@@ -21,6 +21,10 @@ footer {
     width: 100vw;
 }
 
+.column {
+    display: table-cell;
+    padding: 0.5rem;
+}
 
 footer header {
     margin-bottom: 0.5rem;
@@ -66,9 +70,4 @@ footer a {
 
 .footer-below__social li {
     display: table-cell;
-}
-
-footer article {
-    display: table-cell;
-    padding: 0.5rem;
 }
