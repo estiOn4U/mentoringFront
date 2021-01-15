@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    height: 100vh;
     width: 100vw;
 }
 
@@ -14,26 +15,60 @@ img {
 }
 
 footer {
+    font-size: 1em;
     color: #fff;
     background-color: #1b1b1b;
     width: 100vw;
 }
 
+
+footer header {
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
 footer ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer a {
     color: #fff;
     text-decoration: none;
+    font-size: 0.9em;
 }
 
-footer section {
+.footer-links {
+    width: 80%;
+    margin: auto;
+    display: table;
+    table-layout: fixed;
+
+}
+
+.footer-below {
+    width: 80%;
+    margin: auto;
+    display: table;
+    table-layout: fixed;
+}
+
+.footer-below small {
+    display: table-cell;
+}
+
+.footer-below__social {
     width: 100%;
     display: table;
     table-layout: fixed;
 }
 
+.footer-below__social li {
+    display: table-cell;
+}
+
 footer article {
     display: table-cell;
+    padding: 0.5rem;
 }
