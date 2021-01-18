@@ -69,17 +69,19 @@ footer a {
 
 @media (hover: none) {
     .column {
-    display: block;
+        display: block;
     }
+
     .column:after {
         content: "";
         display: block;
         border-bottom-width: 1px;
-        border-bottom-style:solid;
+        border-bottom-style: solid;
         border-bottom-color: white;
     }
 
     .lbl-toggle {
+        position: relative;
         display: block;
         font-weight: bold;
         font-size: 1.2rem;
@@ -90,6 +92,8 @@ footer a {
 
     .lbl-toggle::after {
         content: '+';
+        position: absolute;
+        right: 0;
     }
 
     .toggle:checked + .lbl-toggle::after {
@@ -99,7 +103,7 @@ footer a {
     .collapsible-content {
         max-height: 0px;
         overflow: hidden;
-        /*transition: max-height .25s ease-in-out;*/
+        transition: max-height .5s ease-in-out;
     }
 
     .toggle:checked + .lbl-toggle + .collapsible-content {
