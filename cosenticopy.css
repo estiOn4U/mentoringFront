@@ -26,10 +26,6 @@ footer {
     padding: 0.5rem;
 }
 
-footer header, .lbl-toggle {
-    padding-top: 1rem;
-}
-
 footer input[type='checkbox'] {
     display: none;
 }
@@ -37,7 +33,7 @@ footer input[type='checkbox'] {
 footer ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 0.5rem;
 }
 
 footer a {
@@ -75,12 +71,18 @@ footer a {
     .column {
     display: block;
     }
+    .column:after {
+        content: "";
+        display: block;
+        border-bottom-width: 1px;
+        border-bottom-style:solid;
+        border-bottom-color: white;
+    }
 
     .lbl-toggle {
         display: block;
         font-weight: bold;
         font-size: 1.2rem;
-        padding: 0.5rem;
         color: #DDD;
         cursor: pointer;
         transition: all 0.25s ease-out;
