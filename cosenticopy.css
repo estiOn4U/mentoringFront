@@ -72,6 +72,10 @@ footer a {
 }
 
 @media (hover: none) {
+    .column {
+    display: block;
+    }
+
     .lbl-toggle {
         display: block;
         font-weight: bold;
