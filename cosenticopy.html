@@ -397,9 +397,11 @@
 
 <footer>
     <section class="footer-links">
-        <article class="footer-links__item column">
-            <header>Compañía</header>
-            <ul>
+        <article class="footer-links__item column collapsible"><!--Dropdown!-->
+            <input id="footer-company" class="toggle" type="checkbox">
+            <label for="footer-company" class="lbl-toggle">Compañía</label>
+            <!--<header>Compañía</header>-->
+            <ul class="collapsible-content">
                 <li><a href="#">Cosentino</a></li>
                 <li><a href="#">Seguridad en Cosentino</a></li>
                 <li><a href="#">Espacio Safety Cosentino</a></li>
@@ -411,43 +413,49 @@
                 <li><a href="#">Eduarda Justo Foundation</a></li>
             </ul>
         </article>
-        <article class="footer-links__item column">
-            <header>Área Profesional</header>
-            <ul>
+        <article class="footer-links__item column collapsible">
+            <input id="footer-areaprof" class="toggle" type="checkbox">
+            <label for="footer-areaprof" class="lbl-toggle">Área Profesional</label>
+            <!--header>Área Profesional</header>-->
+            <ul class="collapsible-content">
                 <li><a href="#">Cosentino WE</a></li>
                 <li><a href="#">Área Profesional</a></li>
                 <li><a href="#">Cosentino Center</a></li>
                 <li><a href="#">Cosentino City</a></li>
             </ul>
         </article>
-        <article class="footer-links__item column">
-            <header>Empleo</header>
-            <ul>
+        <article class="footer-links__item column collapsible">
+            <input id="footer-empleo" class="toggle" type="checkbox">
+            <label for="footer-empleo" class="lbl-toggle">Empleo</label>
+            <!--<header>Empleo</header>-->
+            <ul class="collapsible-content">
                 <li><a href="#">Únete a Cosentino</a></li>
                 <li><a href="#">People</a></li>
                 <li><a href="#">Misión, Visión y Valores</a></li>
             </ul>
         </article>
-        <article class="footer-links__item column">
-            <header>Atención al Cliente</header>
-            <ul>
+        <article class="footer-links__item column collapsible">
+            <input id="footer-cliente" class="toggle" type="checkbox">
+            <label for="footer-cliente" class="lbl-toggle">Atención al Cliente</label>
+            <!--<header>Atención al Cliente</header>-->
+            <ul class="collapsible-content">
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Garantía</a></li>
                 <li><a href="#">Condiciones Generales de Compra</a></li>
             </ul>
         </article>
-        <article class="footer-links__item column">
-            <header>Más info</header>
-            <ul>
+        <article class="footer-links__item column collapsible">
+            <!--<header>Más info</header>-->
+            <ul class="collapsible-content">
                 <li><a href="#">Aviso Legal</a></li>
                 <li><a href="#">Política de Privacidad</a></li>
                 <li><a href="#">Política de Cookies</a></li>
                 <li><a href="#">Canal de Denuncia</a></li>
             </ul>
         </article>
-        <article class="footer-links__item column">
-            <header>Recursos</header>
-            <ul>
+        <article class="footer-links__item column collapsible">
+            <!--<header>Recursos</header>-->
+            <ul class="collapsible-content">
                 <li><a href="#">Simulador de cocinas</a></li>
                 <li><a href="#">Descargas</a></li>
                 <li><a href="#">App Dekton</a></li>
