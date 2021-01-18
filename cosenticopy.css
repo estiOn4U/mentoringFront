@@ -72,14 +72,6 @@ footer a {
         display: block;
     }
 
-    .column:after {
-        content: "";
-        display: block;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: white;
-    }
-
     .lbl-toggle {
         position: relative;
         display: block;
@@ -91,12 +83,20 @@ footer a {
     }
 
     .lbl-toggle::after {
+        content: "";
+        display: block;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+    }
+
+    .lbl-toggle::before {
         content: '+';
         position: absolute;
         right: 0;
     }
 
-    .toggle:checked + .lbl-toggle::after {
+    .toggle:checked + .lbl-toggle::before {
         content: '-';
     }
 
