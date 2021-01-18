@@ -72,7 +72,7 @@ footer a {
         display: block;
     }
 
-    .lbl-toggle {
+    .toggle-label {
         position: relative;
         display: block;
         font-weight: bold;
@@ -82,7 +82,7 @@ footer a {
         transition: all 0.25s ease-out;
     }
 
-    .lbl-toggle::after {
+    .toggle-label::after {
         content: "";
         display: block;
         border-bottom-width: 1px;
@@ -90,13 +90,13 @@ footer a {
         border-bottom-color: white;
     }
 
-    .lbl-toggle::before {
+    .toggle-label::before {
         content: '+';
         position: absolute;
         right: 0;
     }
 
-    .toggle:checked + .lbl-toggle::before {
+    .toggle-collapse:checked + .toggle-label::before {
         content: '-';
     }
 
@@ -106,7 +106,7 @@ footer a {
         transition: max-height .5s ease-in-out;
     }
 
-    .toggle:checked + .lbl-toggle + .collapsible-content {
+    .toggle-collapse:checked + .toggle-label + .collapsible-content {
         max-height: 350px;
     }
 
