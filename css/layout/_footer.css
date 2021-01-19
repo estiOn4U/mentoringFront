@@ -2,12 +2,14 @@ footer {
     font-size: 1em;
     color: var(--cosentino-white);
     background-color: var(--cosentino-black);
-    font-family: questa-sans, sans-serif;
+    font-family: var(--main-font);
 }
 
 .column, .footer-below__social li {
-    display: table-cell; /*TODO: INLINE BLOCK!! */
     padding: 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+    /*TODO Ancho máx de cada columna!*/
 }
 
 footer input[type='checkbox'] {
@@ -35,9 +37,6 @@ footer a:hover {
 .footer-links {
     width: 80%; /*TODO: MAX-WIDTH, EN PX*/
     margin: auto;
-    display: table;
-    table-layout: fixed;
-
 }
 
 .footer-below {
@@ -48,13 +47,28 @@ footer a:hover {
 }
 
 .footer-below small {
-    display: table-cell;
+    display: inline-block;
 }
 
 .footer-below__social {
     width: 100%;
-    display: table;
-    table-layout: fixed;
+    display: inline-block;
+}
+
+.footer-below__social li {
+    display: inline-block;
+    background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconPinterest.png?auto=format%2Ccompress&fit=crop');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.footer-below__social a {
+    visibility: hidden;
+}
+
+.footer-below__social li:hover {
+    transform: scale(1.2);
 }
 
 @media (hover: none) {
