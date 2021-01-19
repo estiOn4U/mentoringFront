@@ -1,28 +1,15 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    width: 100vw;
-}
-
-img {
-    max-width: 200px;
-    /*Quitar esto de aquí!
-    TODO: Optimizar imágenes para reducir peso y cambiar tamaños!*/
-}
 
 footer {
     font-size: 1em;
     color: #fff;
     background-color: #1b1b1b;
-    width: 100vw;
+    font-family: questa-sans, sans-serif;
+    /*font-style: normal;
+    font-weight: 300;*/
 }
 
 .column, .footer-below__social li {
-    display: table-cell;
+    display: table-cell; /*TODO: INLINE BLOCK!! */
     padding: 0.5rem;
 }
 
@@ -37,13 +24,19 @@ footer ul {
 }
 
 footer a {
-    color: #fff;
+    color: lightgrey;
     text-decoration: none;
     font-size: 0.9em;
 }
 
+footer a:hover {
+    color: #fff;
+    transition: color 0s;
+    text-decoration: none;
+}
+
 .footer-links {
-    width: 80%;
+    width: 80%; /*TODO: MAX-WIDTH, EN PX*/
     margin: auto;
     display: table;
     table-layout: fixed;
@@ -67,7 +60,7 @@ footer a {
     table-layout: fixed;
 }
 
-@media (hover: none) {
+@media (hover: none) { /*TODO: TAMAÑOS DE PANTALLA, */
     .column {
         display: block;
     }
