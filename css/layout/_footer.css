@@ -40,7 +40,7 @@ footer a:hover {
 }
 
 .footer-below {
-    width: 80%;
+    width: 80%; /*TODO: MAX-WIDTH, EN PX*/
     margin: auto;
     display: table;
     table-layout: fixed;
@@ -70,8 +70,7 @@ footer a:hover {
     transform: scale(1.2);
 }
 
-@media (hover: none) {
-    /*TODO: TAMAÑOS DE PANTALLA, */
+@media (max-width: 758px) {
     .column {
         display: block;
     }
@@ -79,8 +78,6 @@ footer a:hover {
     .toggle-label {
         position: relative;
         display: block;
-        font-weight: bold;
-        font-size: 1.2rem;
         color: #DDD;
         cursor: pointer;
         transition: all 0.25s ease-out;
@@ -111,7 +108,7 @@ footer a:hover {
     }
 
     .toggle-collapse:checked + .toggle-label + .collapsible-content {
-        max-height: 350px;
+        max-height: fit-content;
     }
 
 }
