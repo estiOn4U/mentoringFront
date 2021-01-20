@@ -37,6 +37,7 @@ footer input[type='checkbox'] {
     padding: 0;
     margin-top: 0.5rem;
     max-width: 216px;
+    min-width: 160px;
 }
 
 .footer-links {
@@ -154,5 +155,6 @@ footer input[type='checkbox'] {
     }
     .column ul {
         max-width: max-content;
+        min-width: 160px;
     }
 }
