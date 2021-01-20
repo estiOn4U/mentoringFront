@@ -2,15 +2,5 @@
     --cosentino-white: #fff;
     --cosentino-gray: #727272;
     --cosentino-black: #1b1b1b;
-
     --main-font: questa-sans, sans-serif;
-
-    /*DEVICE BREAKPOINTS*/
-    --min-size: 320px;
-    --min-tablet: 768px;
-    --max-tablet: 1024px;
-    --inter: 1440px;
-    --max-laptop: 1920px;
-
-    /*TODO los tamaños y las imágenes tb podrían ser variables*/
 }

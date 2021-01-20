@@ -35,12 +35,12 @@ footer a:hover {
 }
 
 .footer-links {
-    width: 80%; /*TODO: MAX-WIDTH, EN PX*/
+    max-width: 80%; /*TODO: MAX-WIDTH, EN PX*/
     margin: auto;
 }
 
 .footer-below {
-    width: 80%; /*TODO: MAX-WIDTH, EN PX*/
+    max-width: 80%; /*TODO: MAX-WIDTH, EN PX*/
     margin: auto;
     display: table;
     table-layout: fixed;
@@ -56,11 +56,23 @@ footer a:hover {
 
 .footer-below__social li {
     display: inline-block;
-    background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconPinterest.png?auto=format%2Ccompress&fit=crop');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
+
+#social-facebook { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconFacebook.png?auto=format%2Ccompress&fit=crop'); }
+
+
+#social-twitter { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/inconTwitter.png?auto=format%2Ccompress&fit=crop'); }
+
+#social-instagram { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconInstagram.png?auto=format%2Ccompress&fit=crop'); }
+
+#social-pinterest { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconPinterest.png?auto=format%2Ccompress&fit=crop'); }
+
+#social-youtube { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconYoutube.png?auto=format%2Ccompress&fit=crop'); }
+
+#social-linkedin { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconLinkedin.png?auto=format%2Ccompress&fit=crop'); }
 
 .footer-below__social a {
     visibility: hidden;
