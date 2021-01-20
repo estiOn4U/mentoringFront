@@ -5,22 +5,26 @@ footer {
     font-family: var(--main-font);
 }
 
-.column, .footer-below__social li {
+.column {
     padding: 0.5rem;
     display: inline-block;
     vertical-align: top;
-    /*TODO Ancho máx de cada columna!*/
+}
+
+.footer-below__social li {
+    display: inline-block;
+    vertical-align: top;
 }
 
 footer input[type='checkbox'] {
     display: none;
 }
 
-footer ul {
+.column ul {
     list-style-type: none;
     padding: 0;
     margin-top: 0.5rem;
-    max-width: 250px;
+    max-width: 216px;
 }
 
 footer a {
@@ -59,8 +63,11 @@ footer a:hover {
     background-size: contain;
 }
 
-#social-facebook { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconFacebook.png?auto=format%2Ccompress&fit=crop'); }
+.footer-below__social li {
+    min-height: 30px;
+}
 
+#social-facebook { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconFacebook.png?auto=format%2Ccompress&fit=crop'); }
 
 #social-twitter { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/inconTwitter.png?auto=format%2Ccompress&fit=crop'); }
 
@@ -93,9 +100,9 @@ footer a:hover {
     .toggle-label {
         position: relative;
         display: block;
-        color: #DDD;
-        cursor: pointer;
+        color: var(--cosentino-white);
         transition: all 0.25s ease-out;
+        min-height: 25px;
     }
 
     .toggle-label::after {
@@ -127,7 +134,14 @@ footer a:hover {
     }
 
 }
-@media (min-width: 320px) and (max-width: 768px) {}
-@media (min-width: 768px) and (max-width: 1024px) {}
+
+/*@media (min-width: 768px) and (max-width: 1024px) {}*/
 /*@media (min-width: 1024px) and (max-width: 1440px) {}*/
-@media (min-width: 1440px) and (max-width: 1920px) {}
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .column {
+        margin-right: 36px;
+    }
+    .column ul {
+        max-width: max-content;
+    }
+}
