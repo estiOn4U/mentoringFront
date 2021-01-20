@@ -5,6 +5,18 @@ footer {
     font-family: var(--main-font);
 }
 
+footer a {
+    color: var(--cosentino-gray);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+footer a:hover {
+    color: var(--cosentino-white);
+    transition: color 0s;
+    text-decoration: none;
+}
+
 .column {
     padding: 0.5rem;
     display: inline-block;
@@ -27,25 +39,13 @@ footer input[type='checkbox'] {
     max-width: 216px;
 }
 
-footer a {
-    color: var(--cosentino-gray);
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-footer a:hover {
-    color: var(--cosentino-white);
-    transition: color 0s;
-    text-decoration: none;
-}
-
 .footer-links {
-    max-width: 80%; /*TODO: MAX-WIDTH, EN PX*/
+    max-width: 90%;
     margin: auto;
 }
 
 .footer-below {
-    max-width: 80%; /*TODO: MAX-WIDTH, EN PX*/
+    max-width: 90%;
     margin: auto;
 }
 
@@ -61,9 +61,6 @@ footer a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
-
-.footer-below__social li {
     min-height: 30px;
 }
 
@@ -90,6 +87,16 @@ footer a:hover {
 @media (min-width: 320px) and (max-width: 768px) {
     .column {
         display: block;
+    }
+
+    footer-links {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .footer-below {
+        max-width: 80%;
+        margin: auto;
     }
 
     .footer-below__social li {
