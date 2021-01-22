@@ -5,3 +5,11 @@
 #noDisplay {
     display: none; /*Temporal*/
 }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
