@@ -90,6 +90,10 @@ footer input[type='checkbox'] {
         display: block;
     }
 
+    .column ul {
+        min-width: max-content;
+    }
+
     footer-links {
         max-width: 80%;
         margin: auto;
