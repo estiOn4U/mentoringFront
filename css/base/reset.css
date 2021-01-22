@@ -5,6 +5,14 @@
 #noDisplay {
     display: none; /*Temporal*/
 }
+img {
+    max-width: 200px; /*Temporal*/
+}
+
+h1, h2, h3 {
+    color: var(--cosentino-gray);
+    font-family: var(--main-font);
+}
 
 ul {
     list-style-type: none;
@@ -12,4 +20,20 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.button-like {
+    color: var(--cosentino-gray);
+    background-color: var(--cosentino-white);
+    vertical-align: middle;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--cosentino-gray);
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.button-like:hover {
+    color: var(--cosentino-white);
+    background-color: var(--cosentino-black);
 }

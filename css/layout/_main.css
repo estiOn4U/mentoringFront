@@ -1,4 +1,8 @@
-#breadcrumb {
+#breadcrumb li {
+    display: inline-block;
+}
+#breadcrumb li:not(:last-child):after {
+    content: '>>';
 }
 
 
