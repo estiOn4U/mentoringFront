@@ -26,7 +26,6 @@ a {
 .button-like {
     color: var(--cosentino-gray);
     background-color: var(--cosentino-white);
-    vertical-align: middle;
     border-width: 1px;
     border-style: solid;
     border-color: var(--cosentino-gray);

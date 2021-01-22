@@ -1,6 +1,8 @@
 :root {
     --cosentino-white: #fff;
     --cosentino-gray: #727272;
+    --cosentino-lightgray: #f5f5f5;
     --cosentino-black: #1b1b1b;
+    --cosentino-lightgreen: #edf7ed;
     --main-font: questa-sans, serif;
 }

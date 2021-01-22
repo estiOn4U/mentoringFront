@@ -2,6 +2,7 @@
 #breadcrumb li {
     display: inline-block;
 }
+
 #breadcrumb li:not(:last-child):after {
     content: '>>';
     font-size: 0.6rem;
@@ -9,30 +10,54 @@
 }
 
 main section {
-    max-width: 80%;
-    margin: auto;
+    padding: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
 }
 
-main section header {
+.section__initial--squares, .section--brands, .section--solutions, .distrib__container, .section--inspo, .section--blog {
+    max-width: 800px;
+    margin: auto;
     text-align: center;
 }
 
-.section__initial--squares {
-    max-width: 600px;
-    margin:auto;
-    text-align: justify;
-}
-.section__initial--squares::after {
-    content: '';
-    width: 100%;
-    display: inline-block;
-}
-
 .square {
-    padding: 1rem;
     display: inline-block;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {}
-@media (min-width: 1440px) and (max-width: 1920px) {}
+.section--profcontact {
+    background-color: var(--cosentino-lightgreen);
+    text-align: center;
+}
+
+.section--contact, .section--distrib, .section--solutions {
+    background-color: var(--cosentino-lightgray);
+}
+
+.section--distrib article, .section--brands article {
+    display: inline-block;
+    max-width: 350px;
+    vertical-align: top;
+}
+
+.section--distrib {
+    margin-top: 1rem;
+}
+
+.solutions__form, .solutions__picture {
+    display: inline-block;
+    max-width: 350px;
+    vertical-align: top;
+    padding: 1.2em;
+}
+
+.logo { /*TODO añadir la clase logo a los demás logos!*/
+    display: block;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+}
 
