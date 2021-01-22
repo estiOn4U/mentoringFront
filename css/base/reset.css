@@ -12,6 +12,7 @@ img {
 h1, h2, h3 {
     color: var(--cosentino-gray);
     font-family: var(--main-font);
+    text-align: center;
 }
 
 ul {

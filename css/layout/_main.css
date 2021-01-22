@@ -1,10 +1,37 @@
+
 #breadcrumb li {
     display: inline-block;
 }
 #breadcrumb li:not(:last-child):after {
     content: '>>';
+    font-size: 0.6rem;
+    padding: 0.4rem;
 }
 
+main section {
+    /*max-width: 80%;*/
+    margin: auto;
+}
+
+main section header {
+    text-align: center;
+}
+
+.section__initial--squares {
+    max-width: 600px;
+    margin:auto;
+    text-align: justify;
+}
+.section__initial--squares::after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+
+.square {
+    padding: 1rem;
+    display: inline-block;
+}
 
 @media (min-width: 320px) and (max-width: 768px) {}
 @media (min-width: 1440px) and (max-width: 1920px) {}
