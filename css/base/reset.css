@@ -11,7 +11,7 @@ img {
 }
 
 h1, h2, h3 {
-    color: var(--cosentino-gray);
+    color: var(--color-gray);
     font-family: var(--main-font);
     text-align: center;
 }
@@ -30,16 +30,16 @@ fieldset {
 
 input:not([type="checkbox"]):not([type="submit"]) {
     border-radius: 10px;
-    border-color: var(--cosentino-gray);
+    border-color: var(--color-gray);
     border-width: 1px;
 }
 
 .button-like {
-    color: var(--cosentino-gray);
-    background-color: var(--cosentino-white);
+    color: var(--color-gray);
+    background-color: var(--color-white);
     border-width: 1px;
     border-style: solid;
-    border-color: var(--cosentino-gray);
+    border-color: var(--color-gray);
     border-radius: 24px;
     padding: 1rem;
     margin-top: 1em;
@@ -50,7 +50,7 @@ input:not([type="checkbox"]):not([type="submit"]) {
 }
 
 .button-like:hover {
-    color: var(--cosentino-white);
-    background-color: var(--cosentino-black);
+    color: var(--color-white);
+    background-color: var(--color-black);
 }
 /*TODO focus*/

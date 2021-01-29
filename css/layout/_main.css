@@ -30,14 +30,14 @@ main section {
 }
 
 .section--profcontact {
-    background-color: var(--cosentino-lightgreen);
+    background-color: var(--color-lightgreen);
     text-align: center;
 }
 
 .section--contact,
 .section--distrib,
 .section--solutions {
-    background-color: var(--cosentino-lightgray);
+    background-color: var(--color-lightgray);
 }
 
 .section--distrib article,

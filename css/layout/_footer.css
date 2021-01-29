@@ -1,18 +1,18 @@
 footer {
     font-size: 1em;
-    color: var(--cosentino-white);
-    background-color: var(--cosentino-black);
+    color: var(--color-white);
+    background-color: var(--color-black);
     font-family: var(--main-font);
 }
 
 footer a {
-    color: var(--cosentino-gray);
+    color: var(--color-gray);
     text-decoration: none;
     font-size: 0.9em;
 }
 
 footer a:hover {
-    color: var(--cosentino-white);
+    color: var(--color-white);
     transition: color 0s;
     text-decoration: none;
 }
@@ -74,7 +74,7 @@ footer input[type='checkbox'] {
 
 #social-youtube { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconYoutube.png?auto=format%2Ccompress&fit=crop'); }
 
-#social-linkedin { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconLinkedin.png?auto=format%2Ccompress&fit=crop'); }
+#social-linkedin { background-image: url('https://icosentio.imgix.net/es/wp-content/uploads/2019/07/iconLinkedin.png?auto=format%2Ccompress&fit=crop'); }
 
 .footer-below__social a {
     visibility: hidden;
@@ -111,7 +111,7 @@ footer input[type='checkbox'] {
     .toggle-label {
         position: relative;
         display: block;
-        color: var(--cosentino-white);
+        color: var(--color-white);
         transition: all 0.25s ease-out;
         min-height: 36px;
     }
@@ -121,7 +121,7 @@ footer input[type='checkbox'] {
         display: block;
         border-bottom-width: 1px;
         border-bottom-style: solid;
-        border-bottom-color: var(--cosentino-white);
+        border-bottom-color: var(--color-white);
     }
 
     .toggle-label::before {

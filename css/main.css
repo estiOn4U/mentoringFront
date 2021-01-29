@@ -1,4 +1,5 @@
-@import './abstracts/variables.css';
+@import 'abstracts/colors.css';
+@import 'abstracts/fonts.css';
 @import './base/reset.css';
 @import './layout/_footer.css';
 @import './layout/_main.css';
