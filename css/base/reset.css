@@ -6,6 +6,7 @@
 #noDisplay {
     display: none; /*Temporal*/
 }
+
 img {
     max-width: 200px; /*Temporal*/
 }
@@ -20,8 +21,9 @@ ul {
     list-style-type: none;
 }
 
-a { /*TODO ojo con esto!*/
+a {
     text-decoration: none;
+    min-height: 32px;
 }
 
 fieldset {
@@ -32,6 +34,11 @@ input:not([type="checkbox"]):not([type="submit"]) {
     border-radius: 10px;
     border-color: var(--color-gray);
     border-width: 1px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
 }
 
 .button-like {
@@ -53,4 +60,8 @@ input:not([type="checkbox"]):not([type="submit"]) {
     color: var(--color-white);
     background-color: var(--color-black);
 }
-/*TODO focus*/
+
+.button-like:focus {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}

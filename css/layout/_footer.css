@@ -1,17 +1,28 @@
-footer {
+.main-footer {
     font-size: 1em;
     color: var(--color-white);
     background-color: var(--color-black);
     font-family: var(--main-font);
 }
 
-footer a {
+.main-footer input[type='checkbox'] {
+    display: none;
+}
+
+.main-footer__links {
+    max-width: 90%;
+    margin: auto;
+}
+
+.main-footer__links a {
     color: var(--color-gray);
     text-decoration: none;
     font-size: 0.9em;
+    display: block;
+    min-height: 32px;
 }
 
-footer a:hover {
+.main-footer__links a:hover {
     color: var(--color-white);
     transition: color 0s;
     text-decoration: none;
@@ -23,13 +34,9 @@ footer a:hover {
     vertical-align: top;
 }
 
-.footer-below__social li {
+.footer-social--list li {
     display: inline-block;
     vertical-align: top;
-}
-
-footer input[type='checkbox'] {
-    display: none;
 }
 
 .column ul {
@@ -39,29 +46,24 @@ footer input[type='checkbox'] {
     min-width: 160px;
 }
 
-.footer-links {
+.main-footer__social {
     max-width: 90%;
     margin: auto;
 }
 
-.footer-below {
-    max-width: 90%;
-    margin: auto;
-}
-
-.footer-below small {
+.main-footer__social small {
     display: inline-block;
 }
 
-.footer-below__social {
+.footer-social--list {
     display: inline-block;
 }
 
-.footer-below__social li {
+.footer-social--list li {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    min-height: 30px;
+    min-height: 32px;
 }
 
 #social-facebook { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconFacebook.png?auto=format%2Ccompress&fit=crop'); }
@@ -74,13 +76,13 @@ footer input[type='checkbox'] {
 
 #social-youtube { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconYoutube.png?auto=format%2Ccompress&fit=crop'); }
 
-#social-linkedin { background-image: url('https://icosentio.imgix.net/es/wp-content/uploads/2019/07/iconLinkedin.png?auto=format%2Ccompress&fit=crop'); }
+#social-linkedin { background-image: url('https://icosentino.imgix.net/es/wp-content/uploads/2019/07/iconLinkedin.png?auto=format%2Ccompress&fit=crop'); }
 
-.footer-below__social a {
+.footer-social--list a {
     visibility: hidden;
 }
 
-.footer-below__social li:hover {
+.footer-social--list li:hover {
     transform: scale(1.2);
 }
 
@@ -93,17 +95,17 @@ footer input[type='checkbox'] {
         min-width: max-content;
     }
 
-    .footer-links {
+    .main-footer__links {
         max-width: 80%;
         margin: auto;
     }
 
-    .footer-below {
+    .main-footer__social {
         max-width: 80%;
         margin: auto;
     }
 
-    .footer-below__social li {
+    .footer-social--list li {
         min-height: 40px;
         margin-bottom: 12px;
     }

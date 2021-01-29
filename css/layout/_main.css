@@ -59,11 +59,6 @@ main section {
     padding: 1.2em;
 }
 
-.logo { /*TODO añadir la clase logo a los demás logos!*/
-    display: block;
-    margin: auto;
-}
-
 .section--blog article {
     display: inline-block;
     max-width: min-content;
