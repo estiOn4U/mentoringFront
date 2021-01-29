@@ -84,7 +84,7 @@ footer input[type='checkbox'] {
     transform: scale(1.2);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .column {
         display: block;
     }
@@ -93,7 +93,7 @@ footer input[type='checkbox'] {
         min-width: max-content;
     }
 
-    footer-links {
+    .footer-links {
         max-width: 80%;
         margin: auto;
     }
@@ -135,7 +135,7 @@ footer input[type='checkbox'] {
     }
 
     .collapsible-content {
-        max-height: 0px;
+        max-height: 0;
         overflow: hidden;
         transition: max-height .5s ease-in-out;
     }
@@ -152,7 +152,7 @@ footer input[type='checkbox'] {
 
 /*@media (min-width: 768px) and (max-width: 1024px) {}*/
 /*@media (min-width: 1024px) and (max-width: 1440px) {}*/
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
     .column {
         margin-right: 36px;
     }

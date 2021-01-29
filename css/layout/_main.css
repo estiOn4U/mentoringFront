@@ -14,7 +14,12 @@ main section {
     text-align: center;
 }
 
-.section__initial--squares, .section--brands, .section--solutions, .distrib__container, .section--inspo, .section--blog {
+.section__initial--squares,
+.section--brands,
+.section--solutions,
+.distrib__container,
+.section--inspo,
+.section--blog {
     max-width: 800px;
     margin: auto;
     text-align: center;
@@ -29,11 +34,14 @@ main section {
     text-align: center;
 }
 
-.section--contact, .section--distrib, .section--solutions {
+.section--contact,
+.section--distrib,
+.section--solutions {
     background-color: var(--cosentino-lightgray);
 }
 
-.section--distrib article, .section--brands article {
+.section--distrib article,
+.section--brands article {
     display: inline-block;
     max-width: 350px;
     vertical-align: top;
@@ -43,7 +51,8 @@ main section {
     margin-top: 1rem;
 }
 
-.solutions__form, .solutions__picture {
+.solutions__form,
+.solutions__picture {
     display: inline-block;
     max-width: 350px;
     vertical-align: top;
@@ -52,6 +61,7 @@ main section {
 
 .logo { /*TODO añadir la clase logo a los demás logos!*/
     display: block;
+    margin: auto;
 }
 
 .section--blog article {
@@ -59,9 +69,9 @@ main section {
     max-width: min-content;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
 }
 
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
 }
 
