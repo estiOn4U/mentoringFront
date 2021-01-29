@@ -12,7 +12,7 @@ img {
 }
 
 h1, h2, h3 {
-    color: var(--color-gray);
+    color: var(--color-dark-shadow);
     font-family: var(--main-font);
     text-align: center;
 }
@@ -42,7 +42,7 @@ input:not([type="checkbox"]):not([type="submit"]) {
 }
 
 .button-like {
-    color: var(--color-gray);
+    color: var(--color-dark-shadow);
     background-color: var(--color-white);
     border-width: 1px;
     border-style: solid;

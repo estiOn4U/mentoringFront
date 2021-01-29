@@ -1,4 +1,5 @@
 :root {
     /*max-width en px y tener un padding en porcentaje*/
-
+    --column-pad: 4%;
+    --main-footer-pad: 16px;
 }
