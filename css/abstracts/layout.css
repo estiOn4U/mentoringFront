@@ -1,5 +1,6 @@
 :root {
-    /*max-width en px y tener un padding en porcentaje*/
-    --column-pad: 4%;
-    --main-footer-pad: 16px;
+    --footer-size-mobile: 400px;
+    --footer-size-tabletV: 600px;
+    --footer-size-tabletH: 800px;
+    --footer-size-laptopXL: 1200px;
 }

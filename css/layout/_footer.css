@@ -10,8 +10,8 @@
 }
 
 .main-footer__links {
-    max-width: 90%;
-    padding: var(--main-footer-pad);
+    max-width: 800px;
+    padding: 4%;
     margin: auto;
 }
 
@@ -30,9 +30,9 @@
 }
 
 .column {
-    padding: var(--column-pad);
     display: inline-block;
     vertical-align: top;
+    width: min-content;
 }
 
 .footer-social--list li {
@@ -78,6 +78,7 @@
 @media (max-width: 768px) {
     .column {
         display: block;
+        max-width: var(--footer-size-tabletV);
     }
 
     .column ul {
@@ -85,8 +86,8 @@
     }
 
     .main-footer__links {
-        max-width: 80%;
-        margin: auto;
+        max-width: var(--footer-size-tabletV);
+        padding: 15%;
     }
 
     .main-footer__social {
