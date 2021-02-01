@@ -3,16 +3,16 @@
     line-height: 1.6;
 }
 
-#noDisplay {
+.noDisplay {
     display: none; /*Temporal*/
 }
 
 img {
-    max-width: 200px; /*Temporal*/
+    height: auto;
+    width: 200px; /*Temporal*/
 }
 
 h1, h2, h3 {
-    color: var(--color-dark-shadow);
     font-family: var(--main-font);
     text-align: center;
 }

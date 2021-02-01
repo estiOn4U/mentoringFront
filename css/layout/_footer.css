@@ -52,14 +52,34 @@
     fill: blue;
 }
 
+/*
+======= MOBILE =====
+*/
+@media (max-width: 425px) {
+    .main-footer__links {
+        max-width: var(--footer-size-mobile);
+        padding: 10%;
+    }
+
+    .column {
+        max-width: var(--footer-size-mobile);
+    }
+    .collapsible-content {
+        max-width: var(--footer-size-mobile);
+    }
+}
+
+/*
+======= TABLET V =====
+*/
 @media (max-width: 768px) {
     .column {
         display: block;
-        max-width: var(--footer-size-tabletV);
+        width: var(--footer-size-tabletV);
     }
 
     .column ul {
-        min-width: max-content;
+        max-width: max-content;
     }
 
     .main-footer__links {
@@ -111,6 +131,7 @@
 
     .collapsible-content li {
         min-height: 36px;
+        white-space: pre-line;
     }
 
     .toggle-collapse:checked + .toggle-label + .collapsible-content {
@@ -121,6 +142,11 @@
 
 /*@media (min-width: 768px) and (max-width: 1024px) {}*/
 /*@media (min-width: 1024px) and (max-width: 1440px) {}*/
+
+/*
+======= TABLET H + LAPTOP =====
+*/
+
 @media (min-width: 1440px) {
     .column {
         margin-right: 36px;
