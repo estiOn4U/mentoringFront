@@ -7,6 +7,15 @@
     display: none; /*Temporal*/
 }
 
+.noVisible {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /*Hidden visually, but present for assistive tech!*/
+}
+
 img {
     height: auto;
     width: 200px; /*Temporal*/
@@ -21,14 +30,8 @@ ul {
     list-style-type: none;
 }
 
-fieldset {
-    border: none;
-}
-
-input:not([type="checkbox"]):not([type="submit"]) {
-    border-radius: 10px;
-    border-color: var(--color-gray);
-    border-width: 1px;
+small {
+    display: block;
 }
 
 .logo {

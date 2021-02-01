@@ -229,8 +229,9 @@
         <div class="solutions__form">
             <span>Descubre por qué Dekton es perfecto para fachadas</span>
             <form>
-                <input type="email" placeholder="Introduce tu dirección de email" name="email" id="email">
-                <label class="noDisplay" for="email">Email</label>
+                <label class="noVisible" for="email">Email
+                    <input type="email" placeholder="Introduce tu dirección de email" name="email" id="email">
+                </label>
                 <fieldset>
                     <legend>Estoy interesado en soluciones para...</legend>
                     <input type="radio" name="interes" value="profesional" id="profesional">
@@ -330,60 +331,69 @@
 
     <section class="section--contact">
         <h2>Contacto</h2>
-        <form>
-            <label for="nombre-contacto">Nombre</label>
-            <input type="text" name="nombre-contacto" id="nombre-contacto" pattern="[a-zA-Z]" required>
+        <form class="contact-form">
+            <label class="contact-form__label" for="nombre-contacto">Nombre
+                <input type="text" name="nombre-contacto" id="nombre-contacto" pattern="[a-zA-Z]" required>
+            </label>
 
-            <label for="email-contacto">E-mail</label>
-            <input type="email" name="email-contacto" id="email-contacto" required>
+            <label class="contact-form__label" for="email-contacto">E-mail
+                <input type="email" name="email-contacto" id="email-contacto" required>
+            </label>
 
-            <label for="perfil-contacto">Selecciona tu perfil</label>
-            <select name="perfil-contacto" id="perfil-contacto" required>
-                <option disabled selected>Selecciona tu perfil</option>
-                <option value="arquitecto">Arquitecto</option>
-                <option value="constructor">Constructor</option>
-                <option value="interiorista">Interiorista</option>
-                <option value="marmolista">Marmolista</option>
-                <option value="promotor">Promotor</option>
-                <option value="tienda">Tienda de cocina y baños</option>
-                <option value="instalador">Instalador</option>
-                <option value="proveedores">Proveedores</option>
-                <option value="prensa">Prensa</option>
-                <option value="estudiante">Estudiante</option>
-            </select>
+            <label class="contact-form__label" for="perfil-contacto">Selecciona tu perfil
+                <select name="perfil-contacto" id="perfil-contacto" required>
+                    <option disabled selected>Selecciona tu perfil</option>
+                    <option value="arquitecto">Arquitecto</option>
+                    <option value="constructor">Constructor</option>
+                    <option value="interiorista">Interiorista</option>
+                    <option value="marmolista">Marmolista</option>
+                    <option value="promotor">Promotor</option>
+                    <option value="tienda">Tienda de cocina y baños</option>
+                    <option value="instalador">Instalador</option>
+                    <option value="proveedores">Proveedores</option>
+                    <option value="prensa">Prensa</option>
+                    <option value="estudiante">Estudiante</option>
+                </select>
+            </label>
 
-            <label for="empresa-contacto">Empresa</label>
-            <input type="text" name="empresa-contacto" id="empresa-contacto" minlength="3" required>
+            <label class="contact-form__label" for="empresa-contacto">Empresa
+                <input type="text" name="empresa-contacto" id="empresa-contacto" minlength="3" required>
+            </label>
 
-            <label for="pais-contacto">País</label>
-            <select name="pais-contacto" id="pais-contacto">
-                <option selected value="SP">España</option>
-                <option value="AF">Afganistán</option>
-            </select>
+            <label class="contact-form__label" for="pais-contacto">País
+                <select name="pais-contacto" id="pais-contacto">
+                    <option selected value="SP">España</option>
+                    <option value="AF">Afganistán</option>
+                </select>
+            </label>
 
-            <label for="cp-contacto">Código Postal</label>
-            <input type="number" name="cp-contacto" id="cp-contacto" required>
+            <label class="contact-form__label" for="cp-contacto">Código Postal
+                <input type="number" name="cp-contacto" id="cp-contacto" required>
+            </label>
 
-            <label for="asunto-contacto">Selecciona el asunto</label>
-            <select name="asunto-contacto" id="asunto-contacto" required>
-                <option disabled selected>Selecciona el asunto</option>
-                <option value="asistencia">Asistencia para proyectos</option>
-                <option value="coseninfo">Información general de Cosentino</option>
-                <option value="prodinfo">Información técnica sobre productos</option>
-                <option value="muestras">Petición de muestras</option>
-                <option value="precios">Solicitud de precios</option>
-                <option value="visita">Solicitud de visita de comercial</option>
-                <option value="showroom">Visita al Showroom</option>
-                <option value="otro">Otro</option>
-            </select>
+            <label class="contact-form__label"for="asunto-contacto">Selecciona el asunto
+                <select name="asunto-contacto" id="asunto-contacto" required>
+                    <option disabled selected>Selecciona el asunto</option>
+                    <option value="asistencia">Asistencia para proyectos</option>
+                    <option value="coseninfo">Información general de Cosentino</option>
+                    <option value="prodinfo">Información técnica sobre productos</option>
+                    <option value="muestras">Petición de muestras</option>
+                    <option value="precios">Solicitud de precios</option>
+                    <option value="visita">Solicitud de visita de comercial</option>
+                    <option value="showroom">Visita al Showroom</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </label>
 
-            <label for="tlf-contacto">Número de teléfono</label>
-            <input type="tel" pattern="+[0-9]{2}-[0-9]{9}" name="tlf-contacto" id="tlf-contacto" required
-                   aria-describedby="tel-validation">
-            <div id="tel-validation">Introduce tu número de teléfono incluyendo el prefijo de país</div>
+            <label class="contact-form__label" for="tlf-contacto">Número de teléfono
+                <input type="tel" pattern="+[0-9]{2}-[0-9]{9}" name="tlf-contacto" id="tlf-contacto" required
+                       aria-describedby="tel-validation">
+                <div id="tel-validation">Introduce tu número de teléfono incluyendo el prefijo de país</div>
+            </label>
 
-            <label for="mensaje-contacto">Escribe aquí tu mensaje</label>
-            <textarea name="mensaje-contacto" id="mensaje-contacto"></textarea>
+            <label class="contact-form__label" for="mensaje-contacto">Escribe aquí tu mensaje
+                <textarea name="mensaje-contacto" id="mensaje-contacto"></textarea>
+            </label>
 
             <small>De conformidad con el RGPD, le informamos que sus datos serán incorporados a un fichero bajo la
                 responsabilidad de COSENTINO, S.A. (en adelante COSENTINO), con la finalidad de atender su solicitud y

@@ -1,0 +1,20 @@
+fieldset {
+    border: none;
+    display: block;
+}
+
+input:not([type="checkbox"]):not([type="submit"]) {
+    border-radius: 10px;
+    border-color: var(--color-gray);
+    border-width: 1px;
+}
+
+.contact-form__label {
+    display: inline-block;
+    width: 40%;
+    text-align: start;
+}
+
+.contact-form__label input, .contact-form__label select {
+    display: block;
+}
