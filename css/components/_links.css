@@ -4,7 +4,7 @@
 }
 
 .primary-link:hover, .primary-link:focus {
-    color:var(--color-black);
+    color: var(--color-black);
     text-decoration: underline;
 }
 
@@ -23,7 +23,13 @@
 }
 
 .policy-link {
+    color: var(--color-dark-shadow);
+    text-decoration: underline;
+}
 
+.policy-link:hover, .policy-link:focus {
+    color: var(--color-black);
+    text-decoration: none;
 }
 
 .button-like {
@@ -45,4 +51,13 @@
 .button-like:hover, .button-like:focus {
     color: var(--color-white);
     background-color: var(--color-black);
+}
+
+.social-media--icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.social-media--icon:hover img, .social-media--icon:focus img {
+    transform: scale(1.2);
 }

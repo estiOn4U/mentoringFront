@@ -45,15 +45,6 @@
 .footer-social--list {
     display: inline-block;
 }
-.footer-social--list a {
-    visibility: hidden;
-    display: block;
-    min-height: 32px;
-}
-
-.footer-social--list li:hover {
-    transform: scale(1.2);
-}
 
 .social-logo {
     width: 40px;
