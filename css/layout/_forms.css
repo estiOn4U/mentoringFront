@@ -23,19 +23,41 @@ input:not([type="checkbox"]):not([type="submit"]), textarea, select {
 .contact-form__label textarea {
     display: block;
     width: 100%;
+    min-height: 32px;
+}
+
+.textarea-label {
+    display: inline-block;
+    width: 80%;
+}
+
+.contact-form__label textarea {
+    height: 96px;
 }
 
 .contact-form__label input:focus,
-.contact-form__label textarea:focus
-{
+.contact-form__label textarea:focus,
+.contact-form__label select:focus {
     outline: none;
     box-shadow: 0 0 3px 2px var(--color-dark-shadow);
 }
 
-.contact-form__label select:focus {
+.contact-form__label select:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.contact-form__label select:active {
     outline: none;
-    color: var(--color-dark-shadow);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+
+.contact-form__label select option:checked {
+    background: var(--color-lightgray);
 }
 
 /*falta darles el mismo alto a todas las cajas*/
