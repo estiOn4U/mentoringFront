@@ -3,10 +3,11 @@ fieldset {
     display: block;
 }
 
-input:not([type="checkbox"]):not([type="submit"]) {
+input:not([type="checkbox"]):not([type="submit"]), textarea, select {
     border-radius: 10px;
     border-color: var(--color-gray);
     border-width: 1px;
+    background-color: var(--color-white);
 }
 
 .contact-form__label {
@@ -24,8 +25,17 @@ input:not([type="checkbox"]):not([type="submit"]) {
     width: 100%;
 }
 
-.contact-form__label input:focus {
+.contact-form__label input:focus,
+.contact-form__label textarea:focus
+{
     outline: none;
-    border-style: solid;
-    border-color: aqua;
+    box-shadow: 0 0 3px 2px var(--color-dark-shadow);
 }
+
+.contact-form__label select:focus {
+    outline: none;
+    color: var(--color-dark-shadow);
+    background-color: var(--color-white);
+}
+
+/*falta darles el mismo alto a todas las cajas*/
