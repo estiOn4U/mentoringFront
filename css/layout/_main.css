@@ -25,6 +25,11 @@ main section {
     text-align: center;
 }
 
+.contact-form {
+    max-width: 1024px;
+    margin: auto;
+}
+
 .square {
     display: inline-block;
 }
@@ -54,9 +59,12 @@ main section {
 .solutions__form,
 .solutions__picture {
     display: inline-block;
-    max-width: 350px;
     vertical-align: top;
     padding: 1.2em;
+}
+
+.solutions__form {
+    max-width: 450px;
 }
 
 .section--blog article {

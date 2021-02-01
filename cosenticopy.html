@@ -229,22 +229,27 @@
         <div class="solutions__form">
             <span>Descubre por qué Dekton es perfecto para fachadas</span>
             <form>
-                <label class="noVisible" for="email">Email
+                <label class="textarea-label contact-form__label" for="email">Email
                     <input type="email" placeholder="Introduce tu dirección de email" name="email" id="email">
                 </label>
                 <fieldset>
                     <legend>Estoy interesado en soluciones para...</legend>
-                    <input type="radio" name="interes" value="profesional" id="profesional">
-                    <label for="profesional">Proyecto profesional</label>
-                    <input type="radio" name="interes" value="personal" id="personal">
-                    <label for="personal">Mi vivienda</label>
+                    <label for="profesional">
+                        <input type="radio" name="interes" value="profesional" id="profesional">
+                        Proyecto profesional
+                    </label>
+                    <label for="personal">
+                        <input type="radio" name="interes" value="personal" id="personal">
+                        Mi vivienda</label>
                 </fieldset>
                 <fieldset>
-                    <input type="checkbox" name="suscripcion" value="suscripcion" id="suscripcion">
-                    <label for="suscripcion"> Si, quiero suscribirme al blog de tendencias y que me mantengan informado
+                    <label for="suscripcion">
+                        <input type="checkbox" name="suscripcion" value="suscripcion" id="suscripcion">
+                        Si, quiero suscribirme al blog de tendencias y que me mantengan informado
                         sobre ventajas, promociones, eventos y demás productos de Cosentino.</label>
-                    <input type="checkbox" name="politica" value="politica" id="politica" required>
-                    <label for="politica"> Acepto la <a class="policy-link" href="#">Política de Privacidad</a> y la <a
+                    <label for="politica">
+                        <input type="checkbox" name="politica" value="politica" id="politica" required>
+                        Acepto la <a class="policy-link" href="#">Política de Privacidad</a> y la <a
                             class="policy-link" href="#">Cláusula de
                         Contacto</a></label>
                 </fieldset>
@@ -331,107 +336,118 @@
 
     <section class="section--contact">
         <h2>Contacto</h2>
-        <form class="contact-form">
-            <label class="contact-form__label" for="nombre-contacto">Nombre
-                <input type="text" name="nombre-contacto" id="nombre-contacto" pattern="[a-zA-Z]" required>
-            </label>
+        <div class="contact-form">
+            <form class="contact-form">
+                <label class="contact-form__label" for="nombre-contacto">Nombre
+                    <input type="text" name="nombre-contacto" id="nombre-contacto" pattern="[a-zA-Z]" required>
+                </label>
 
-            <label class="contact-form__label" for="email-contacto">E-mail
-                <input type="email" name="email-contacto" id="email-contacto" required>
-            </label>
+                <label class="contact-form__label" for="email-contacto">E-mail
+                    <input type="email" name="email-contacto" id="email-contacto" required>
+                </label>
 
-            <label class="contact-form__label" for="perfil-contacto">Selecciona tu perfil
-                <select name="perfil-contacto" id="perfil-contacto" required>
-                    <option disabled selected>Selecciona tu perfil</option>
-                    <option value="arquitecto">Arquitecto</option>
-                    <option value="constructor">Constructor</option>
-                    <option value="interiorista">Interiorista</option>
-                    <option value="marmolista">Marmolista</option>
-                    <option value="promotor">Promotor</option>
-                    <option value="tienda">Tienda de cocina y baños</option>
-                    <option value="instalador">Instalador</option>
-                    <option value="proveedores">Proveedores</option>
-                    <option value="prensa">Prensa</option>
-                    <option value="estudiante">Estudiante</option>
-                </select>
-            </label>
+                <label class="contact-form__label" for="perfil-contacto">Selecciona tu perfil
+                    <select name="perfil-contacto" id="perfil-contacto" required>
+                        <option disabled selected>Selecciona tu perfil</option>
+                        <option value="arquitecto">Arquitecto</option>
+                        <option value="constructor">Constructor</option>
+                        <option value="interiorista">Interiorista</option>
+                        <option value="marmolista">Marmolista</option>
+                        <option value="promotor">Promotor</option>
+                        <option value="tienda">Tienda de cocina y baños</option>
+                        <option value="instalador">Instalador</option>
+                        <option value="proveedores">Proveedores</option>
+                        <option value="prensa">Prensa</option>
+                        <option value="estudiante">Estudiante</option>
+                    </select>
+                </label>
 
-            <label class="contact-form__label" for="empresa-contacto">Empresa
-                <input type="text" name="empresa-contacto" id="empresa-contacto" minlength="3" required>
-            </label>
+                <label class="contact-form__label" for="empresa-contacto">Empresa
+                    <input type="text" name="empresa-contacto" id="empresa-contacto" minlength="3" required>
+                </label>
 
-            <label class="contact-form__label" for="pais-contacto">País
-                <select name="pais-contacto" id="pais-contacto">
-                    <option selected value="SP">España</option>
-                    <option value="AF">Afganistán</option>
-                </select>
-            </label>
+                <label class="contact-form__label" for="pais-contacto">País
+                    <select name="pais-contacto" id="pais-contacto">
+                        <option selected value="SP">España</option>
+                        <option value="AF">Afganistán</option>
+                    </select>
+                </label>
 
-            <label class="contact-form__label" for="cp-contacto">Código Postal
-                <input type="number" name="cp-contacto" id="cp-contacto" required>
-            </label>
+                <label class="contact-form__label" for="cp-contacto">Código Postal
+                    <input type="number" name="cp-contacto" id="cp-contacto" required>
+                </label>
 
-            <label class="contact-form__label"for="asunto-contacto">Selecciona el asunto
-                <select name="asunto-contacto" id="asunto-contacto" required>
-                    <option disabled selected>Selecciona el asunto</option>
-                    <option value="asistencia">Asistencia para proyectos</option>
-                    <option value="coseninfo">Información general de Cosentino</option>
-                    <option value="prodinfo">Información técnica sobre productos</option>
-                    <option value="muestras">Petición de muestras</option>
-                    <option value="precios">Solicitud de precios</option>
-                    <option value="visita">Solicitud de visita de comercial</option>
-                    <option value="showroom">Visita al Showroom</option>
-                    <option value="otro">Otro</option>
-                </select>
-            </label>
+                <label class="contact-form__label" for="asunto-contacto">Selecciona el asunto
+                    <select name="asunto-contacto" id="asunto-contacto" required>
+                        <option disabled selected>Selecciona el asunto</option>
+                        <option value="asistencia">Asistencia para proyectos</option>
+                        <option value="coseninfo">Información general de Cosentino</option>
+                        <option value="prodinfo">Información técnica sobre productos</option>
+                        <option value="muestras">Petición de muestras</option>
+                        <option value="precios">Solicitud de precios</option>
+                        <option value="visita">Solicitud de visita de comercial</option>
+                        <option value="showroom">Visita al Showroom</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </label>
 
-            <label class="contact-form__label" for="tlf-contacto">Número de teléfono
-                <input type="tel" pattern="+[0-9]{2}-[0-9]{9}" name="tlf-contacto" id="tlf-contacto" required
-                       aria-describedby="tel-validation">
-                <div class="noVisible" id="tel-validation">Introduce tu número de teléfono incluyendo el prefijo de país</div>
-            </label>
+                <label class="contact-form__label" for="tlf-contacto">Número de teléfono
+                    <input type="tel" pattern="+[0-9]{2}-[0-9]{9}" name="tlf-contacto" id="tlf-contacto" required
+                           aria-describedby="tel-validation">
+                    <div class="noVisible" id="tel-validation">Introduce tu número de teléfono incluyendo el prefijo de
+                        país
+                    </div>
+                </label>
 
-            <label class="contact-form__label textarea-label" for="mensaje-contacto">Escribe aquí tu mensaje
-                <textarea name="mensaje-contacto" id="mensaje-contacto"></textarea>
-            </label>
+                <label class="contact-form__label textarea-label" for="mensaje-contacto">Escribe aquí tu mensaje
+                    <textarea name="mensaje-contacto" id="mensaje-contacto"></textarea>
+                </label>
 
-            <small>De conformidad con el RGPD, le informamos que sus datos serán incorporados a un fichero bajo la
-                responsabilidad de COSENTINO, S.A. (en adelante COSENTINO), con la finalidad de atender su solicitud y
-                ofrecerle información relacionada con la misma. Por tanto, la base jurídica que legitima este
-                tratamiento, será su consentimiento. El plazo de conservación de sus datos será de cinco años.
-                Igualmente, le
-                informamos que sus datos podrán ser comunicados a empresas del GRUPO COSENTINO cuando sea necesario para
-                el
-                correcto desarrollo de la relación mantenida con usted, o bien, porque nos ha solicitado algún producto
-                o
-                servicio concreto, y por interés legítimo, por motivos corporativos. Algunas empresas del GRUPO
-                COSENTINO pueden
-                estar ubicadas en terceros países, incluso en aquellos donde la legislación no exige un nivel de
-                seguridad adecuado a criterio de la Agencia Española de Protección de Datos.</small>
+                <small>De conformidad con el RGPD, le informamos que sus datos serán incorporados a un fichero bajo la
+                    responsabilidad de COSENTINO, S.A. (en adelante COSENTINO), con la finalidad de atender su solicitud
+                    y
+                    ofrecerle información relacionada con la misma. Por tanto, la base jurídica que legitima este
+                    tratamiento, será su consentimiento. El plazo de conservación de sus datos será de cinco años.
+                    Igualmente, le
+                    informamos que sus datos podrán ser comunicados a empresas del GRUPO COSENTINO cuando sea necesario
+                    para
+                    el
+                    correcto desarrollo de la relación mantenida con usted, o bien, porque nos ha solicitado algún
+                    producto
+                    o
+                    servicio concreto, y por interés legítimo, por motivos corporativos. Algunas empresas del GRUPO
+                    COSENTINO pueden
+                    estar ubicadas en terceros países, incluso en aquellos donde la legislación no exige un nivel de
+                    seguridad adecuado a criterio de la Agencia Española de Protección de Datos.</small>
 
-            <small>Puede ejercer sus derechos de acceso, rectificación, cancelación/supresión, oposición, limitación y
-                portabilidad, a través de comunicación por escrito a Ctra. Baza a Huércal – Overa, Km. 59 – 04860
-                Cantoria (Almería), o bien a la dirección de nuestro Delegado de Protección de Datos gdpr@cosentino.com
-                aportando
-                fotocopia de su DNI o documento equivalente, e identificando el derecho que se solicita. Asimismo, en
-                caso de considerar vulnerado su derecho a la protección de datos personales, podrán interponer una
-                reclamación ante la Agencia Española de Protección de Datos (www.agpd.es).</small>
+                <small>Puede ejercer sus derechos de acceso, rectificación, cancelación/supresión, oposición, limitación
+                    y
+                    portabilidad, a través de comunicación por escrito a Ctra. Baza a Huércal – Overa, Km. 59 – 04860
+                    Cantoria (Almería), o bien a la dirección de nuestro Delegado de Protección de Datos
+                    gdpr@cosentino.com aportando fotocopia de su DNI o documento equivalente, e identificando el derecho
+                    que se solicita. Asimismo,                    en
+                    caso de considerar vulnerado su derecho a la protección de datos personales, podrán interponer una
+                    reclamación ante la Agencia Española de Protección de Datos (www.agpd.es).</small>
 
-            <fieldset>
-                <input type="checkbox" name="suscripcion-contacto" value="suscripcion-contacto"
-                       id="suscripcion-contacto">
-                <label for="suscripcion-contacto"> Si, quiero suscribirme al blog de tendencias y que me mantengan
-                    informado
-                    sobre ventajas, promociones, eventos y demás productos de Cosentino.</label>
-                <input type="checkbox" name="politica-contacto" value="politica-contacto" id="politica-contacto"
-                       required>
-                <label for="politica-contacto"> Acepto la <a class="policy-link" href="#">Política de Privacidad</a> y
-                    la <a class="policy-link" href="#">Cláusula
-                        de Contacto</a></label>
-            </fieldset>
+                <fieldset>
+                    <label for="suscripcion-contacto">
+                        <input type="checkbox" name="suscripcion-contacto" value="suscripcion-contacto"
+                               id="suscripcion-contacto">
+                        Si, quiero suscribirme al blog de tendencias y que me mantengan
+                        informado sobre ventajas, promociones, eventos y demás productos de Cosentino.
+                    </label>
+                    <label for="politica-contacto">
+                        <input type="checkbox" name="politica-contacto" value="politica-contacto" id="politica-contacto"
+                               required>
+                        Acepto la <a class="policy-link" href="#">Política de Privacidad</a>
+                        y la <a class="policy-link" href="#">Cláusula de Contacto</a>
+                    </label>
+                </fieldset>
 
-            <input class="button-like" type="submit" value="Enviar">
-        </form>
+                <input class="button-like" type="submit" value="Enviar">
+            </form>
+        </div>
+
     </section>
     <section class="section--blog">
         <h2>Consulta nuestro blog de tendencias</h2>

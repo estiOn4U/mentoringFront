@@ -32,6 +32,7 @@ ul {
 
 small {
     display: block;
+    text-align: left;
 }
 
 .logo {
