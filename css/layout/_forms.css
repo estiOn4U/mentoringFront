@@ -17,7 +17,15 @@ input:not([type="checkbox"]):not([type="submit"]) {
     vertical-align: top;
 }
 
-.contact-form__label input, .contact-form__label select {
+.contact-form__label input,
+.contact-form__label select,
+.contact-form__label textarea {
     display: block;
     width: 100%;
+}
+
+.contact-form__label input:focus {
+    outline: none;
+    border-style: solid;
+    border-color: aqua;
 }
