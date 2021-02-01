@@ -64,9 +64,6 @@
     .column {
         max-width: var(--footer-size-mobile);
     }
-    .collapsible-content {
-        max-width: var(--footer-size-mobile);
-    }
 }
 
 /*
@@ -148,11 +145,27 @@
 */
 
 @media (min-width: 1440px) {
-    .column {
-        margin-right: 36px;
+    .main-footer__links {
+        max-width: var(--footer-size-tabletH);
+        padding: 10%;
     }
-    .column ul {
-        max-width: max-content;
-        min-width: 160px;
+
+    .column {
+        max-width: var(--footer-size-tabletH);
+        margin-right: 24px;
+    }
+}
+
+/*
+======= LAPTOP XL =====
+*/
+@media (min-width: 1920px) {
+    .main-footer__links {
+        max-width: var(--footer-size-laptopXL);
+    }
+
+    .column {
+        width: fit-content;
+        margin-right: 40px;
     }
 }
