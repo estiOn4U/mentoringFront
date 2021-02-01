@@ -15,20 +15,6 @@
     margin: auto;
 }
 
-.main-footer__links a {
-    color: var(--color-gray);
-    text-decoration: none;
-    font-size: 0.9em;
-    display: block;
-    min-height: 32px;
-}
-
-.main-footer__links a:hover, .main-footer__links a:focus{
-    color: var(--color-white);
-    transition: color 0s;
-    text-decoration: none;
-}
-
 .column {
     display: inline-block;
     vertical-align: top;

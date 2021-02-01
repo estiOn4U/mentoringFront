@@ -1,0 +1,48 @@
+.primary-link {
+    color: var(--color-dark-shadow);
+    text-decoration: none;
+}
+
+.primary-link:hover, .primary-link:focus {
+    color:var(--color-black);
+    text-decoration: underline;
+}
+
+.secondary-link {
+    color: var(--color-gray);
+    text-decoration: none;
+    font-size: 0.9em;
+    display: block;
+    min-height: 32px;
+}
+
+.secondary-link:hover, .secondary-link:focus {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0s;
+}
+
+.policy-link {
+
+}
+
+.button-like {
+    color: var(--color-dark-shadow);
+    text-decoration: none;
+    background-color: var(--color-white);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-gray);
+    border-radius: 24px;
+    padding: 1rem;
+    margin-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max-content;
+}
+
+.button-like:hover, .button-like:focus {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}

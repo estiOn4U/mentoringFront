@@ -1,6 +1,7 @@
 @import 'abstracts/colors.css';
 @import 'abstracts/fonts.css';
 @import './base/reset.css';
+@import './components/_links.css';
 @import './layout/_footer.css';
 @import './layout/_main.css';
 
