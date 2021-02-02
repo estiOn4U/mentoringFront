@@ -81,7 +81,6 @@
 
     .main-footer__links {
         max-width: var(--footer-size-tabletV);
-        padding: 15%;
     }
 
     .main-footer__social {

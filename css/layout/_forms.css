@@ -65,3 +65,10 @@ input:not([type="checkbox"]):not([type="submit"]), textarea, select {
 .contact-form__label select option:checked {
     background: var(--color-lightgray);
 }
+
+@media (max-width: 768px) {
+    .contact-form__label {
+        display: block;
+        width: 100%;
+    }
+}
