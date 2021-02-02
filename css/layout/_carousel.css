@@ -3,6 +3,6 @@
 }
 
 .carousel__item {
-
+    display: inline-block;
 }
 
