@@ -21,11 +21,6 @@ img {
     width: 200px; /*Temporal*/
 }
 
-h1, h2, h3 {
-    font-family: var(--main-font);
-    text-align: center;
-}
-
 ul {
     list-style-type: none;
 }

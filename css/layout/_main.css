@@ -12,6 +12,7 @@
 main section {
     padding: 1.2rem;
     text-align: center;
+    font-family: var(--main-font);
 }
 
 .section__initial--squares,
