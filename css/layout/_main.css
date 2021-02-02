@@ -21,7 +21,7 @@ main section {
 .distrib__container,
 .section--inspo,
 .section--blog {
-    max-width: 800px;
+    max-width: 1024px;
     margin: auto;
     text-align: center;
 }
@@ -71,6 +71,7 @@ main section {
 .section--blog article {
     display: inline-block;
     max-width: min-content;
+    vertical-align: top;
 }
 
 /*@media (max-width: 768px) {

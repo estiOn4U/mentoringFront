@@ -16,11 +16,6 @@
     /*Hidden visually, but present for assistive tech!*/
 }
 
-img {
-    height: auto;
-    width: 200px; /*Temporal*/
-}
-
 ul {
     list-style-type: none;
 }

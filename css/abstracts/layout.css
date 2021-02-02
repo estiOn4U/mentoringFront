@@ -3,4 +3,9 @@
     --footer-size-tabletV: 600px;
     --footer-size-tabletH: 800px;
     --footer-size-laptopXL: 1200px;
+
+    --main-size-mobile: 400px;
+    --main-size-tabletV: 600px;
+    --main-size-tabletH: 1024px;
+    --main-size-laptopXL: 1400px;
 }
