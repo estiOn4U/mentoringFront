@@ -7,3 +7,17 @@
     height: 250px;
     width: auto;
 }
+
+.title-img {
+    width: 1024px;
+    height: auto;
+}
+
+.side-img {
+    height: 300px;
+    width: auto;
+}
+
+/*
+TODO: Responsive!
+*/
