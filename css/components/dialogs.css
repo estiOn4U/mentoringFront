@@ -1,0 +1,42 @@
+
+.main-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 1em;
+    max-height: 30vh;
+    max-width: 50vw;
+    box-shadow: 0.25em 0.25em var(--color-dark-shadow);
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: 0;
+    display: block;
+    z-index: 100;
+}
+
+.closed {
+    display: none;
+}
+
+.main-dialog--overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.main-dialog__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 20px;
+}

@@ -13,6 +13,21 @@ input:not([type="checkbox"]):not([type="submit"]), textarea, select {
     border-color: var(--color-gray);
     border-width: 1px;
     background-color: var(--color-white);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+input[disabled], textarea[disabled] {
+    background-color: var(--color-lightgray);
+    cursor: not-allowed;
+}
+
+input:not([type="checkbox"]):not([type="submit"]):invalid {
+    color: var(--color-error);
+}
+
+input:not([type="checkbox"]):not([type="submit"]):valid {
+    color: var(--color-success);
 }
 
 .contact-form__label {

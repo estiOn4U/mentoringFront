@@ -15,6 +15,20 @@
     margin: auto;
 }
 
+.main-footer__social {
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+}
+
+.main-footer__links::after {
+    content: "";
+    display: block;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-white);
+}
+
 .column {
     display: inline-block;
     vertical-align: top;
@@ -24,6 +38,7 @@
 .footer-social--list li {
     display: inline-block;
     vertical-align: top;
+    margin-right: 8px;
 }
 
 .column ul {
@@ -31,11 +46,6 @@
     margin-top: 0.5rem;
     max-width: 216px;
     min-width: 160px;
-}
-
-.main-footer__social {
-    max-width: 90%;
-    margin: auto;
 }
 
 .main-footer__social small {

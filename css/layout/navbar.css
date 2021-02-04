@@ -1,0 +1,15 @@
+.main-navbar {
+
+}
+
+.main-navbar__tab {
+    display: inline-block;
+}
+
+.main-navbar__tab ul {
+    display: none; /*Temporal*/
+}
+
+.secondary-nav li {
+    display: inline-block;
+}
