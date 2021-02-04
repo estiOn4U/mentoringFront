@@ -15,15 +15,21 @@
 .column {
     display: inline-block;
     vertical-align: top;
-    min-width: min-content;
-    max-width: 200px;
     margin-left: 8px;
     margin-right: 8px;
+    max-width: 200px;
+}
+
+.column-L {
+    max-width: 400px;
+}
+
+.column-footer {
+    max-width: 144px;
 }
 
 .column ul {
     padding: 0;
     margin-top: 0.5rem;
-    max-width: 216px;
-    min-width: 160px;
+
 }

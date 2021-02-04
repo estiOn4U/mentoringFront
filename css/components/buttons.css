@@ -1,10 +1,19 @@
 .primary-btn {
     cursor: pointer;
     font-family: var(--main-font);
+    font-size: 1em;
+    background-color: var(--color-dark-shadow);
+    color: var(--color-white);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-black);
+    border-radius: 24px;
 }
 
 button:focus, button:hover  {
-
+    box-shadow: 0 10px 6px #888888;
+    color: var(--color-black);
+    background-color: var(--color-white);
 }
 
 .close-button {

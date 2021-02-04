@@ -9,12 +9,17 @@
     display: none;
 }
 
-.main-footer__links,
-.main-footer__social {
+.main-footer__container {
     max-width: 1024px;
     padding: 2%;
     margin: auto;
     text-align: left;
+}
+
+.main-footer__links {
+    margin-left: -8px;
+    margin-right: -8px;
+    width: fit-content;
 }
 
 .main-footer__links::after {
@@ -47,7 +52,7 @@
 
 /*
 ======= MOBILE =====
-*/
+*//*
 @media (max-width: 425px) {
     .main-footer__links {
         max-width: var(--footer-size-mobile);
@@ -57,11 +62,11 @@
     .column {
         max-width: var(--footer-size-mobile);
     }
-}
+}*/
 
 /*
 ======= TABLET V =====
-*/
+*//*
 @media (max-width: 768px) {
     .column {
         display: block;
@@ -129,11 +134,11 @@
 
 }
 
-
+*/
 /*
 ======= TABLET H + LAPTOP =====
 */
-
+/*
 @media (min-width: 1440px) {
     .main-footer__links {
         min-width: var(--footer-size-tabletH);
@@ -146,7 +151,7 @@
 
 /*
 ======= LAPTOP XL =====
-*/
+*//*
 @media (min-width: 1920px) {
     .main-footer__links {
         min-width: var(--footer-size-laptopXL);
@@ -155,4 +160,4 @@
     .column:not(:last-child) {
         margin-right: 40px;
     }
-}
+}*/
