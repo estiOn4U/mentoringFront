@@ -14,7 +14,7 @@ button:focus, button:hover  {
     color: red;
     z-index: 1;
     top: 10px;
-    right: 10px;
+    right: 20px;
     font-size: 2rem;
 }
 

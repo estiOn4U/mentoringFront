@@ -205,6 +205,22 @@
             <div class="main-dialog__content">
                 <div id="dialog-title">Hi, I'm a dialog</div>
                 <div id="dialog-description">Nice to meet you</div>
+                <form>
+                    <label class="textarea-label contact-form__label" for="dialog-email">Email
+                        <input type="email" placeholder="Introduce tu dirección de email" name="email" id="dialog-email">
+                    </label>
+                    <fieldset>
+                        <legend>Estoy interesado en soluciones para...</legend>
+                        <label for="dialog-profesional">
+                            <input type="radio" name="interes" value="profesional" id="dialog-profesional">
+                            Proyecto profesional
+                        </label>
+                        <label for="dialog-personal">
+                            <input type="radio" name="interes" value="personal" id="dialog-personal">
+                            Mi vivienda</label>
+                    </fieldset>
+                    <input class="button-like" type="submit" value="Enviar">
+                </form>
             </div>
         </div>
         <div class="main-dialog--overlay closed" id="modal-overlay"></div>
@@ -212,7 +228,7 @@
 
     <section class="section--brands">
         <h2>Nuestras marcas</h2>
-        <article>
+        <article class="column">
             <img class="logo"
                  src="https://imgix.cosentino.com/es/wp-content/uploads/2017/09/silestone_logo.png?auto=format%2Ccompress&fit=crop"
                  alt="silestone-logo">
@@ -223,7 +239,7 @@
                 los usos en que veremos a Silestone en grandes proyectos.</p>
             <a class="button-like" href="https://www.cosentino.com/es/silestone/">Ver características</a>
         </article>
-        <article>
+        <article class="column">
             <img class="logo"
                  src="https://imgix.cosentino.com/es/wp-content/uploads/2017/09/dekton_logo.png?auto=format%2Ccompress&fit=crop"
                  alt="dekton-logo">
@@ -281,7 +297,7 @@
     </section>
 
     <section class="section--distrib">
-        <header>
+        <header class= "distrib__header">
             <h2>Ven y descubre nuestra red global de distribución</h2>
             <p> En los más de 20 países en los que Grupo Cosentino tiene presencia, la distribución se lleva a cabo con
                 una innovadora red de Cosentino Centers. Hoy, la multinacional cuenta con más de 110 distribuidores por
@@ -289,7 +305,7 @@
             </p>
         </header>
         <div class="distrib__container">
-            <article>
+            <article class="column">
                 <h2>Cosentino City</h2>
                 <p>Los Cosentino City son espacios configurados para fomentar la relación entre Cosentino y los
                     diseñadores y arquitectos en un área social y dinámica donde todos hablan el mismo idioma.</p>
@@ -298,7 +314,7 @@
                 <a class="button-like" href="https://www.cosentino.com/es/cosentino-center/">Encuentra tu Cosentino City
                     más cercano</a>
             </article>
-            <article>
+            <article class="column">
                 <h2>Cosentino Center</h2>
                 <p>Los Cosentino Centers son un ejemplo del compromiso total de la compañía con los clientes, combinando
                     las funciones de almacén, exposición de marca y producto y red de distribución.</p>
@@ -463,14 +479,14 @@
     </section>
     <section class="section--blog">
         <h2>Consulta nuestro blog de tendencias</h2>
-        <article>
+        <article class="column">
             <a class="primary-link" href="https://www.cosentino.com/es/top-trends/cuanto-cuesta-reformar-una-cocina/">
                 <img class="blog-img" src="https://imgix.cosentino.com/es/wp-content/uploads/2020/01/cuanto-cuesta-reformar-cocina-10m2.jpg?auto=format%2Ccompress&fit=crop"
                      alt="Imagen Reformar Cocina">
                 <p>¿Cuánto cuesta reformar una cocina?</p>
             </a>
         </article>
-        <article>
+        <article class="column">
             <a class="primary-link"
                href="https://www.cosentino.com/es/top-trends/como-reformar-una-cocina-sin-hacer-obra-11-ideas-interesantes/">
                 <img class="blog-img" src="https://imgix.cosentino.com/es/wp-content/uploads/2020/01/cocina-blanca-medida.jpg?auto=format%2Ccompress&fit=crop"
@@ -478,7 +494,7 @@
                 <p>¿Cómo reformar una cocina sin hacer obra?</p>
             </a>
         </article>
-        <article>
+        <article class="column">
             <a class="primary-link"
                href="https://www.cosentino.com/es/top-projects/cuanto-cuesta-reformar-bano-precios-2020/">
                 <img class="blog-img" src="https://imgix.cosentino.com/es/wp-content/uploads/2020/01/et-noir-bathroom.jpg?auto=format%2Ccompress&fit=crop"
@@ -486,7 +502,7 @@
                 <p>¿Cuánto cuesta reformar un baño? ¡Precios actualizados!</p>
             </a>
         </article>
-        <article>
+        <article class="column">
             <a class="primary-link" href="https://www.cosentino.com/es/top-trends/ideas-diseno-decorar-cuartos-bano/">
                 <img class="blog-img" src="https://imgix.cosentino.com/es/wp-content/uploads/2020/01/et-noir-bathroom.jpg?auto=format%2Ccompress&fit=crop"
                      alt="Imagen Reformar Baño 2">

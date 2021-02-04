@@ -9,14 +9,10 @@
     display: none;
 }
 
-.main-footer__links {
-    width: fit-content;
-    padding: 4%;
-    margin: auto;
-}
-
+.main-footer__links,
 .main-footer__social {
-    width: fit-content;
+    max-width: 1024px;
+    padding: 2%;
     margin: auto;
     text-align: left;
 }
@@ -29,23 +25,10 @@
     border-bottom-color: var(--color-white);
 }
 
-.column {
-    display: inline-block;
-    vertical-align: top;
-    width: min-content;
-}
-
 .footer-social--list li {
     display: inline-block;
     vertical-align: top;
     margin-right: 8px;
-}
-
-.column ul {
-    padding: 0;
-    margin-top: 0.5rem;
-    max-width: 216px;
-    min-width: 160px;
 }
 
 .main-footer__social small {

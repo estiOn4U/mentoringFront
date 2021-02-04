@@ -11,3 +11,19 @@
     --main-size-tabletH: 1024px;
     --main-size-laptopXL: 1400px;
 }
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    min-width: min-content;
+    max-width: 200px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.column ul {
+    padding: 0;
+    margin-top: 0.5rem;
+    max-width: 216px;
+    min-width: 160px;
+}

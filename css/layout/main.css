@@ -19,9 +19,11 @@ main section {
 .section--brands,
 .section--solutions,
 .distrib__container,
+.distrib__header,
 .section--inspo,
 .section--blog {
     max-width: 1024px;
+    padding: 2%;
     margin: auto;
     text-align: center;
 }
@@ -29,6 +31,7 @@ main section {
 .contact-form {
     max-width: 1024px;
     margin: auto;
+    padding: 2%;
 }
 
 .square {
@@ -46,13 +49,6 @@ main section {
     background-color: var(--color-lightgray);
 }
 
-.section--distrib article,
-.section--brands article {
-    display: inline-block;
-    max-width: 350px;
-    vertical-align: top;
-}
-
 .section--distrib {
     margin-top: 1rem;
 }
@@ -67,16 +63,3 @@ main section {
 .solutions__form {
     max-width: 450px;
 }
-
-.section--blog article {
-    display: inline-block;
-    max-width: min-content;
-    vertical-align: top;
-}
-
-/*@media (max-width: 768px) {
-}
-
-@media (min-width: 1440px) {
-}*/
-
