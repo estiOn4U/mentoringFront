@@ -18,7 +18,7 @@ input:not([type="checkbox"]):not([type="submit"]), textarea, select {
 }
 
 input[disabled], textarea[disabled] {
-    background-color: var(--color-lightgray);
+    background-color: var(--color-gray);
     cursor: not-allowed;
 }
 

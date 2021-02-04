@@ -33,10 +33,6 @@ main section {
     padding: 2%;
 }
 
-.square {
-    display: inline-block;
-}
-
 .section--profcontact {
     background-color: var(--color-lightgreen);
     text-align: center;

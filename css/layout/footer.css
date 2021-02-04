@@ -36,12 +36,18 @@
     margin-right: 8px;
 }
 
+.main-footer__social {
+    min-height: 56px;
+}
+
 .main-footer__social small {
     display: inline-block;
+    margin-top: 24px;
 }
 
 .footer-social--list {
     display: inline-block;
+    float: right;
 }
 
 .social-logo {
