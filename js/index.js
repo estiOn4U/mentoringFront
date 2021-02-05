@@ -35,6 +35,7 @@ function addEventListeners() {
         dialog.setAttribute("aria-modal", "true");
         dialog.removeAttribute("aria-hidden");
         overlay.classList.toggle("closed");
+        trapFocus(dialog);
     });
 }
 
@@ -66,3 +67,29 @@ function toggleCollapse() {
 }
 
 /*TODO: Add ESC navigation!*/
+
+function trapFocus(dialog) {
+    /*Approach 1: get elements from inside modal, add event listener to the last one
+    * instead of applying tabindex to the rest of the elements of the DOM*/
+
+    let lastGut = dialog.lastElementChild;
+    console.log(lastGut);
+
+    let modalFocusables = dialog.querySelectorAll('input:not([disabled]), button:not([disabled]), a, textarea, select');
+    // 'a, button, input, textarea, select, details,[tabindex]:not([tabindex="-1"])' ... alguno más?
+    //CONST focusable selectors
+    console.log(modalFocusables);
+    let firstFocusable = modalFocusables[0];
+
+    lastGut.addEventListener("keydown", event => {
+        if (event.keyCode === 9) { //tab key
+            event.preventDefault(); //es IMPORTANTE
+            firstFocusable.focus();
+            return;
+        }
+    });
+}
+
+function trapFocusAlt() {
+    /*Approach 1: get all elements outside modal, apply tabindex=-1 AND aria-hidden=true*/
+}
