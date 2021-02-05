@@ -2,6 +2,22 @@ window.addEventListener("load", init);
 window.addEventListener("resize", checkCollapse);
 
 function init() {
+    addFooter();
+    addEventListeners();
+    checkCollapse();
+}
+
+function addFooter() {
+    fetch("./MainFooter.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector("footer").innerHTML = data;
+        });
+}
+
+function addEventListeners() {
     let dialog = document.querySelector("#modal");
     let overlay = document.querySelector("#modal-overlay");
     let closeButton = document.querySelector("#close-button");
@@ -20,15 +36,12 @@ function init() {
         dialog.removeAttribute("aria-hidden");
         overlay.classList.toggle("closed");
     });
-
-    checkCollapse();
 }
 
 function checkCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let acc = document.getElementsByClassName("accordion");
-    let i;
-    for (i = 0; i < acc.length; i++) {
+    for ( let i = 0; i < acc.length; i++) {
         if (clientWidth <= 768) {
             acc[i].addEventListener("click", toggleCollapse);
             acc[i].nextElementSibling.style.display = "none";
