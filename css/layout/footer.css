@@ -28,6 +28,7 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--color-white);
+    margin-top: 16px;
 }
 
 .footer-social--list li {
@@ -38,6 +39,7 @@
 
 .main-footer__social {
     min-height: 56px;
+    width: fit-content;
 }
 
 .main-footer__social small {
@@ -57,8 +59,6 @@
 }
 
 /*
-======= MOBILE =====
-*//*
 @media (max-width: 425px) {
     .main-footer__links {
         max-width: var(--footer-size-mobile);
@@ -69,10 +69,8 @@
         max-width: var(--footer-size-mobile);
     }
 }*/
-
 /*
-======= TABLET V =====
-*//*
+
 @media (max-width: 768px) {
     .column {
         display: block;
@@ -141,29 +139,31 @@
 }
 
 */
-/*
-======= TABLET H + LAPTOP =====
-*/
-/*
-@media (min-width: 1440px) {
-    .main-footer__links {
-        min-width: var(--footer-size-tabletH);
+@media (max-width: 768px) {
+
+    .main-footer__container {
+        max-width: 600px;
     }
 
-    .column:not(:last-child) {
-        margin-right: 24px;
+    .main-footer__links,
+    .main-footer__social {
+        margin: auto;
     }
+
+    .column-footer {
+        min-width: 500px;
+        display: block;
+    }
+
 }
 
-/*
-======= LAPTOP XL =====
-*//*
 @media (min-width: 1920px) {
-    .main-footer__links {
-        min-width: var(--footer-size-laptopXL);
+    .main-footer__container {
+        min-width: 1440px;
     }
 
-    .column:not(:last-child) {
-        margin-right: 40px;
+    .main-footer__links,
+    .main-footer__social {
+        margin: auto;
     }
-}*/
+}

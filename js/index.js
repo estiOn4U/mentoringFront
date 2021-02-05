@@ -6,6 +6,9 @@ function init() {
     let closeButton = document.querySelector("#close-button");
     let openButton = document.querySelector("#open-button");
 
+    let clientWidth  = document.documentElement.clientWidth;
+
+
     closeButton.addEventListener("click", function() {
         dialog.classList.toggle("closed");
         dialog.setAttribute("aria-hidden", "true");
@@ -19,6 +22,26 @@ function init() {
         dialog.removeAttribute("aria-hidden");
         overlay.classList.toggle("closed");
     });
+
+    if(clientWidth <= 768) {
+        console.log(clientWidth);
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+    }
 }
 
 /*TODO: Add ESC navigation!*/

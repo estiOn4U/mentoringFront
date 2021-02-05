@@ -1,0 +1,47 @@
+.accordion {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: none;
+    padding: 0;
+}
+
+.active, .accordion:hover {
+}
+
+.panel {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+
+    .panel {
+        display: none;
+        overflow: hidden;
+    }
+
+    .accordion {
+        width: 100%;
+        text-align: left;
+    }
+
+    .accordion::before {
+        content: '+';
+        position: absolute;
+        right: 150px;
+    }
+
+    .accordion.active::before {
+        content: '-';
+        position: absolute;
+        right: 150px;
+    }
+
+    .accordion::after {
+        content: "";
+        display: block;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: var(--color-white);
+    }
+}
