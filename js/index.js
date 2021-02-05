@@ -31,17 +31,16 @@ function checkCollapse() {
     for (i = 0; i < acc.length; i++) {
         if (clientWidth <= 768) {
             acc[i].addEventListener("click", toggleCollapse);
-        }
-        else {
+            acc[i].nextElementSibling.style.display = "none";
+        } else {
             acc[i].removeEventListener("click", toggleCollapse);
             let panel = acc[i].nextElementSibling;
             panel.style.display = "block";
         }
-
     }
 }
 
-function toggleCollapse(){
+function toggleCollapse() {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
     if (panel.style.display === "block") {
