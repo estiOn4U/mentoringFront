@@ -1,6 +1,8 @@
 window.addEventListener("load", init);
 window.addEventListener("resize", checkCollapse);
 
+const focusableSelectors = 'input:not([disabled]), button:not([disabled]), a[href]:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"]';
+
 function init() {
     addFooter();
     addEventListeners();
@@ -66,30 +68,37 @@ function toggleCollapse() {
     }
 }
 
-/*TODO: Add ESC navigation!*/
+/*TODO: Add ESC key navigation!*/
 
 function trapFocus(dialog) {
     /*Approach 1: get elements from inside modal, add event listener to the last one
     * instead of applying tabindex to the rest of the elements of the DOM*/
 
-    let lastGut = dialog.lastElementChild;
-    console.log(lastGut);
-
-    let modalFocusables = dialog.querySelectorAll('input:not([disabled]), button:not([disabled]), a, textarea, select');
-    // 'a, button, input, textarea, select, details,[tabindex]:not([tabindex="-1"])' ... alguno más?
-    //CONST focusable selectors
-    console.log(modalFocusables);
+    let modalFocusables = dialog.querySelectorAll(focusableSelectors);
     let firstFocusable = modalFocusables[0];
+    let lastFocusable = modalFocusables[modalFocusables.length -1];
 
-    lastGut.addEventListener("keydown", event => {
-        if (event.keyCode === 9) { //tab key
-            event.preventDefault(); //es IMPORTANTE
-            firstFocusable.focus();
+    dialog.addEventListener("keydown", function(e) {
+        let isTabPressed = (e.key === 'Tab' || e.keyCode === 9);
+
+        if (!isTabPressed) {
             return;
+        }
+
+        if ( e.shiftKey ) {
+            if (document.activeElement === firstFocusable) {
+                lastFocusable.focus();
+                e.preventDefault();
+            }
+        }
+
+        else {
+            if (document.activeElement === lastFocusable) {
+                firstFocusable.focus();
+                e.preventDefault();
+            }
         }
     });
 }
 
-function trapFocusAlt() {
-    /*Approach 1: get all elements outside modal, apply tabindex=-1 AND aria-hidden=true*/
-}
+/*TODO: Approach 2?: get all elements outside modal, apply tabindex=2-1 AND aria-hidden=true*/
