@@ -1,14 +1,16 @@
 .accordion {
-    color: var(--color-white);
-    background-color: var(--color-black);
+   /* color: var(--color-white);
+    background-color: var(--color-black);*/
+    color: inherit;
+    background-color: inherit;
     border: none;
     padding: 0;
     font-size: 1em;
 }
 
 .active, .accordion:hover {
-    color: var(--color-white);
-    background-color: var(--color-black);
+   /* color: var(--color-white);
+    background-color: var(--color-black);*/
     border: none;
     box-shadow: none;
 }
@@ -16,14 +18,18 @@
 .accordion:focus {
     box-shadow: none;
     outline: none;
-    color: var(--color-white);
-    background-color: var(--color-black);
+   /* color: var(--color-white);
+    background-color: var(--color-black);*/
 }
 
 .panel {
-    color: var(--color-white);
-    background-color: var(--color-black);
+ /*   color: var(--color-white);
+    background-color: var(--color-black);*/
+    color: inherit;
+    background-color: inherit;
 }
+
+/*TODO Corregir el hover de los titulos de seccion del footer*/
 
 @media (max-width: 768px) {
 

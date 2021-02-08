@@ -329,10 +329,15 @@
                 </label>
 
                 <label class="contact-form__label" id="pais-contacto">País
-                    <div role="listbox" aria-labelledby="pais-contacto" aria-expanded="true"
-                         aria-activedescendant="es" tabindex="0">
-                        <div id="es" role="option">España</div>
-                        <div id="fr" role="option">Francia</div>
+                    <div class="custom-select__container">
+                        <div role="listbox" aria-labelledby="pais-contacto" aria-expanded="true"
+                             aria-activedescendant="es" tabindex="0" class="custom-select collapsible">
+                            <button type="button" class="accordion fake-select-btn" id="accordion-button">Selecciona tu país</button>
+                            <ul class="panel">
+                                <li role="option" id="es" class="custom-select__option selected">España</li>
+                                <li role="option" id="fr" class="custom-select__option">Francia</li>
+                            </ul>
+                        </div>
                     </div>
                 </label>
 

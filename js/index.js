@@ -1,5 +1,5 @@
 window.addEventListener("load", init);
-window.addEventListener("resize", checkCollapse);
+window.addEventListener("resize", checkFooterCollapse);
 
 const focusableSelectors = 'input:not([disabled]), button:not([disabled]), a[href]:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"]';
 var slideIndex = 1;
@@ -7,7 +7,7 @@ var slideIndex = 1;
 function init() {
     addFooter();
     addEventListeners();
-    checkCollapse();
+    checkFooterCollapse();
     showSlides(slideIndex);
 }
 
@@ -28,7 +28,7 @@ function addEventListeners() {
     let openButton = document.querySelector("#open-button");
     let nextSlide = document.querySelector(".next");
     let prevSlide = document.querySelector(".prev");
-
+    let customSelect = document.querySelector("#accordion-button");
 
     closeButton.addEventListener("click", function () {
         dialog.classList.toggle("closed");
@@ -46,11 +46,24 @@ function addEventListeners() {
     });
 
     nextSlide.addEventListener("click", function () {
-        plusSlides(1);
+        plusSlides(1); //TODO
     });
 
     prevSlide.addEventListener("click", function () {
-        plusSlides(-1);
+        plusSlides(-1); //TODO
+    });
+
+    customSelect.addEventListener("click", function() {
+        console.log(this);
+        let panel = this.nextElementSibling;
+        console.log(panel);
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+            panel.removeAttribute("aria-expanded");
+        } else {
+            panel.style.display = "block";
+            panel.setAttribute("aria-expanded", "true");
+        }
     });
 }
 
@@ -89,7 +102,7 @@ function showSlides(n) {
     //TODO: Añadir un listener del tamaño de pantalla. La función tiene margen de mejora...
 }
 
-function checkCollapse() {
+function checkFooterCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let acc = document.getElementsByClassName("accordion");
     for (let i = 0; i < acc.length; i++) {
