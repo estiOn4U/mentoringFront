@@ -77,12 +77,10 @@ function manageCustomSelect() {
 
 function selectOption() {
     let btnText = document.querySelector('.fake-select-btn'); //esto mejor un id, o un previous sibling desdeel panel
-
-    console.log(this);
     if (!this.classList.contains("selected")) {
         this.parentNode.querySelector('.custom-select__option.selected').classList.remove('selected');
         this.classList.add("selected");
-    } 
+    }
     btnText.innerHTML = this.innerHTML;
 
 }
