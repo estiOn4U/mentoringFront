@@ -11,6 +11,6 @@
 }
 
 .custom-select__option.selected {
-
+    color: deeppink;
 }
 

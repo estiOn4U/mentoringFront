@@ -46,24 +46,33 @@ function addEventListeners() {
     });
 
     nextSlide.addEventListener("click", function () {
-        plusSlides(1); //TODO
+        plusSlides(1); //TODO syntax
     });
 
     prevSlide.addEventListener("click", function () {
-        plusSlides(-1); //TODO
+        plusSlides(-1); //TODO syntax
     });
 
     customSelect.addEventListener("click", function() {
-        console.log(this);
         let panel = this.nextElementSibling;
-        console.log(panel);
         if (panel.style.display === "block") {
             panel.style.display = "none";
             panel.removeAttribute("aria-expanded");
-        } else {
+        } else { //lo muestro
             panel.style.display = "block";
             panel.setAttribute("aria-expanded", "true");
+
+            for (let option of document.querySelectorAll(".custom-select__option")) {
+                console.log(option);
+                option.addEventListener("click", function() {
+                    if (!this.classList.contains("selected")) {
+                        this.parentNode.querySelector('.custom-select__option.selected').classList.remove('selected');
+                        this.classList.add("selected");
+                    }
+                });
+            }
         }
+        //TODO: Make list crawlable!
     });
 }
 
