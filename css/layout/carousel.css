@@ -2,6 +2,7 @@
     max-width: 1240px;
     position: relative;
     margin: auto;
+    padding: 0;
 }
 
 .carousel__item {
