@@ -328,11 +328,12 @@
                     <input type="text" name="empresa-contacto" id="empresa-contacto" minlength="3" required />
                 </label>
 
-                <label class="contact-form__label" for="pais-contacto">País
-                    <select name="pais-contacto" id="pais-contacto" class="custom-select">
-                        <option selected value="SP">España</option>
-                        <option value="AF">Afganistán</option>
-                    </select>
+                <label class="contact-form__label" id="pais-contacto">País
+                    <div role="listbox" aria-labelledby="pais-contacto" aria-expanded="true"
+                         aria-activedescendant="es" tabindex="0">
+                        <div id="es" role="option">España</div>
+                        <div id="fr" role="option">Francia</div>
+                    </div>
                 </label>
 
                 <label class="contact-form__label" for="cp-contacto">Código Postal
