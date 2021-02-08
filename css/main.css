@@ -9,7 +9,7 @@
 @import './components/collapsibles.css';
 @import './components/dialogs.css';
 @import './components/carousel.css';
-@import './components/selects.css';
+@import 'components/fake-selects.css';
 @import './layout/main.css';
 @import './layout/navbar.css';
 @import './layout/footer.css';
