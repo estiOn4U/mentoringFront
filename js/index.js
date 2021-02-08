@@ -2,11 +2,13 @@ window.addEventListener("load", init);
 window.addEventListener("resize", checkCollapse);
 
 const focusableSelectors = 'input:not([disabled]), button:not([disabled]), a[href]:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"]';
+var slideIndex = 1;
 
 function init() {
     addFooter();
     addEventListeners();
     checkCollapse();
+    showSlides(slideIndex);
 }
 
 function addFooter() {
@@ -24,6 +26,9 @@ function addEventListeners() {
     let overlay = document.querySelector("#modal-overlay");
     let closeButton = document.querySelector("#close-button");
     let openButton = document.querySelector("#open-button");
+    let nextSlide = document.querySelector(".next");
+    let prevSlide = document.querySelector(".prev");
+
 
     closeButton.addEventListener("click", function () {
         dialog.classList.toggle("closed");
@@ -39,12 +44,35 @@ function addEventListeners() {
         overlay.classList.toggle("closed");
         trapFocus(dialog);
     });
+
+    nextSlide.addEventListener("click", function () {
+        plusSlides(1);
+    });
+
+    prevSlide.addEventListener("click", function () {
+        plusSlides(-1);
+    });
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    var slides = document.getElementsByClassName("carousel__item");
+
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
 }
 
 function checkCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let acc = document.getElementsByClassName("accordion");
-    for ( let i = 0; i < acc.length; i++) {
+    for (let i = 0; i < acc.length; i++) {
         if (clientWidth <= 768) {
             acc[i].addEventListener("click", toggleCollapse);
             acc[i].nextElementSibling.style.display = "none";
@@ -76,23 +104,21 @@ function trapFocus(dialog) {
 
     let modalFocusables = dialog.querySelectorAll(focusableSelectors);
     let firstFocusable = modalFocusables[0];
-    let lastFocusable = modalFocusables[modalFocusables.length -1];
+    let lastFocusable = modalFocusables[modalFocusables.length - 1];
 
-    dialog.addEventListener("keydown", function(e) {
+    dialog.addEventListener("keydown", function (e) {
         let isTabPressed = (e.key === 'Tab' || e.keyCode === 9);
 
         if (!isTabPressed) {
             return;
         }
 
-        if ( e.shiftKey ) {
+        if (e.shiftKey) {
             if (document.activeElement === firstFocusable) {
                 lastFocusable.focus();
                 e.preventDefault();
             }
-        }
-
-        else {
+        } else {
             if (document.activeElement === lastFocusable) {
                 firstFocusable.focus();
                 e.preventDefault();

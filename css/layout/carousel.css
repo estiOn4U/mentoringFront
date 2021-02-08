@@ -1,8 +1,14 @@
 .carousel__container {
-
+    max-width: 1240px;
+    position: relative;
+    margin: auto;
 }
 
 .carousel__item {
-    display: inline-block;
+    display: none;
 }
 
+.prev, .next {
+    cursor: pointer;
+    padding: 16px;
+}
