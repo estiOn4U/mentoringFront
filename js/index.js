@@ -28,7 +28,7 @@ function addEventListeners() {
     let openButton = document.querySelector("#open-button");
     let nextSlide = document.querySelector(".next");
     let prevSlide = document.querySelector(".prev");
-    let customSelect = document.querySelector("#accordion-button");
+    let customSelect = document.querySelector(".fake-select-btn");
 
     closeButton.addEventListener("click", function () {
         dialog.classList.toggle("closed");
@@ -53,26 +53,38 @@ function addEventListeners() {
         plusSlides(-1);
     });
 
-    customSelect.addEventListener("click", function () {
-        let panel = this.nextElementSibling;
+    customSelect.addEventListener("click", manageCustomSelect);
+}
 
-        if (!panel.classList.contains('f-hidden')) { //si esta abierto lo escondo
-            panel.removeAttribute("aria-expanded");
-            panel.classList.add('f-hidden');
-        } else { //si está cerrado lo muestro
-            panel.classList.remove('f-hidden');
-            panel.setAttribute("aria-expanded", "true");
-            for (let option of document.querySelectorAll(".custom-select__option")) {
-                option.addEventListener("click", function () {
-                    if (!this.classList.contains("selected")) {
-                        this.parentNode.querySelector('.custom-select__option.selected').classList.remove('selected');
-                        this.classList.add("selected");
-                    }
-                });
-            }
+function manageCustomSelect() {
+    let panel = this.nextElementSibling;
+    let optionlist = document.getElementsByClassName("custom-select__option");
+
+    if (!panel.classList.contains('f-hidden')) {
+        panel.removeAttribute("aria-expanded");
+        panel.classList.add('f-hidden');
+        for (let i = 0; i < optionlist.length; i++) {
+            optionlist[i].removeEventListener("click", selectOption);
         }
-        //TODO: Make list crawlable!
-    });
+    } else {
+        panel.classList.remove('f-hidden');
+        panel.setAttribute("aria-expanded", "true");
+        for (let i = 0; i < optionlist.length; i++) {
+            optionlist[i].addEventListener("click", selectOption);
+        }
+    }
+}
+
+function selectOption() {
+    let btnText = document.querySelector('.fake-select-btn'); //esto mejor un id, o un previous sibling desdeel panel
+
+    console.log(this);
+    if (!this.classList.contains("selected")) {
+        this.parentNode.querySelector('.custom-select__option.selected').classList.remove('selected');
+        this.classList.add("selected");
+    } 
+    btnText.innerHTML = this.innerHTML;
+
 }
 
 function plusSlides(n) {
