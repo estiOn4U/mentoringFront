@@ -78,6 +78,7 @@ function showSlides(n) {
             slides[i].style.display = "none";
         }
         slides[slideIndex - 1].style.display = "inline-block";
+
         if (slides[slideIndex]) {
             slides[slideIndex].style.display = "inline-block";
         }
@@ -85,6 +86,7 @@ function showSlides(n) {
             slides[slideIndex - 2].style.display = "inline-block";
         }
     }
+    //TODO: Añadir un listener del tamaño de pantalla. La función tiene margen de mejora...
 }
 
 function checkCollapse() {
