@@ -3,6 +3,7 @@ window.addEventListener("resize", checkFooterCollapse);
 
 const focusableSelectors = 'input:not([disabled]), button:not([disabled]), a[href]:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"]';
 var slideIndex = 1;
+var optIndex = 1;
 
 function init() {
     addFooter();
@@ -63,23 +64,61 @@ function manageCustomSelect() {
     if (!panel.classList.contains('f-hidden')) {
         panel.removeAttribute("aria-expanded");
         panel.classList.add('f-hidden');
+        removeControls(panel);
         for (let i = 0; i < optionlist.length; i++) {
             optionlist[i].removeEventListener("click", selectOption);
         }
     } else {
         panel.classList.remove('f-hidden');
         panel.setAttribute("aria-expanded", "true");
+        addControls(panel);
         for (let i = 0; i < optionlist.length; i++) {
             optionlist[i].addEventListener("click", selectOption);
         }
+
     }
 }
 
+function addControls() {
+    this.addEventListener("keydown", function (e) {
+        if (e.keyCode === 38) {
+            loopOptions(1);
+        }
+        if (e.keyCode === 40) {
+            loopOptions(-1);
+        }
+    });
+}
+
+function loopOptions(n) {
+    optIndex += n;
+
+    let optionlist = document.getElementsByClassName("custom-select__option");
+
+    if (optIndex > optionlist.length) {
+        optIndex = 1;
+        console.log(optionlist[(optionlist.length) - optIndex ]);
+    }
+    if (optIndex < 1) {
+        optIndex = optionlist.length;
+        console.log(optionlist[(optionlist.length) - optIndex ]);
+    }
+    console.log(optionlist[(optionlist.length) - optIndex ]);
+}
+
+function removeControls() {
+    this.removeEventListener;
+    console.log("remove controls");
+}
+
 function selectOption() {
-    let btnText = document.querySelector('.fake-select-btn'); //esto mejor un id, o un previous sibling desdeel panel
+    let btnText = document.querySelector('.fake-select-btn');
+    let prevOption = this.parentNode.querySelector('.custom-select__option.selected');
     if (!this.classList.contains("selected")) {
-        this.parentNode.querySelector('.custom-select__option.selected').classList.remove('selected');
+        prevOption.classList.remove('selected');
+        prevOption.removeAttribute("aria-selected");
         this.classList.add("selected");
+        this.setAttribute("aria-selected", "true");
     }
     btnText.innerHTML = this.innerHTML;
 
@@ -176,5 +215,3 @@ function trapFocus(dialog) {
         }
     });
 }
-
-/*TODO: Approach 2?: get all elements outside modal, apply tabindex=2-1 AND aria-hidden=true*/

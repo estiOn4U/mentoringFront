@@ -2,22 +2,33 @@
 
 }
 
-.custom-select__option {
-
+.custom-select__option:hover {
+    color: var(--color-lightgray);
+    background-color: var(--color-medium-gray);
 }
 
 .custom-select__option.selected {
-    color: deeppink;
+    color: var(--color-lightgray);
+    background-color: var(--color-dark-shadow);
 }
 
 .f-hidden {
     overflow: hidden;
     max-height: 0;
+    visibility: hidden;
 }
 
 .custom-select__panel {
     position: absolute;
     background-color: var(--color-lightgray);
+    width: 440px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: transparent;
 }
 
 .fake-select-btn {
