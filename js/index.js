@@ -3,7 +3,7 @@ window.addEventListener("resize", checkFooterCollapse);
 
 const focusableSelectors = 'input:not([disabled]), button:not([disabled]), a[href]:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"]';
 var slideIndex = 1;
-var optIndex = 1;
+//var optIndex = 1;
 
 function init() {
     addFooter();
@@ -29,7 +29,7 @@ function addEventListeners() {
     let openButton = document.querySelector("#open-button");
     let nextSlide = document.querySelector(".next");
     let prevSlide = document.querySelector(".prev");
-    let customSelect = document.querySelector(".fake-select-btn");
+   // let customSelect = document.querySelector(".fake-select-btn");
 
     closeButton.addEventListener("click", function () {
         dialog.classList.toggle("closed");
@@ -54,10 +54,10 @@ function addEventListeners() {
         plusSlides(-1);
     });
 
-    customSelect.addEventListener("click", manageCustomSelect);
+   // customSelect.addEventListener("click", manageCustomSelect);
 }
 
-function manageCustomSelect() {
+/*function manageCustomSelect() {
     let panel = this.nextElementSibling;
     let optionlist = document.getElementsByClassName("custom-select__option");
 
@@ -66,14 +66,28 @@ function manageCustomSelect() {
         panel.classList.add('f-hidden');
         removeControls(panel);
         for (let i = 0; i < optionlist.length; i++) {
-            optionlist[i].removeEventListener("click", selectOption);
+            optionlist[i].removeEventListener("click", function () {
+                selectOption(this);
+            });
+            optionlist[i].removeEventListener("keydown", function (e) {
+                if (e.keyCode === 13) {
+                    selectOption(this);
+                }
+            });
         }
     } else {
         panel.classList.remove('f-hidden');
         panel.setAttribute("aria-expanded", "true");
         addControls(panel);
         for (let i = 0; i < optionlist.length; i++) {
-            optionlist[i].addEventListener("click", selectOption);
+            optionlist[i].addEventListener("click", function () {
+                selectOption(this);
+            });
+            optionlist[i].addEventListener("keydown", function (e) {
+                if (e.keyCode === 13) {
+                    this.click();
+                }
+            });
         }
 
     }
@@ -92,37 +106,42 @@ function addControls() {
 
 function loopOptions(n) {
     optIndex += n;
-
     let optionlist = document.getElementsByClassName("custom-select__option");
 
     if (optIndex > optionlist.length) {
         optIndex = 1;
-        console.log(optionlist[(optionlist.length) - optIndex ]);
+        console.log(optionlist[(optionlist.length) - optIndex]);
     }
     if (optIndex < 1) {
         optIndex = optionlist.length;
-        console.log(optionlist[(optionlist.length) - optIndex ]);
+        console.log(optionlist[(optionlist.length) - optIndex]);
+
     }
-    console.log(optionlist[(optionlist.length) - optIndex ]);
+    console.log(optionlist[(optionlist.length) - optIndex]);
+
+    for (let i = 0; i < optionlist.length; i += 1) {
+        optionlist[i].style.color = "initial";
+    }
+    optionlist[(optionlist.length) - optIndex].style.color = "pink";
+
 }
 
 function removeControls() {
     this.removeEventListener;
-    console.log("remove controls");
 }
 
-function selectOption() {
+function selectOption(option) {
     let btnText = document.querySelector('.fake-select-btn');
-    let prevOption = this.parentNode.querySelector('.custom-select__option.selected');
-    if (!this.classList.contains("selected")) {
+    let prevOption = option.parentNode.querySelector('.custom-select__option.selected');
+    if (!option.classList.contains("selected")) {
         prevOption.classList.remove('selected');
         prevOption.removeAttribute("aria-selected");
-        this.classList.add("selected");
-        this.setAttribute("aria-selected", "true");
+        option.classList.add("selected");
+        option.setAttribute("aria-selected", "true");
     }
-    btnText.innerHTML = this.innerHTML;
+    btnText.innerHTML = option.innerHTML;
 
-}
+}*/
 
 function plusSlides(n) {
     showSlides(slideIndex += n);

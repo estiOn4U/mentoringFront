@@ -2,7 +2,10 @@
 
 }
 
-.custom-select__option:hover {
+.custom-select__option:hover,
+.custom-select__option:focus,
+.custom-select__option:active
+{
     color: var(--color-lightgray);
     background-color: var(--color-medium-gray);
 }
