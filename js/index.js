@@ -204,8 +204,6 @@ function toggleCollapse() {
     }
 }
 
-/*TODO: Add ESC key navigation!*/
-
 function trapFocus(dialog) {
     /*Approach 1: get elements from inside modal, add event listener to the last one
     * instead of applying tabindex to the rest of the elements of the DOM*/
