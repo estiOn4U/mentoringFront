@@ -2,6 +2,7 @@ import {addFooter} from './base/add-components.js';
 import {checkFooterCollapse} from './components/collapsibles.js';
 import {trapFocus} from './components/dialogs.js';
 import {addSlider} from './components/slider.js';
+import {validateForm} from './components/form-validations.js';
 
 if (document.readyState !== 'loading') {
     init();
@@ -21,6 +22,7 @@ function addEventListeners() {
     let overlay = document.querySelector("#modal-overlay");
     let closeButton = document.querySelector("#close-button");
     let openButton = document.querySelector("#open-button");
+    let submitButton = document.querySelector('input[type="submit"]'); //de momento sólo hay uno
 
     closeButton.addEventListener("click", function () {
         dialog.classList.toggle("closed");
@@ -43,4 +45,6 @@ function addEventListeners() {
         dialog.removeAttribute("aria-modal");
         this.classList.toggle("closed");
     });
+
+    submitButton.addEventListener("click", validateForm);
 }
