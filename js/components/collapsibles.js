@@ -1,3 +1,5 @@
+import {tabletH, mobile, laptopXL} from '../abstracts/media-queries';
+
 function toggleCollapse() {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
@@ -14,7 +16,7 @@ function checkFooterCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let acc = document.getElementsByClassName("accordion");
     for (let i = 0; i < acc.length; i++) {
-        if (clientWidth <= 768) {
+        if (clientWidth <= tabletH) {
             acc[i].addEventListener("click", toggleCollapse);
             acc[i].nextElementSibling.style.display = "none";
         } else {
