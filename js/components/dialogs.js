@@ -1,4 +1,3 @@
-
 const focusableSelectors = 'input:not([disabled]), button:not([disabled]), a[href]:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"]';
 
 function trapFocus(dialog) {
@@ -30,4 +29,4 @@ function trapFocus(dialog) {
     });
 }
 
-export { trapFocus };
+export {trapFocus};

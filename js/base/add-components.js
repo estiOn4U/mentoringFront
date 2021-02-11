@@ -8,4 +8,4 @@ function addFooter() {
         });
 }
 
-export { addFooter };
+export {addFooter};

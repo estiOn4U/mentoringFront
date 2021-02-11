@@ -1,6 +1,6 @@
-import { checkFooterCollapse } from './components/collapsibles.js';
-import { trapFocus } from './components/dialogs.js';
-import { addFooter } from './base/add-components.js';
+import {checkFooterCollapse} from './components/collapsibles.js';
+import {trapFocus} from './components/dialogs.js';
+import {addFooter} from './base/add-components.js';
 
 if (document.readyState !== 'loading') {
     init();

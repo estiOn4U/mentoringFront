@@ -27,4 +27,4 @@ function checkFooterCollapse() {
     }
 }
 
-export { checkFooterCollapse };
+export {checkFooterCollapse};
