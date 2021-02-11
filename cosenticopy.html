@@ -7,8 +7,9 @@
     <meta name="description"
           content="En Cosentino podrás encontrar la solución perfecta para tu proyecto de ingeniería o reforma. Suelos, fachadas o revestimientos."/>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/external/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/external/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <script type="module" src="js/index.js"></script>
     <title>Architectural Solutions for your projects - Cosentino</title>
     <script type="application/ld+json">
@@ -77,15 +78,16 @@
     <section class="section__initial">
         <header>
             <h1>Soluciones Arquitectónicas</h1>
-            <picture>
-                <source media="(min-width:650px)"
-                        srcset="https:/imgix.cosentino.com/es/wp-content/uploads/2017/10/fachada-ve.jpg">
-                <source media="(min-width:465px)"
-                        srcset="https://imgix.cosentino.com/es/wp-content/uploads/2017/10/Mesa-de-trabajo-16@2x-1.png">
-                <img class="title-img"
-                     src="https://imgix.cosentino.com/es/wp-content/uploads/2017/10/Mesa-de-trabajo-16@2x-1.png"
-                     alt="Imagen Soluciones Arquitectónicas">
-            </picture>
+            <div class="img-wrapper">
+                <!--<picture>
+                    <source media="(min-width:650px)"
+                            srcset="https:/imgix.cosentino.com/es/wp-content/uploads/2017/10/fachada-ve.jpg">
+                    <source media="(min-width:465px)"
+                            srcset="https://imgix.cosentino.com/es/wp-content/uploads/2017/10/Mesa-de-trabajo-16@2x-1.png">
+                    <img src="https://imgix.cosentino.com/es/wp-content/uploads/2017/10/Mesa-de-trabajo-16@2x-1.png"
+                         alt="Imagen Soluciones Arquitectónicas">
+                </picture>-->
+            </div>
             <p>Para traducir la creatividad del arquitecto en un espacio, se necesita un buen equipo que proporcione
                 materiales de construcción que puedan cumplir con el diseño en sus diferentes aplicaciones interiores y
                 exteriores.
@@ -271,53 +273,41 @@
         </div>
     </section>
 
-    <!--<section aria-roledescription="carousel" class="section--inspo">
+    <section aria-roledescription="carousel" class="section--inspo">
         <h2>Encuentra inspiración para tu próximo proyecto</h2>
-        <div id="slide-container">
-            <ul aria-roledescription="slide" class="carousel__container">
-                <li class="carousel__item">
-                    <img class="carousel-img"
-                         src="https://assetstools.cosentino.com/api/v1/bynder/image/84028A12-99F7-48D1-AD908DC02719D47B/wroclaw-dekton-laos.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
-                         alt="">
-                </li>
-                <li class="carousel__item">
-                    <img class="carousel-img"
-                         src="https://assetstools.cosentino.com/api/v1/bynder/image/9E638F33-5490-4E79-9FC61B8CB7CD6B24/kitchen-taj-mahal.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
-                         alt="">
-                </li>
-                <li class="carousel__item">
-                    <img class="carousel-img"
-                         src="https://assetstools.cosentino.com/api/v1/bynder/image/D5A01584-3AFA-4E4A-AEC125E475FF2EF1/maszdesign-magdalena-szwedowska.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
-                         alt="">
-                </li>
-                <li class="carousel__item">
-                    <img class="carousel-img"
-                         src="https://assetstools.cosentino.com/api/v1/bynder/image/1FB28D1A-F262-47DA-BAB299E255333066/arbeitsplatte-aus-silestone-blanco-zeus.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
-                         alt="">
-                </li>
-                <li class="carousel__item">
-                    <img class="carousel-img"
-                         src="https://assetstools.cosentino.com/api/v1/bynder/image/49814F8E-8BFF-4F79-B1B481CB2092A798/black-beauty.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
-                         alt="">
-                </li>
-                <li class="carousel__item">
-                    <img class="carousel-img"
-                         src="https://assetstools.cosentino.com/api/v1/bynder/image/AF7E0730-AE3B-42AD-82D9655847211403/flynn-kreta-dining-table.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
-                         alt="">
-                </li>
-            </ul>
-            <div aria-controls="slide-container">
-                <button type="button" class="prev">&#10094;</button>
-                <button type="button" class="next">&#10095;</button>
+        <div class="carousel__container">
+            <div>
+                <img class="carousel-img"
+                     src="https://assetstools.cosentino.com/api/v1/bynder/image/84028A12-99F7-48D1-AD908DC02719D47B/wroclaw-dekton-laos.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
+                     alt="">
+            </div>
+            <div>
+                <img class="carousel-img"
+                     src="https://assetstools.cosentino.com/api/v1/bynder/image/9E638F33-5490-4E79-9FC61B8CB7CD6B24/kitchen-taj-mahal.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
+                     alt="">
+            </div>
+            <div>
+                <img class="carousel-img"
+                     src="https://assetstools.cosentino.com/api/v1/bynder/image/D5A01584-3AFA-4E4A-AEC125E475FF2EF1/maszdesign-magdalena-szwedowska.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
+                     alt="">
+            </div>
+            <div>
+                <img class="carousel-img"
+                     src="https://assetstools.cosentino.com/api/v1/bynder/image/1FB28D1A-F262-47DA-BAB299E255333066/arbeitsplatte-aus-silestone-blanco-zeus.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
+                     alt="">
+            </div>
+            <div>
+                <img class="carousel-img"
+                     src="https://assetstools.cosentino.com/api/v1/bynder/image/49814F8E-8BFF-4F79-B1B481CB2092A798/black-beauty.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
+                     alt="">
+            </div>
+            <div>
+                <img class="carousel-img"
+                     src="https://assetstools.cosentino.com/api/v1/bynder/image/AF7E0730-AE3B-42AD-82D9655847211403/flynn-kreta-dining-table.jpg?auto=compress%2Cformat&w=500&h=500&fit=crop"
+                     alt="">
             </div>
         </div>
-    </section>-->
-
-    <div class="your-class">
-        <div>your content1</div>
-        <div>your content2</div>
-        <div>your content3</div>
-    </div>
+    </section>
 
     <section class="section--contact">
         <h2>Contacto</h2>
@@ -489,9 +479,5 @@
     </section>
 </main>
 <footer class="main-footer"></footer>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/external/slick.min.js"></script>
-
 </body>
 </html>

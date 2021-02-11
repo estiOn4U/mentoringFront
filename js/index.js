@@ -1,18 +1,19 @@
+import {addFooter} from './base/add-components.js';
 import {checkFooterCollapse} from './components/collapsibles.js';
 import {trapFocus} from './components/dialogs.js';
-import {addFooter} from './base/add-components.js';
+import {addSlider} from './components/slider.js';
 
 if (document.readyState !== 'loading') {
     init();
 } else {
     document.addEventListener('DOMContentLoaded', init);
-    window.addEventListener("resize", checkFooterCollapse);
 }
 
 function init() {
     addFooter();
     addEventListeners();
     checkFooterCollapse();
+    addSlider();
 }
 
 function addEventListeners() {

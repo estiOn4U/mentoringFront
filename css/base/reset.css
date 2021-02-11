@@ -29,3 +29,11 @@ small {
     display: block;
     margin: auto;
 }
+
+.img-wrapper {
+    max-width: 500px;
+}
+
+picture {
+    width: 100%;
+}
