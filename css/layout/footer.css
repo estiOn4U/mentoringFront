@@ -19,7 +19,6 @@
 .main-footer__links {
     margin-left: -8px;
     margin-right: -8px;
-    width: fit-content;
 }
 
 .main-footer__links::after {
@@ -39,7 +38,6 @@
 
 .main-footer__social {
     min-height: 56px;
-    width: fit-content;
 }
 
 .main-footer__social small {
@@ -52,87 +50,6 @@
     float: right;
 }
 
-/*
-@media (max-width: 425px) {
-    .main-footer__links {
-        max-width: var(--footer-size-mobile);
-        padding: 10%;
-    }
-
-    .column {
-        max-width: var(--footer-size-mobile);
-    }
-}*/
-/*
-
-@media (max-width: 768px) {
-    .column {
-        display: block;
-        width: var(--footer-size-tabletV);
-    }
-
-    .column ul {
-        max-width: max-content;
-    }
-
-    .main-footer__links {
-        max-width: var(--footer-size-tabletV);
-    }
-
-    .main-footer__social {
-        max-width: 80%;
-        margin: auto;
-    }
-
-    .footer-social--list li {
-        min-height: 40px;
-        margin-bottom: 12px;
-    }
-
-    .toggle-label {
-        position: relative;
-        display: block;
-        color: var(--color-white);
-        transition: all 0.25s ease-out;
-        min-height: 36px;
-    }
-
-    .toggle-label::after {
-        content: "";
-        display: block;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: var(--color-white);
-    }
-
-    .toggle-label::before {
-        content: '+';
-        position: absolute;
-        right: 0;
-    }
-
-    .toggle-collapse:checked + .toggle-label::before {
-        content: '-';
-    }
-
-    .collapsible-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .5s ease-in-out;
-    }
-
-    .collapsible-content li {
-        min-height: 36px;
-        white-space: pre-line;
-    }
-
-    .toggle-collapse:checked + .toggle-label + .collapsible-content {
-        max-height: fit-content;
-    }
-
-}
-
-*/
 @media (max-width: 768px) {
 
     .main-footer__container {

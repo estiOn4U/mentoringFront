@@ -10,7 +10,7 @@ fieldset label {
 
 input:not([type="checkbox"]):not([type="submit"]), textarea, select {
     border-radius: 10px;
-    border-color: var(--color-gray);
+    border-color: var(--color-black);
     border-width: 1px;
     background-color: var(--color-white);
     padding-left: 8px;
@@ -18,8 +18,10 @@ input:not([type="checkbox"]):not([type="submit"]), textarea, select {
 }
 
 input[disabled], textarea[disabled] {
-    background-color: var(--color-gray);
     cursor: not-allowed;
+    border-color: var(--color-gray);
+    opacity: 0.5;
+
 }
 
 input:not([type="checkbox"]):not([type="submit"]):invalid {
