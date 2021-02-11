@@ -1,3 +1,15 @@
+function toggleCollapse() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+        panel.removeAttribute("aria-expanded");
+    } else {
+        panel.style.display = "block";
+        panel.setAttribute("aria-expanded", "true");
+    }
+}
+
 function checkFooterCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let acc = document.getElementsByClassName("accordion");
@@ -10,18 +22,6 @@ function checkFooterCollapse() {
             let panel = acc[i].nextElementSibling;
             panel.style.display = "block";
         }
-    }
-}
-
-function toggleCollapse() {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-        panel.style.display = "none";
-        panel.removeAttribute("aria-expanded");
-    } else {
-        panel.style.display = "block";
-        panel.setAttribute("aria-expanded", "true");
     }
 }
 
