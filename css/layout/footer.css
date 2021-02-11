@@ -30,10 +30,11 @@
     margin-top: 16px;
 }
 
-.footer-social--list li {
+.footer-social__list li {
     display: inline-block;
     vertical-align: top;
     margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .main-footer__social {
@@ -45,9 +46,8 @@
     margin-top: 24px;
 }
 
-.footer-social--list {
+.footer-social__list {
     display: inline-block;
-    float: right;
 }
 
 @media (max-width: 768px) {
