@@ -1,4 +1,4 @@
-import {tabletH, mobile, laptopXL} from '../abstracts/media-queries';
+import {tabletH, mobile, laptopXL} from '../abstracts/media-queries.js';
 
 function toggleCollapse() {
     this.classList.toggle("active");

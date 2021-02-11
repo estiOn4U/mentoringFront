@@ -35,4 +35,11 @@ function addEventListeners() {
         overlay.classList.toggle("closed");
         trapFocus(dialog);
     });
+
+    overlay.addEventListener("click", function () {
+        dialog.classList.toggle("closed");
+        dialog.setAttribute("aria-hidden", "true");
+        dialog.removeAttribute("aria-modal");
+        this.classList.toggle("closed");
+    });
 }
