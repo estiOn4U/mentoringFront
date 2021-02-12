@@ -1,28 +1,29 @@
-//import {tabletH, mobile, laptopXL} from '../abstracts/media-queries.js';
+import {tabletH} from '../abstracts/media-queries.js';
 
 function toggleCollapse() {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-        panel.style.display = "none";
+    if (panel.classList.contains('visible')) {
         panel.removeAttribute("aria-expanded");
-    } else {
-        panel.style.display = "block";
+        panel.classList.remove('visible');
+    }
+    else {
         panel.setAttribute("aria-expanded", "true");
+        panel.classList.add('visible');
     }
 }
 
 function checkFooterCollapse() {
     let clientWidth = document.documentElement.clientWidth;
-    let acc = document.getElementsByClassName("accordion"); // 0! but HTMLElement length = 6
+    let acc = document.getElementsByClassName("accordion");
     for (let i = 0; i < acc.length; i++) {
-        if (clientWidth <= 768) {
+        if (clientWidth <= tabletH) {
             acc[i].addEventListener("click", toggleCollapse);
-            acc[i].nextElementSibling.style.display = "none";
+            acc[i].nextElementSibling.classList.remove('visible');
         } else {
             acc[i].removeEventListener("click", toggleCollapse);
             let panel = acc[i].nextElementSibling;
-            panel.style.display = "block";
+            panel.classList.add('visible');
         }
     }
 }

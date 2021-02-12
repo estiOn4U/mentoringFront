@@ -1,6 +1,6 @@
+/* Self-reminder: el accordion debería definir comportamiento, no colores - tiene que ser reutilizable!! */
+
 .accordion {
-   /* color: var(--color-white);
-    background-color: var(--color-black);*/
     color: inherit;
     background-color: inherit;
     border: none;
@@ -9,8 +9,6 @@
 }
 
 .active, .accordion:hover {
-   /* color: var(--color-white);
-    background-color: var(--color-black);*/
     border: none;
     box-shadow: none;
 }
@@ -18,24 +16,28 @@
 .accordion:focus {
     box-shadow: none;
     outline: none;
-   /* color: var(--color-white);
-    background-color: var(--color-black);*/
 }
 
 .panel {
- /*   color: var(--color-white);
-    background-color: var(--color-black);*/
     color: inherit;
     background-color: inherit;
 }
 
-/*TODO Corregir el hover de los titulos de seccion del footer*/
-
 @media (max-width: 768px) {
 
     .panel {
-        display: none;
+      /*  display: none;
+        overflow: hidden;*/
         overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: height 0ms 400ms, opacity 400ms 0ms;
+    }
+
+    .visible {
+        height: auto;
+        opacity: 1;
+        transition: height 0ms 0ms, opacity 600ms 0ms;
     }
 
     .accordion {
@@ -57,8 +59,7 @@
     }
 
     .accordion:focus {
-        color: var(--color-black);
-        background-color: var(--color-white);
+
     }
 
     .accordion::after {
