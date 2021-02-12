@@ -14,7 +14,7 @@ function toggleCollapse() {
 
 function checkFooterCollapse() {
     let clientWidth = document.documentElement.clientWidth;
-    let acc = document.getElementsByClassName("accordion"); // 0!
+    let acc = document.getElementsByClassName("accordion"); // 0! but HTMLElement length = 6
     for (let i = 0; i < acc.length; i++) {
         if (clientWidth <= 768) {
             acc[i].addEventListener("click", toggleCollapse);

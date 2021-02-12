@@ -1,5 +1,4 @@
 import {addFooter} from './base/add-components.js';
-import {checkFooterCollapse} from './components/collapsibles.js';
 import {trapFocus} from './components/dialogs.js';
 import {addSlider} from './components/slider.js';
 import {validateForm} from './components/form-validations.js';
@@ -13,7 +12,6 @@ if (document.readyState !== 'loading') {
 function init() {
     addFooter();
     addEventListeners();
-    checkFooterCollapse();
     addSlider();
 }
 

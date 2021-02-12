@@ -1,3 +1,5 @@
+import {checkFooterCollapse} from "../components/collapsibles.js";
+
 function addFooter() {
 
     fetch("./MainFooter.html")
@@ -6,7 +8,8 @@ function addFooter() {
         })
         .then(data => {
             document.querySelector("footer").innerHTML = data;
-        });
+        })
+        .then(checkFooterCollapse);
 }
 
 export {addFooter};
