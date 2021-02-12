@@ -22,7 +22,7 @@ function addEventListeners() {
     let overlay = document.querySelector("#modal-overlay");
     let closeButton = document.querySelector("#close-button");
     let openButton = document.querySelector("#open-button");
-    let submitButton = document.querySelector('input[type="submit"]'); //de momento sólo hay uno
+    let submitButton = document.querySelector('#main-submit-btn');
 
     closeButton.addEventListener("click", function () {
         dialog.classList.toggle("closed");
