@@ -58,3 +58,14 @@ main section {
 .solutions__form {
     max-width: 450px;
 }
+
+@media (min-width: 1920px) {
+    .section__initial--squares,
+    .section--brands,
+    .section--solutions,
+    .distrib__container,
+    .section--inspo,
+    .section--blog {
+        max-width: 1440px;
+    }
+}

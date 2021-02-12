@@ -33,3 +33,20 @@
     margin-top: 0.5rem;
 
 }
+
+@media (min-width: 1920px) {
+
+    .column {
+        max-width: 300px;
+    }
+
+    .column-footer {
+        max-width: 240px;
+    }
+
+    .column-L {
+        max-width: 560px;
+    }
+
+
+}
