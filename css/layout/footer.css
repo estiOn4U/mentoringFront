@@ -39,15 +39,19 @@
 
 .main-footer__social {
     min-height: 56px;
+    position: relative;
 }
 
 .main-footer__social small {
     display: inline-block;
     margin-top: 24px;
+    position: absolute;
 }
 
 .footer-social__list {
     display: inline-block;
+    position: absolute;
+    right: 0;
 }
 
 @media (max-width: 768px) {
@@ -64,6 +68,16 @@
     .column-footer {
         min-width: 500px;
         display: block;
+    }
+
+.main-footer__social {
+    position: inherit;
+}
+    .main-footer__social small {
+        position: inherit;
+    }
+    .footer-social__list {
+        position: inherit;
     }
 
 }
