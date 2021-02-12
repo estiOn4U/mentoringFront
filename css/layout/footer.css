@@ -54,10 +54,11 @@
     right: 0;
 }
 
+
 @media (max-width: 768px) {
 
     .main-footer__container {
-        max-width: 600px;
+        max-width: 400px;
     }
 
     .main-footer__links,
@@ -66,7 +67,8 @@
     }
 
     .column-footer {
-        min-width: 500px;
+        min-width: 300px;
+        max-width: 500px;
         display: block;
     }
 
@@ -78,6 +80,10 @@
     }
     .footer-social__list {
         position: inherit;
+    }
+
+    .main-footer__links::after {
+        max-width: 400px;
     }
 
 }

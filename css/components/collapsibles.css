@@ -26,8 +26,6 @@
 @media (max-width: 768px) {
 
     .panel {
-      /*  display: none;
-        overflow: hidden;*/
         overflow: hidden;
         height: 0;
         opacity: 0;
@@ -68,5 +66,7 @@
         border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: var(--color-white);
+        min-width: 300px;
+        max-width: 500px;
     }
 }
