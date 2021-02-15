@@ -20,7 +20,9 @@ function addEventListeners() {
     let overlay = document.querySelector("#modal-overlay");
     let closeButton = document.querySelector("#close-button");
     let openButton = document.querySelector("#open-button");
-    let submitButton = document.querySelector('#main-submit-btn');
+    //let submitButton = document.querySelector('#main-submit-btn');
+    let mainForm = document.querySelector('#contact-form');
+
 
     closeButton.addEventListener("click", function () {
         dialog.classList.toggle("closed");
@@ -44,5 +46,9 @@ function addEventListeners() {
         this.classList.toggle("closed");
     });
 
-    submitButton.addEventListener("click", validateForm);
+    mainForm.addEventListener("submit", function (event) {
+        if(!validateForm) {
+            event.preventDefault();
+        }
+    });
 }
