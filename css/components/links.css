@@ -36,7 +36,7 @@
 }
 
 .button-like {
-    color: var(--color-dark-shadow);
+    color: var(--color-super-dark);
     text-decoration: none;
     background-color: var(--color-white);
     border-width: 1px;
