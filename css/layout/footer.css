@@ -19,6 +19,7 @@
 .main-footer__links {
     margin-left: -8px;
     margin-right: -8px;
+    position: relative;
 }
 
 .main-footer__links::after {
@@ -66,18 +67,14 @@
         margin: auto;
     }
 
-    .column-footer {
-        min-width: 300px;
-        max-width: 500px;
-        display: block;
+    .main-footer__social {
+        position: inherit;
     }
 
-.main-footer__social {
-    position: inherit;
-}
     .main-footer__social small {
         position: inherit;
     }
+
     .footer-social__list {
         position: inherit;
     }

@@ -42,18 +42,19 @@
         width: 100%;
         text-align: left;
         min-height: 32px;
+        display: block;
     }
 
     .accordion::before {
         content: '+';
         position: absolute;
-        right: 150px;
+        right: 50px;
     }
 
     .accordion.active::before {
         content: '-';
         position: absolute;
-        right: 150px;
+        right: 50px;
     }
 
     .accordion:focus {
@@ -66,7 +67,5 @@
         border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: var(--color-white);
-        min-width: 300px;
-        max-width: 500px;
     }
 }
