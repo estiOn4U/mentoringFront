@@ -7,8 +7,8 @@ function addSlider() {
         dots: true,
         arrows: true,
         infinite: true,
-        centerMode: true,
         variableWidth: true,
+        respondTo : 'window',
         mobileFirst: true,
         responsive: [
             {
@@ -19,10 +19,11 @@ function addSlider() {
                 }
             },
             {
-                breakpoint: 568,
+                breakpoint: 425,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }
         ]
