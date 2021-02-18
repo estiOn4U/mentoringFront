@@ -3,6 +3,10 @@
     line-height: 1.6;
 }
 
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
 .noDisplay {
     display: none; /*Temporal*/
 }

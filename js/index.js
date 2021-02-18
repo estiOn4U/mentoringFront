@@ -47,7 +47,7 @@ function addEventListeners() {
     });
 
     mainForm.addEventListener("submit", function (event) {
-        if(!validateForm) {
+        if (!validateForm) {
             event.preventDefault();
         }
     });
