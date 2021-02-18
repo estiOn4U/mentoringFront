@@ -41,3 +41,7 @@ small {
 picture {
     width: 100%;
 }
+
+.onError {
+    background-color: #ffcccc;
+}
