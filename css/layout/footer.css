@@ -88,6 +88,7 @@
 @media (min-width: 1920px) {
     .main-footer__container {
         min-width: 1440px;
+        max-width: max-content;
     }
 
     .main-footer__links,
