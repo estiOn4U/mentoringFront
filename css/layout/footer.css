@@ -34,7 +34,8 @@
 .footer-social__list li {
     display: inline-block;
     vertical-align: top;
-    margin-right: 8px;
+    margin-right: 12px;
+    margin-left: 12px;
     margin-bottom: 8px;
 }
 
