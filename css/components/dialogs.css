@@ -46,7 +46,6 @@
 }
 
 .main-dialog form {
-    background-color: var(--color-lightgray);
     padding: 2em;
     margin-top: 24px;
 }
@@ -54,5 +53,9 @@
 @media (max-width: 768px) {
     .main-dialog {
         max-height: 100vh;
+        border-radius: 0;
+    }
+    .main-dialog input[type="submit"] {
+        margin-bottom: 8px;
     }
 }

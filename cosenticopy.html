@@ -138,8 +138,8 @@
                aria-labelledby="dialog-title"
                aria-describedby="dialog-description"
                aria-hidden="true">
-            <button class="close-button primary-btn" id="close-button">&times;</button>
             <div class="main-dialog__content">
+                <button class="close-button primary-btn" id="close-button">&times;</button>
                 <h2 id="dialog-title">Contacta con nuestro equipo comercial</h2>
                 <div id="dialog-description">Encuentra toda la inspiración, el contenido personalizado y la asistencia
                     técnica que necesitas para llevar a cabo tus proyectos.
@@ -166,7 +166,9 @@
                             <input type="radio" name="interes" value="personal" id="dialog-personal">
                             Un particular</label>
                     </fieldset>
-                    <input class="button-like" type="submit" value="Enviar">
+                    <div class="btn-wrapper">
+                        <input class="button-like" type="submit" value="Enviar">
+                    </div>
                 </form>
             </div>
         </aside>
