@@ -12,4 +12,16 @@ function addFooter() {
         .then(checkFooterCollapse);
 }
 
-export {addFooter};
+function addNavbar() {
+
+    fetch("./MainNavbar.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".main-header").innerHTML = data;
+        })
+}
+
+
+export {addFooter, addNavbar};
