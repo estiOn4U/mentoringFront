@@ -21,3 +21,12 @@
 /*
 TODO: Responsive!
 */
+
+.header-logo {
+    max-width: 200px;
+    align-self: center;
+}
+
+.header-logo img {
+    max-width: inherit;
+}

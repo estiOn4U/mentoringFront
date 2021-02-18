@@ -58,6 +58,16 @@
     background-color: var(--color-black);
 }
 
+.button-like--square {
+    display: inline-block;
+    color: var(--color-white);
+    background-color: var(--color-super-dark);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-gray);
+    padding: 1rem;
+    text-decoration: none;
+}
 .social-media--icon img {
     height: 40px;
     width: 40px;
