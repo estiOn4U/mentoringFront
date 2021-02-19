@@ -52,15 +52,19 @@
     background-color: var(--color-lightgray);
     width: 100%;
     z-index: 1;
-    padding: 16px;
 }
 
 .navbar__dropdown li {
-    padding: 8px;
+    padding: 16px;
 }
 
 .main-navbar__tab.active .navbar__dropdown,
 .main-navbar__tab:focus .navbar__dropdown {
     display: flex;
     justify-content: center;
+}
+
+.main-navbar__tab.active .standout-text {
+    color: var(--color-black);
+    text-decoration: underline;
 }
