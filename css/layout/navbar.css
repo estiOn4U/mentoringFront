@@ -41,6 +41,7 @@
 .main-navbar__tab {
     overflow: hidden;
     align-self: center;
+    height: 100%;
 }
 
 .navbar__dropdown {
