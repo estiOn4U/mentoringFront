@@ -1,6 +1,6 @@
 .blog-img {
     width: 200px;
-    height:200px;
+    height: 200px;
 }
 
 .carousel-img {
@@ -29,4 +29,29 @@ TODO: Responsive!
 
 .header-logo img {
     max-width: inherit;
+}
+
+/*===== SVG =====*/
+.social-media--icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.social-media--icon svg {
+    background-color: transparent;
+    fill: currentColor;
+    width: 40px;
+    height: 40px;
+}
+
+.social-media--icon svg:hover,
+.social-media--icon svg:focus {
+    transform: scale(1.2);
+}
+
+.navbar-icon svg {
+    background-color: transparent;
+    fill: currentColor;
+    width: 160px;
+    height: 60px;
 }

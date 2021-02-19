@@ -69,19 +69,3 @@
     padding: 0.5rem;
     text-decoration: none;
 }
-.social-media--icon img {
-    height: 40px;
-    width: 40px;
-}
-
-.social-media--icon svg {
-    background-color: transparent;
-    fill: currentColor;
-    width: 40px;
-    height: 40px;
-}
-
-.social-media--icon svg:hover,
-.social-media--icon svg:focus {
-    transform: scale(1.2);
-}
