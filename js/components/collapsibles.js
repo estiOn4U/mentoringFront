@@ -3,13 +3,7 @@ import {tabletH} from '../abstracts/media-queries.js';
 function toggleCollapseFooter() {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
-    if (panel.classList.contains('visible')) {
-        panel.removeAttribute("aria-expanded");
-        panel.classList.remove('visible');
-    } else {
-        panel.setAttribute("aria-expanded", "true");
-        panel.classList.add('visible');
-    }
+    genericCollapse(panel);
 }
 
 function toggleCollapseNav() {
@@ -17,12 +11,17 @@ function toggleCollapseNav() {
     defaultActive.classList.toggle("active");
     this.classList.toggle("active");
     let panel = this.lastElementChild;
-    if (panel.classList.contains('visible')) {
-        panel.removeAttribute("aria-expanded");
-        panel.classList.remove('visible');
+    genericCollapse(panel);
+
+}
+
+function genericCollapse(collapsible) {
+    if (collapsible.classList.contains('visible')) {
+        collapsible.removeAttribute("aria-expanded");
+        collapsible.classList.remove('visible');
     } else {
-        panel.setAttribute("aria-expanded", "true");
-        panel.classList.add('visible');
+        collapsible.setAttribute("aria-expanded", "true");
+        collapsible.classList.add('visible');
     }
 }
 
