@@ -1,3 +1,6 @@
+#breadcrumb {
+    padding-top: 32px
+}
 
 #breadcrumb li {
     display: inline-block;

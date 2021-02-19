@@ -26,6 +26,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-grow: 1;
+    align-self: center;
 }
 
 .main-navbar {
@@ -58,7 +59,8 @@
     padding: 8px;
 }
 
-.main-navbar__tab:hover .navbar__dropdown {
+.main-navbar__tab.active .navbar__dropdown,
+.main-navbar__tab:focus .navbar__dropdown {
     display: flex;
     justify-content: center;
 }

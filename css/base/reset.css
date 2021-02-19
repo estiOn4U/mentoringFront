@@ -45,3 +45,7 @@ picture {
 .onError {
     background-color: #ffcccc;
 }
+
+.standout-text {
+    font-weight: bold;
+}
