@@ -42,7 +42,7 @@
 .main-navbar__tab {
     overflow: hidden;
     align-self: center;
-    height: 100%;
+    padding: 16px;
 }
 
 .navbar__dropdown {
@@ -52,7 +52,7 @@
     background-color: var(--color-lightgray);
     width: 100%;
     z-index: 1;
-    padding: 8px;
+    padding: 16px;
 }
 
 .navbar__dropdown li {
