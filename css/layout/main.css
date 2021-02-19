@@ -1,6 +1,7 @@
 
 #breadcrumb li {
     display: inline-block;
+    font-family: var(--main-font);
 }
 
 #breadcrumb li:not(:last-child):after {
