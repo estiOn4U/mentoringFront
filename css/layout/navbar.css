@@ -24,7 +24,7 @@
 .tab-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-grow: 1;
     align-self: center;
 }
@@ -67,4 +67,9 @@
 .main-navbar__tab.active .standout-text {
     color: var(--color-black);
     text-decoration: underline;
+}
+
+/*==============COLLAPSIBLE==================*/
+@media (max-width: 768px) {
+
 }
