@@ -5,9 +5,7 @@
 }
 
 .secondary-nav__container * {
-    /* border-style: solid;
-     border-width: 1px;
-     border-color: var(--color-lightgray);*/
+    vertical-align: top;
 }
 
 .secondary-nav--left li,
@@ -16,9 +14,21 @@
     align-self: center;
 }
 
+.secondary-nav--left li {
+    margin-right: -24px;
+}
+
 .secondary-nav--right {
     font-size: 0.9em;
 }
+
+.secondary-nav--right li {
+    padding: 4px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: var(--color-lightgray);
+}
+
 
 /*______________________________________________________________*/
 .tab-container {
@@ -69,11 +79,35 @@
     text-decoration: underline;
 }
 
+.primary-link.standout-text {
+    position: relative;
+}
+
+.primary-link.standout-text::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.main-navbar__tab:hover .primary-link.standout-text::after{
+    width: 100%;
+    left: 0;
+}
+
+
 /*==============COLLAPSIBLE==================*/
 @media (max-width: 768px) {
     .main-navbar {
         margin: 0;
     }
+
     .main-navbar__tab {
         width: 100%;
     }
@@ -105,7 +139,8 @@
     .main-navbar__tab:focus .navbar__dropdown.visible {
         display: flex;
         flex-direction: column;
-        position: relative;    }
+        position: relative;
+    }
 
     .navbar__dropdown {
         display: none;
