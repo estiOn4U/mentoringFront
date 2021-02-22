@@ -41,20 +41,33 @@ img {
     overflow: hidden;
 }
 
+.img-wrapper-xl {
+    max-width: var(--img-big);
+    max-height: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+
 picture {
     width: 100%;
 }
 
-.zoomable img{
+.zoomable img {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
 
 .zoomable img:hover {
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
+
 /*=====LOGOS=====*/
+.logo {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+}
 
 .header-logo {
     max-width: 200px;

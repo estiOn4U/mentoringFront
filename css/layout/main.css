@@ -19,6 +19,14 @@ main section {
     font-family: var(--main-font);
 }
 
+.section__initial header {
+    display: flex;
+    flex-direction: column;
+}
+.section__initial .img-wrapper-xl {
+    order: -1;
+}
+
 .section__initial--squares,
 .section--brands,
 .section--solutions,

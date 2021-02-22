@@ -29,11 +29,6 @@ small {
     text-align: left;
 }
 
-.logo {
-    display: block;
-    margin: auto;
-}
-
 .onError {
     background-color: #ffcccc;
 }
