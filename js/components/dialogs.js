@@ -29,4 +29,5 @@ function trapFocus(dialog) {
     });
 }
 
+
 export {trapFocus};

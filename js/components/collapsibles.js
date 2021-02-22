@@ -71,9 +71,26 @@ function checkNavbarCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let toggleNavbarBtn = document.querySelector(".toggle-navbar-btn");
     if (clientWidth <= tabletH) {
-        toggleNavbarBtn.addEventListener("click", toggleCollapseNavbar);
+        toggleNavbarBtn.addEventListener("click", toggleCollapseOverlay);
     } else {
         autoFocus();
+    }
+}
+
+function toggleCollapseOverlay(){
+    let overlay = document.querySelector(".all-headers__container.overlay-content");
+    this.classList.toggle("active");
+
+    if(overlay.style.width === ""){
+        console.log("ok");
+        overlay.style.width = "100%";
+        let panel = this.nextElementSibling;
+        panel.classList.toggle("active");
+        genericCollapse(panel);
+    }
+    else {
+        console.log("no");
+        overlay.style.width = "";
     }
 }
 
