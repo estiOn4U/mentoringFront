@@ -76,9 +76,6 @@
     }
     .main-navbar__tab {
         width: 100%;
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
     }
 
     .all-headers__container {

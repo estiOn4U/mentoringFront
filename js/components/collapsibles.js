@@ -63,6 +63,7 @@ function toggleCollapseNavbar() {
 function toggleCollapseColumn() {
     this.classList.toggle("active");
     let panel = this.lastElementChild;
+
     genericCollapse(panel);
 }
 
