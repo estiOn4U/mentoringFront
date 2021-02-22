@@ -57,10 +57,6 @@
         right: 50px;
     }
 
-    .accordion:focus {
-
-    }
-
     .accordion::after {
         content: "";
         display: block;

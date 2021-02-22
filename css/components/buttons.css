@@ -32,6 +32,10 @@
     border-radius: 10px;
 }
 
+.toggle-navbar-btn {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .btn-wrapper {
@@ -43,4 +47,7 @@
         width: 100%;
     }
 
+    .toggle-navbar-btn {
+        display: block;
+    }
 }

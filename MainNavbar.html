@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <header>
-    <div class="secondary-nav__container">
-        <ul class="secondary-nav--left">
-            <li class="secondary-nav__tab tab">
-                <a class="navbar-icon primary-link" href="https://www.cosentino.com/es/silestone/">
-                    <svg role="img">
-                        <use xlink:href="./resources/svg/sprites.svg#silestone"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="secondary-nav__tab tab">
-                <a class="navbar-icon primary-link" href="https://www.cosentino.com/es/dekton/">
-                    <svg role="img">
-                        <use xlink:href="./resources/svg/sprites.svg#dekton"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="navbar-icon primary-link" href="https://www.cosentino.com/es/sensa/">
-                    <svg role="img">
-                        <use xlink:href="./resources/svg/sprites.svg#sensa"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="navbar-icon primary-link" href="https://www.cosentino.com/es/piedra-natural/">
-                    <svg role="img">
-                        <use xlink:href="./resources/svg/sprites.svg#naturalstone"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        <ul class="secondary-nav--right">
-            <form action="#" role="search">
-                <input type="search" name="search" id="search">
-                <label for="search">
+        <button type="button" class ="toggle-navbar-btn">
+            <svg role="img">
+                <use xlink:href="./resources/svg/sprites.svg#hamburguer-open"></use>
+            </svg>
+        </button>
+    <div class="collapsible all-headers__container">
+        <div class="secondary-nav__container">
+            <ul class="secondary-nav--left">
+                <li class="secondary-nav__tab tab">
+                    <a class="navbar-icon primary-link" href="https://www.cosentino.com/es/silestone/">
+                        <svg role="img">
+                            <use xlink:href="./resources/svg/sprites.svg#silestone"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="secondary-nav__tab tab">
+                    <a class="navbar-icon primary-link" href="https://www.cosentino.com/es/dekton/">
+                        <svg role="img">
+                            <use xlink:href="./resources/svg/sprites.svg#dekton"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-icon primary-link" href="https://www.cosentino.com/es/sensa/">
+                        <svg role="img">
+                            <use xlink:href="./resources/svg/sprites.svg#sensa"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-icon primary-link" href="https://www.cosentino.com/es/piedra-natural/">
+                        <svg role="img">
+                            <use xlink:href="./resources/svg/sprites.svg#naturalstone"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="secondary-nav--right">
+                <form action="#" role="search">
+                    <input type="search" name="search" id="search">
+                    <label for="search">
                     <span>
                         <a class="social-media--icon" href="#" target="_blank" rel="noopener noreferrer">
                             <svg role="img">
@@ -43,95 +49,97 @@
                             </svg>
                         </a>
                     </span>
-                </label>
-                <input type="submit" value="Buscar">
-            </form>
-            <li><a class="primary-link" href="https://www.cosentino.com/es/noticias/">Noticias</a></li>
-            <li><a class="primary-link" href="https://jobs.cosentino.com/?locale=es_ES">Empleo</a></li>
-            <li><a class="primary-link" href="https://www.cosentino.com/es/garantia/">Garantía</a></li>
-            <li><a class="primary-link" href="https://www.cosentino.com/es/contacto/">Contacto</a></li>
-            <ul>
-                <li><a href="#" aria-label="Idioma seleccionado: Español">Español</a></li>
-                <li><a href="#" aria-label="Idioma seleccionado: Inglés">Inglés</a></li>
+                    </label>
+                    <input type="submit" value="Buscar">
+                </form>
+                <li><a class="primary-link" href="https://www.cosentino.com/es/noticias/">Noticias</a></li>
+                <li><a class="primary-link" href="https://jobs.cosentino.com/?locale=es_ES">Empleo</a></li>
+                <li><a class="primary-link" href="https://www.cosentino.com/es/garantia/">Garantía</a></li>
+                <li><a class="primary-link" href="https://www.cosentino.com/es/contacto/">Contacto</a></li>
+                <ul>
+                    <li><a href="#" aria-label="Idioma seleccionado: Español">Español</a></li>
+                    <li><a href="#" aria-label="Idioma seleccionado: Inglés">Inglés</a></li>
+                </ul>
             </ul>
-        </ul>
+        </div>
+
+        <nav class="main-navbar">
+            <a class="header-logo" href="#">
+                <img src="https://icosentino.imgix.net/wp-content/uploads/2020/04/logo-1.gif" alt="Logo Cosentino">
+            </a>
+            <div class="main-navbar__container tab-container">
+                <div class="main-navbar__tab" tabindex="0" ><!--Dropdown-->
+                    <a class="primary-link standout-text" href="https://www.cosentino.com/es/colores/">Colores</a>
+                    <ul role="listbox" class="navbar__dropdown">
+                        <li role="option"><a class="primary-link" href="#">Todos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Tonos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Silestone</a></li>
+                        <li role="option"><a class="primary-link" href="#">Dekton</a></li>
+                        <li role="option"><a class="primary-link" href="#">Sensa</a></li>
+                        <li role="option"><a class="primary-link" href="#">Piedra Natural</a></li>
+                    </ul>
+                </div>
+                <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
+                    <a class="primary-link standout-text" href="https://www.cosentino.com/es/cocinas/">Cocinas</a>
+                    <ul role="listbox" class="navbar__dropdown">
+                        <li role="option"><a class="primary-link" href="#">Encimeras</a></li>
+                        <li role="option"><a class="primary-link" href="#">Suelos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Fregaderos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Reformas</a></li>
+                    </ul>
+                </div>
+                <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
+                    <a class="primary-link standout-text" href="https://www.cosentino.com/es/banos/">Baños</a>
+                    <ul role="listbox" class="navbar__dropdown">
+                        <li role="option"><a class="primary-link" href="#">Encimeras</a></li>
+                        <li role="option"><a class="primary-link" href="#">Lavabos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Platos de ducha</a></li>
+                        <li role="option"><a class="primary-link" href="#">Suelos de baño</a></li>
+                        <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Reformas</a></li>
+                    </ul>
+                </div>
+                <div class="main-navbar__tab active" tabindex="0"><!--Dropdown-->
+                    <a class="primary-link standout-text" href="https://www.cosentino.com/es/soluciones-arquitectonicas/">Soluciones
+                        Arquitectónicas</a>
+                    <ul role="listbox" class="navbar__dropdown">
+                        <li role="option"><a class="primary-link" href="#">Fachadas</a></li>
+                        <li role="option"><a class="primary-link" href="#">Suelos y pavimentos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Reformas</a></li>
+                    </ul>
+                </div>
+                <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
+                    <a class="primary-link standout-text" href="https://www.cosentino.com/es/galeria/">Galería</a>
+                    <ul role="listbox" class="navbar__dropdown">
+                        <li role="option"><a class="primary-link" href="#">Galería de baños</a></li>
+                        <li role="option"><a class="primary-link" href="#">Galería de cocinas</a></li>
+                    </ul>
+                </div>
+                <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
+                    <a class="primary-link standout-text" href="https://www.cosentino.com/es/blog-news/">Blog</a>
+                    <ul role="listbox" class="navbar__dropdown">
+                        <li role="option"><a class="primary-link" href="#">Top Faces</a></li>
+                        <li role="option"><a class="primary-link" href="#">Top Projects</a></li>
+                        <li role="option"><a class="primary-link" href="#">Top Trends</a></li>
+                        <li role="option"><a class="primary-link" href="#">Top Products</a></li>
+                    </ul>
+                </div>
+                <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
+                    <a class="primary-link standout-text" href="https://www.cosentino.com/es/donde-comprar/">Dónde comprar</a>
+                    <ul role="listbox" class="navbar__dropdown">
+                        <li role="option"><a class="primary-link" href="#">Fachadas</a></li>
+                        <li role="option"><a class="primary-link" href="#">Suelos y pavimentos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
+                        <li role="option"><a class="primary-link" href="#">Reformas</a></li>
+                    </ul>
+                </div>
+                <a class="button-like--square" href="https://pro.cosentino.com/es/" target="_blank"
+                   rel="noopener noreferrer">Profesional</a>
+            </div>
+        </nav>
     </div>
 
-    <nav class="main-navbar">
-        <a class="header-logo" href="#">
-            <img src="https://icosentino.imgix.net/wp-content/uploads/2020/04/logo-1.gif" alt="Logo Cosentino">
-        </a>
-        <div class="main-navbar__container tab-container">
-            <div class="main-navbar__tab" tabindex="0" ><!--Dropdown-->
-                <a class="primary-link standout-text" href="https://www.cosentino.com/es/colores/">Colores</a>
-                <ul role="listbox" class="navbar__dropdown">
-                    <li role="option"><a class="primary-link" href="#">Todos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Tonos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Silestone</a></li>
-                    <li role="option"><a class="primary-link" href="#">Dekton</a></li>
-                    <li role="option"><a class="primary-link" href="#">Sensa</a></li>
-                    <li role="option"><a class="primary-link" href="#">Piedra Natural</a></li>
-                </ul>
-            </div>
-            <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
-                <a class="primary-link standout-text" href="https://www.cosentino.com/es/cocinas/">Cocinas</a>
-                <ul role="listbox" class="navbar__dropdown">
-                    <li role="option"><a class="primary-link" href="#">Encimeras</a></li>
-                    <li role="option"><a class="primary-link" href="#">Suelos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Fregaderos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Reformas</a></li>
-                </ul>
-            </div>
-            <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
-                <a class="primary-link standout-text" href="https://www.cosentino.com/es/banos/">Baños</a>
-                <ul role="listbox" class="navbar__dropdown">
-                    <li role="option"><a class="primary-link" href="#">Encimeras</a></li>
-                    <li role="option"><a class="primary-link" href="#">Lavabos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Platos de ducha</a></li>
-                    <li role="option"><a class="primary-link" href="#">Suelos de baño</a></li>
-                    <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Reformas</a></li>
-                </ul>
-            </div>
-            <div class="main-navbar__tab active" tabindex="0"><!--Dropdown-->
-                <a class="primary-link standout-text" href="https://www.cosentino.com/es/soluciones-arquitectonicas/">Soluciones
-                    Arquitectónicas</a>
-                <ul role="listbox" class="navbar__dropdown">
-                    <li role="option"><a class="primary-link" href="#">Fachadas</a></li>
-                    <li role="option"><a class="primary-link" href="#">Suelos y pavimentos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Reformas</a></li>
-                </ul>
-            </div>
-            <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
-                <a class="primary-link standout-text" href="https://www.cosentino.com/es/galeria/">Galería</a>
-                <ul role="listbox" class="navbar__dropdown">
-                    <li role="option"><a class="primary-link" href="#">Galería de baños</a></li>
-                    <li role="option"><a class="primary-link" href="#">Galería de cocinas</a></li>
-                </ul>
-            </div>
-            <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
-                <a class="primary-link standout-text" href="https://www.cosentino.com/es/blog-news/">Blog</a>
-                <ul role="listbox" class="navbar__dropdown">
-                    <li role="option"><a class="primary-link" href="#">Top Faces</a></li>
-                    <li role="option"><a class="primary-link" href="#">Top Projects</a></li>
-                    <li role="option"><a class="primary-link" href="#">Top Trends</a></li>
-                    <li role="option"><a class="primary-link" href="#">Top Products</a></li>
-                </ul>
-            </div>
-            <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
-                <a class="primary-link standout-text" href="https://www.cosentino.com/es/donde-comprar/">Dónde comprar</a>
-                <ul role="listbox" class="navbar__dropdown">
-                    <li role="option"><a class="primary-link" href="#">Fachadas</a></li>
-                    <li role="option"><a class="primary-link" href="#">Suelos y pavimentos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
-                    <li role="option"><a class="primary-link" href="#">Reformas</a></li>
-                </ul>
-            </div>
-            <a class="button-like--square" href="https://pro.cosentino.com/es/" target="_blank"
-               rel="noopener noreferrer">Profesional</a>
-        </div>
-    </nav>
 </header>
 </html>

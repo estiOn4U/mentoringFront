@@ -71,5 +71,10 @@
 
 /*==============COLLAPSIBLE==================*/
 @media (max-width: 768px) {
-
+    .all-headers__container {
+        display: none;
+    }
+    .all-headers__container.visible {
+        display: block;
+    }
 }
