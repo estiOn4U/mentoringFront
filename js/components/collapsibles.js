@@ -49,18 +49,31 @@ function autoFocus() {
 }
 
 function toggleCollapseNavbar() {
+    this.classList.toggle("active");
     let panel = this.nextElementSibling;
     panel.classList.toggle("active");
     genericCollapse(panel);
 
+    let acc = document.querySelectorAll(".main-navbar__tab");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", toggleCollapseColumn);
+    }
+}
+
+function toggleCollapseColumn() {
+    this.classList.toggle("active");
+    let panel = this.lastElementChild;
+    genericCollapse(panel);
 }
 
 function checkNavbarCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let toggleNavbarBtn = document.querySelector(".toggle-navbar-btn");
-        if (clientWidth <= tabletH) {
-            toggleNavbarBtn.addEventListener("click", toggleCollapseNavbar);
-        }
+    if (clientWidth <= tabletH) {
+        toggleNavbarBtn.addEventListener("click", toggleCollapseNavbar);
+    } else {
+        autoFocus();
+    }
 }
 
 export {checkFooterCollapse, autoFocus, checkNavbarCollapse};

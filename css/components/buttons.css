@@ -60,6 +60,20 @@
         border: none;
     }
 
+    .toggle-navbar-btn::before {
+        content: '+';
+         position: absolute;
+         right: 50px;
+        /*background-image: url('/mentoringFront/resources/svg/sprites.svg#hamburguer-open');*/
+    }
+
+
+    .toggle-navbar-btn.active::before {
+        content: '-';
+        position: absolute;
+        right: 50px;
+    }
+
     .toggle-navbar-btn svg {
         position: absolute;
         right: 0;

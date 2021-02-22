@@ -71,10 +71,57 @@
 
 /*==============COLLAPSIBLE==================*/
 @media (max-width: 768px) {
+    .main-navbar {
+        margin: 0;
+    }
+    .main-navbar__tab {
+        width: 100%;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+    }
+
     .all-headers__container {
         display: none;
     }
+
     .all-headers__container.visible {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .tab-container {
+        flex-direction: column;
+    }
+
+    .main-navbar__tab.active .navbar__dropdown,
+    .main-navbar__tab:focus .navbar__dropdown {
+        display: none;
+    }
+
+    .main-navbar__tab.active .navbar__dropdown.visible,
+    .main-navbar__tab:focus .navbar__dropdown.visible {
+        display: flex;
+        flex-direction: column;
+        position: relative;    }
+
+    .navbar__dropdown {
+        display: none;
+    }
+
+    .navbar__dropdown.visible {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .primary-link.standout-text {
+        text-align: center;
+        pointer-events: none;
     }
 }

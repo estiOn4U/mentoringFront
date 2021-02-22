@@ -21,8 +21,7 @@ function addNavbar() {
         .then(data => {
             document.querySelector(".main-header").innerHTML = data;
         })
-        .then(checkNavbarCollapse)
-        .then(autoFocus)
+        .then(checkNavbarCollapse);
 }
 
 
