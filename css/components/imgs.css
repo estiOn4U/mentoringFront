@@ -1,3 +1,8 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
 .blog-img {
     width: 200px;
     height: 200px;
@@ -18,9 +23,38 @@
     width: auto;
 }
 
-/*
-TODO: Responsive!
-*/
+.img-wrapper-s {
+    max-width: var(--img-little);
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.img-wrapper-ms {
+    max-width: var(--img-med-s);
+    max-height: 200px;
+
+}
+
+.img-wrapper-ml {
+    max-width: var(--img-med-l);
+    max-height: 200px;
+    overflow: hidden;
+}
+
+picture {
+    width: 100%;
+}
+
+.zoomable img{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.zoomable img:hover {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+/*=====LOGOS=====*/
 
 .header-logo {
     max-width: 200px;

@@ -34,14 +34,6 @@ small {
     margin: auto;
 }
 
-.img-wrapper {
-    max-width: 500px;
-}
-
-picture {
-    width: 100%;
-}
-
 .onError {
     background-color: #ffcccc;
 }

@@ -10,6 +10,11 @@
     --main-size-tabletV: 600px;
     --main-size-tabletH: 1024px;
     --main-size-laptopXL: 1400px;
+
+    --img-little: 250px;
+    --img-med-s: 400px;
+    --img-med-l: 500px;
+    --img-big: 600px;
 }
 
 .column {
