@@ -60,23 +60,24 @@
         border: none;
     }
 
-    .toggle-navbar-btn::before {
+    /*.toggle-navbar-btn::before {
         content: '+';
          position: absolute;
          right: 50px;
-        /*background-image: url('/mentoringFront/resources/svg/sprites.svg#hamburguer-open');*/
-    }
-
-    .toggle-navbar-btn.active {
-        position: fixed;
-        top: 0;
+        position: absolute;
+        right: 50px;
+        content: url('/mentoringFront/resources/svg/sprites.svg#facebook');
+        background-image: url('/mentoringFront/resources/svg/sprites.svg#facebook');
+        background-size: 28px 28px;
+        height: 28px;
+        width: 28px;
     }
 
     .toggle-navbar-btn.active::before {
         content: '-';
         position: absolute;
         right: 50px;
-    }
+    }*/
 
     .toggle-navbar-btn svg {
         position: absolute;

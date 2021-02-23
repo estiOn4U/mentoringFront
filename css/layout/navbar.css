@@ -104,6 +104,9 @@
 
 /*==============COLLAPSIBLE==================*/
 @media (max-width: 768px) {
+    .main-navbar {
+        margin: unset;
+    }
 
     .main-navbar__tab {
         width: 100%;
@@ -160,5 +163,9 @@
         background-color: var(--color-white);
         overflow-x: hidden;
         transition: 1s;
+    }
+
+    .button-like--square {
+        width: 100%;
     }
 }
