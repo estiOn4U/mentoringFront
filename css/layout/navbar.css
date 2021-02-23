@@ -123,6 +123,7 @@
     }
 
     .tab-container {
+        display: flex;
         flex-direction: column;
     }
 
@@ -164,9 +165,19 @@
         overflow-x: hidden;
         transition: 1s;
         transition-timing-function: ease-in;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
     }
 
     .button-like--square {
         width: 100%;
+    }
+
+    .secondary-nav--left {
+        display: none;
+    }
+    .secondary-nav--right li {
+        display: none;
     }
 }
