@@ -163,6 +163,7 @@
         background-color: var(--color-white);
         overflow-x: hidden;
         transition: 1s;
+        transition-timing-function: ease-in;
     }
 
     .button-like--square {

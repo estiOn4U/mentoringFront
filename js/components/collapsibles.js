@@ -77,20 +77,14 @@ function checkNavbarCollapse() {
     }
 }
 
-function toggleCollapseOverlay(){
+function toggleCollapseOverlay() {
     let overlay = document.querySelector(".all-headers__container.overlay-content");
-    this.classList.toggle("active");
+    this.classList.toggle("active"); //this ==button
 
-    if(overlay.style.width === ""){
+    if (overlay.style.width === "") {
         overlay.style.width = "100%";
         document.querySelector("body").style.overflow = "hidden";
-        let panel = this.nextElementSibling;
-        panel.classList.toggle("active");
-        genericCollapse(panel);
-    }
-    else {
-        let panel = this.nextElementSibling;
-        panel.classList.toggle("active");
+    } else {
         overlay.style.width = "";
         document.querySelector("body").style.overflow = "auto";
     }
