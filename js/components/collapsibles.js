@@ -78,15 +78,24 @@ function checkNavbarCollapse() {
 }
 
 function toggleCollapseOverlay() {
+    let hamIconSvg = this.childNodes[1].lastElementChild
     let overlay = document.querySelector(".all-headers__container.overlay-content");
-    this.classList.toggle("active"); //this ==button
-
+    let acc = document.querySelectorAll(".main-navbar__tab");
+    this.classList.toggle("active");
     if (overlay.style.width === "") {
+        hamIconSvg.setAttribute("xlink:href", './resources/svg/sprites.svg#hamburguer-close');
         overlay.style.width = "100%";
         document.querySelector("body").style.overflow = "hidden";
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", toggleCollapseColumn);
+        }
     } else {
+        hamIconSvg.setAttribute("xlink:href", './resources/svg/sprites.svg#hamburguer-open');
         overlay.style.width = "";
         document.querySelector("body").style.overflow = "auto";
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].removeEventListener("click", toggleCollapseColumn);
+        }
     }
 }
 
