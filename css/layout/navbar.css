@@ -159,6 +159,6 @@
         right: 0;
         background-color: var(--color-white);
         overflow-x: hidden;
-        transition: 0.8s;
+        transition: 1s;
     }
 }

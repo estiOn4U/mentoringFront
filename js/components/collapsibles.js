@@ -82,15 +82,17 @@ function toggleCollapseOverlay(){
     this.classList.toggle("active");
 
     if(overlay.style.width === ""){
-        console.log("ok");
         overlay.style.width = "100%";
+        document.querySelector("body").style.overflow = "hidden";
         let panel = this.nextElementSibling;
         panel.classList.toggle("active");
         genericCollapse(panel);
     }
     else {
-        console.log("no");
+        let panel = this.nextElementSibling;
+        panel.classList.toggle("active");
         overlay.style.width = "";
+        document.querySelector("body").style.overflow = "auto";
     }
 }
 
