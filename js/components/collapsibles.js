@@ -72,9 +72,9 @@ function toggleCollapseOverlay() {
     let allSubnavs = document.querySelectorAll(".navbar__dropdown.overlay-content");
 
     this.classList.toggle("active");
-    if (overlay.style.width === "") {
+    if (!overlay.classList.contains("overlay--active")) {
         hamIconSvg.setAttribute("xlink:href", './resources/svg/sprites.svg#hamburguer-close');
-        overlay.style.width = "100%";
+        overlay.classList.add("overlay--active");
         document.querySelector("body").style.overflow = "hidden";
         for (let i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", toggleCollapseSubnav);
@@ -84,7 +84,7 @@ function toggleCollapseOverlay() {
         }
     } else {
         hamIconSvg.setAttribute("xlink:href", './resources/svg/sprites.svg#hamburguer-open');
-        overlay.style.width = "";
+        overlay.classList.remove("overlay--active");
         document.querySelector("body").style.overflow = "auto";
         for (let i = 0; i < acc.length; i++) {
             acc[i].removeEventListener("click", toggleCollapseSubnav);
@@ -93,7 +93,7 @@ function toggleCollapseOverlay() {
             overlayClose[i].removeEventListener("click", toggleCollapseSubnav);
         }
         for (let i = 0; i < allSubnavs.length; i++) {
-            allSubnavs[i].style.width = "";
+            allSubnavs[i].classList.remove("overlay--active");
         }
     }
 }
@@ -101,10 +101,10 @@ function toggleCollapseOverlay() {
 function toggleCollapseSubnav() {
     this.classList.toggle("active");
     let panel = this.lastElementChild;
-    if (panel.style.width === "") {
-        panel.style.width = "100%";
+    if (!panel.classList.contains("overlay--active")) {
+        panel.classList.add("overlay--active");
     } else {
-        panel.style.width = "";
+        panel.classList.remove("overlay--active");
     }
 }
 
