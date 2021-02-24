@@ -75,6 +75,14 @@
         background-size: contain;
         border: none;
     }
+    .toggle-navbar-btn::after {
+        content: " ";
+        display: block;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: var(--color-dark-shadow);
+        margin-top: 32px;
+    }
 
     /*.toggle-navbar-btn::before {
         content: '+';

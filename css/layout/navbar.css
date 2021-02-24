@@ -120,6 +120,15 @@
         width: 100%;
     }
 
+    .main-navbar__tab::after {
+        content: " ";
+        display: block;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: var(--color-dark-shadow);
+        margin-top: 16px;
+    }
+
     .all-headers__container.visible {
         display: flex;
         flex-direction: column;
@@ -151,6 +160,10 @@
     .primary-link.standout-text {
         text-align: center;
         pointer-events: none;
+    }
+
+    .primary-link.standout-text::after {
+        display: none;
     }
 
     .overlay-content {
