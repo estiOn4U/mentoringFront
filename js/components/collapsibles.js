@@ -48,12 +48,6 @@ function autoFocus() {
     }
 }
 
-function toggleCollapseColumn() {
-    this.classList.toggle("active");
-    let panel = this.lastElementChild;
-    genericCollapse(panel);
-}
-
 function checkNavbarCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let toggleNavbarBtn = document.querySelector(".toggle-navbar-btn");

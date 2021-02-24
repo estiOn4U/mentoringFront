@@ -36,6 +36,21 @@
     display: none;
 }
 
+.search-btn {
+    width: 40px;
+    color: transparent;
+    border: none;
+    background-color: transparent;
+    background-image: url('https://icons-for-free.com/iconfiles/png/512/search+24px-131985193505071219.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    padding: 4px;
+}
+
 @media (max-width: 768px) {
 
     .btn-wrapper {
