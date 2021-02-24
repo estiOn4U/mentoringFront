@@ -2,6 +2,7 @@
 @import 'abstracts/fonts.css';
 @import 'abstracts/layout.css';
 @import 'base/reset.css';
+@import 'components/texts.css';
 @import 'components/titles.css';
 @import 'components/imgs.css';
 @import 'components/links.css';

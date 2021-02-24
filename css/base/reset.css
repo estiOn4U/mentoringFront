@@ -24,15 +24,6 @@ ul {
     list-style-type: none;
 }
 
-small {
-    display: block;
-    text-align: left;
-}
-
 .onError {
     background-color: #ffcccc;
-}
-
-.standout-text {
-    font-weight: bold;
 }

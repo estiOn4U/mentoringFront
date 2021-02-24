@@ -1,0 +1,8 @@
+small {
+    display: block;
+    text-align: left;
+}
+
+.standout-text {
+    font-weight: bold;
+}
