@@ -75,7 +75,8 @@
 .main-navbar__tab.active .navbar__dropdown,
 .main-navbar__tab:focus .navbar__dropdown {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 4%;
 }
 
 .main-navbar__tab.active .standout-text {
@@ -136,7 +137,9 @@
     }
 
     .header-logo {
-        display: none;
+        display: inline-block;
+        position: fixed;
+        top: 16px;
     }
 
     .tab-container {
