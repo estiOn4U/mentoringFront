@@ -48,22 +48,9 @@ function autoFocus() {
     }
 }
 
-function toggleCollapseNavbar() {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    panel.classList.toggle("active");
-    genericCollapse(panel);
-
-    let acc = document.querySelectorAll(".main-navbar__tab");
-    for (let i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", toggleCollapseColumn);
-    }
-}
-
 function toggleCollapseColumn() {
     this.classList.toggle("active");
     let panel = this.lastElementChild;
-
     genericCollapse(panel);
 }
 
@@ -78,24 +65,46 @@ function checkNavbarCollapse() {
 }
 
 function toggleCollapseOverlay() {
-    let hamIconSvg = this.childNodes[1].lastElementChild
+    let hamIconSvg = this.childNodes[1].lastElementChild;
     let overlay = document.querySelector(".all-headers__container.overlay-content");
     let acc = document.querySelectorAll(".main-navbar__tab");
+    let overlayClose = document.querySelector(".overlay__close");
+    let allSubnavs = document.querySelectorAll(".navbar__dropdown.overlay-content");
+
     this.classList.toggle("active");
     if (overlay.style.width === "") {
         hamIconSvg.setAttribute("xlink:href", './resources/svg/sprites.svg#hamburguer-close');
         overlay.style.width = "100%";
         document.querySelector("body").style.overflow = "hidden";
         for (let i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", toggleCollapseColumn);
+            acc[i].addEventListener("click", toggleCollapseSubnav);
+        }
+        for (let i = 0; i < overlayClose.length; i++) {
+            overlayClose[i].addEventListener("click", toggleCollapseSubnav);
         }
     } else {
         hamIconSvg.setAttribute("xlink:href", './resources/svg/sprites.svg#hamburguer-open');
         overlay.style.width = "";
         document.querySelector("body").style.overflow = "auto";
         for (let i = 0; i < acc.length; i++) {
-            acc[i].removeEventListener("click", toggleCollapseColumn);
+            acc[i].removeEventListener("click", toggleCollapseSubnav);
         }
+        for (let i = 0; i < overlayClose.length; i++) {
+            overlayClose[i].removeEventListener("click", toggleCollapseSubnav);
+        }
+        for (let i = 0; i < allSubnavs.length; i++) {
+            allSubnavs[i].style.width = "";
+        }
+    }
+}
+
+function toggleCollapseSubnav() {
+    this.classList.toggle("active");
+    let panel = this.lastElementChild;
+    if (panel.style.width === "") {
+        panel.style.width = "100%";
+    } else {
+        panel.style.width = "";
     }
 }
 
