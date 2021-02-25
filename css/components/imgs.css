@@ -114,9 +114,10 @@ picture {
     transform: scale(1.2);
 }
 
+
 .navbar-icon svg {
     background-color: transparent;
     fill: currentColor;
-    width: 140px;
-    height: 24px;
+    max-width: 132px;
+    height: 32px;
 }
