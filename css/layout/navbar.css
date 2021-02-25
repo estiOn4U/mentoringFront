@@ -120,6 +120,7 @@
 
     .main-navbar__tab {
         width: 100%;
+        padding: 8px;
     }
 
     .main-navbar__tab::after {
@@ -148,6 +149,12 @@
         flex-direction: column;
     }
 
+    .main-navbar__tab.active .navbar__dropdown,
+    .main-navbar__tab:focus .navbar__dropdown {
+        justify-content: end;
+        margin-top: -16px;
+    }
+
     .main-navbar__tab.active .navbar__dropdown.visible,
     .main-navbar__tab:focus .navbar__dropdown.visible {
         display: flex;
@@ -155,7 +162,6 @@
         padding: 8%;
         flex-direction: column;
     }
-
 
     .navbar__dropdown.visible {
         display: flex;
@@ -187,6 +193,7 @@
     }
 
     .all-headers__container.overlay-content {
+        display: flex;
         flex-direction: column-reverse;
     }
 
@@ -212,7 +219,8 @@
     .overlay--active {
         width: 100%;
         opacity: 1;
-        padding: 8%;
+        padding-left: 8%;
+        padding-right: 8%;
         display: flex;
     }
 
@@ -225,6 +233,7 @@
     .overlay__footer {
         display: block;
         position: fixed;
+        z-index: 9;
         bottom: 0;
         background-color: var(--color-black);
         color: var(--color-white);
