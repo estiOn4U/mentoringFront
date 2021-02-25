@@ -113,7 +113,8 @@
 }
 
 .navbar__slider {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
 }
 
 /*==============COLLAPSIBLE==================*/
@@ -177,7 +178,7 @@
         line-height: 2em;
     }
 
-    .navbar__dropdown li a{
+    .navbar__dropdown li a {
         padding: 16px;
     }
 
@@ -282,6 +283,7 @@
     }
 
     .navbar__slider {
-        display: flex;
+        max-height: 40px;
+        overflow: auto;
     }
 }

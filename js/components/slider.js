@@ -33,17 +33,17 @@ function addPhotosSlider() {
 
 function addNavbarSlider() {
     $('.navbar__slider').slick({
-        arrows: false,
-        slidesToShow: 0,
-        slidesToScroll: 0,
-        variableWidth: true,
+        arrows: true,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    arrows: false
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    arrows: true
                 }
             }
         ]

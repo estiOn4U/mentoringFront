@@ -121,3 +121,8 @@ picture {
     max-width: 132px;
     height: 32px;
 }
+
+.navbar__slider svg {
+    height: 100px;
+    width: 100px;
+}
