@@ -62,6 +62,23 @@ picture {
     transform: scale(1.2);
 }
 
+.zoomable:hover {
+    animation: animateBorder 1s normal forwards ease;
+}
+
+@-webkit-keyframes animateBorder {
+    from {
+        border-style: inset;
+        border-color: var(--color-black);
+        border-width: 0;
+    }
+    to {
+        border-style: inset;
+        border-color: var(--color-medium-gray);
+        border-width: 4px;
+    }
+}
+
 /*=====LOGOS=====*/
 .logo {
     display: block;
