@@ -52,17 +52,18 @@ picture {
     width: 100%;
 }
 
-.zoomable img {
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+.zoomable {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
-.zoomable img:hover {
+.zoomable:hover img {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 
-.zoomable:hover {
+.zoomable:hover .img-wrapper-s,
+.zoomable:hover .img-wrapper-ml {
     animation: animateBorder 1s normal forwards ease;
 }
 
