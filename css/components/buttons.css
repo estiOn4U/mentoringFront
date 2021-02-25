@@ -66,7 +66,7 @@
     height: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .btn-wrapper {
         display: block;

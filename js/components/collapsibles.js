@@ -1,4 +1,4 @@
-import {tabletH} from '../abstracts/media-queries.js';
+import {tabletV, tabletH} from '../abstracts/media-queries.js';
 
 function genericCollapse(collapsible) {
     if (collapsible.classList.contains('visible')) {
@@ -20,7 +20,7 @@ function checkFooterCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let acc = document.getElementsByClassName("accordion");
     for (let i = 0; i < acc.length; i++) {
-        if (clientWidth <= tabletH) {
+        if (clientWidth <= tabletV) {
             acc[i].addEventListener("click", toggleCollapseFooter);
             acc[i].nextElementSibling.classList.remove('visible');
         } else {

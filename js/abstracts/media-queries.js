@@ -1,5 +1,4 @@
-var mobile = 320;
-var tabletH = 768;
-var laptopXL = 1920;
+var tabletV = 768;
+var tabletH = 1024;
 
-export {laptopXL, mobile, tabletH};
+export {tabletV, tabletH};
