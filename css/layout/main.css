@@ -1,5 +1,6 @@
 #breadcrumb {
-    padding-top: 32px
+    padding-top: 32px;
+    margin-top: 40px;
 }
 
 #breadcrumb li {

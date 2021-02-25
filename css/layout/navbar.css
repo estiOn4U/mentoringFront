@@ -112,6 +112,10 @@
     display: none;
 }
 
+.navbar__slider {
+    display: none;
+}
+
 /*==============COLLAPSIBLE==================*/
 @media (max-width: 1024px) {
     .main-navbar {
@@ -129,7 +133,6 @@
         border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: var(--color-dark-shadow);
-        margin-top: 16px;
     }
 
     .all-headers__container.visible {
@@ -169,13 +172,22 @@
         position: relative;
     }
 
+    .navbar__dropdown li {
+        padding: 0;
+        line-height: 2em;
+    }
+
+    .navbar__dropdown li a{
+        padding: 16px;
+    }
+
+
     .navbar__dropdown li:not(:first-child)::after {
         content: " ";
         display: block;
         border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: var(--color-dark-shadow);
-        margin-top: 16px;
     }
 
     .main-navbar__tab::before {
@@ -267,5 +279,9 @@
 
     .secondary-nav--right li {
         display: none;
+    }
+
+    .navbar__slider {
+        display: flex;
     }
 }

@@ -2,7 +2,7 @@ import 'https://code.jquery.com/jquery-1.11.0.min.js';
 import 'https://code.jquery.com/jquery-migrate-1.2.1.min.js';
 import 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js';
 
-function addSlider() {
+function addPhotosSlider() {
     $('.carousel__slider').slick({
         dots: true,
         arrows: true,
@@ -31,4 +31,23 @@ function addSlider() {
     });
 }
 
-export {addSlider};
+function addNavbarSlider() {
+    $('.navbar__slider').slick({
+        arrows: false,
+        slidesToShow: 0,
+        slidesToScroll: 0,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            }
+        ]
+    });
+}
+
+export {addPhotosSlider, addNavbarSlider};
