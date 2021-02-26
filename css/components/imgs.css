@@ -27,18 +27,20 @@ img {
     max-width: var(--img-little);
     max-height: 200px;
     overflow: hidden;
+    margin: auto;
 }
 
 .img-wrapper-ms {
     max-width: var(--img-med-s);
     max-height: 200px;
-
+    margin: auto;
 }
 
 .img-wrapper-ml {
     max-width: var(--img-med-l);
     max-height: 200px;
     overflow: hidden;
+    margin: auto;
 }
 
 .img-wrapper-xl {
@@ -125,5 +127,4 @@ picture {
 .navbar__slider svg {
     height: 40px;
     width: 40px;
-
 }
