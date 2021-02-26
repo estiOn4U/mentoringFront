@@ -7,7 +7,9 @@
     --img-little: 250px;
     --img-med-s: 400px;
     --img-med-l: 600px;
-    --img-big: 1024px;
+    --img-l: 1024px;
+    --img-xl: 1440px;
+
 }
 
 .column {

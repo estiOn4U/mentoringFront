@@ -42,7 +42,7 @@ img {
 }
 
 .img-wrapper-xl {
-    max-width: 100%;
+    max-width: var(--img-xl);
     max-height: 300px;
     overflow: hidden;
     margin: auto;

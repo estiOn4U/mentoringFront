@@ -24,6 +24,12 @@ main section {
     display: flex;
     flex-direction: column;
 }
+
+.section__initial header p {
+    max-width: 800px;
+    margin: auto;
+}
+
 .section__initial .img-wrapper-xl {
     order: -1;
 }
