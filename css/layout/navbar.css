@@ -49,7 +49,6 @@
 .main-navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     max-width: 1360px;
     margin: auto;
     text-align: center;
@@ -116,6 +115,7 @@
     max-height: 0;
     overflow: hidden;
 }
+
 /*
 .sticky {
     position: sticky;
@@ -284,14 +284,32 @@
         width: 100%
     }
 
-
     .secondary-nav--right li {
         display: none;
     }
 
     .navbar__slider {
-        max-height: 40px;
+        min-height: 80px;
         width: 100%;
+        padding: 0;
+        margin-bottom: 16px;
+        overflow: visible;
+    }
+
+    .navbar__slider__slide {
+        width: 100px;
+        min-height: 80px;
+    }
+
+    .navbar__slider__slide div {
+        width: 40px;
+        margin: auto;
+    }
+
+    .navbar__slider__slide small {
+        max-width: 60px;
+        margin: auto;
+        text-align: center;
     }
 
 }

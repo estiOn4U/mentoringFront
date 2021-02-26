@@ -22,8 +22,8 @@ function addNavbar() {
         .then(data => {
             document.querySelector(".main-header").innerHTML = data;
         })
-        .then(checkNavbarCollapse)
-        .then(addNavbarSlider);
+        .then(addNavbarSlider)
+        .then(checkNavbarCollapse);
 }
 
 

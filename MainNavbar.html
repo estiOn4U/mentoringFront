@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<button type="button" class="toggle-navbar-btn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="toggle-navbar-txt" class="noVisible">Toggle Navbar</div>
+<button type="button" class="toggle-navbar-btn" aria-labelledby="toggle-navbar-txt">
     <svg role="img">
         <use xlink:href="./resources/svg/sprites.svg#hamburguer-open"></use>
     </svg>
@@ -14,6 +20,7 @@
                     <svg role="img">
                         <use xlink:href="./resources/svg/sprites.svg#silestone"></use>
                     </svg>
+                    <div class="noVisible">Ir a Silestone</div>
                 </a>
             </li>
             <li class="secondary-nav__tab tab">
@@ -21,6 +28,7 @@
                     <svg role="img">
                         <use xlink:href="./resources/svg/sprites.svg#dekton"></use>
                     </svg>
+                    <div class="noVisible">Ir a Dekton</div>
                 </a>
             </li>
             <li>
@@ -28,6 +36,7 @@
                     <svg role="img">
                         <use xlink:href="./resources/svg/sprites.svg#sensa"></use>
                     </svg>
+                    <div class="noVisible">Ir a Sensa</div>
                 </a>
             </li>
             <li>
@@ -35,12 +44,14 @@
                     <svg role="img">
                         <use xlink:href="./resources/svg/sprites.svg#naturalstone"></use>
                     </svg>
+                    <div class="noVisible">Ir a Natural Stone</div>
                 </a>
             </li>
         </ul>
         <ul class="secondary-nav--right">
             <form action="#" role="search">
-                <input type="search" name="search" id="search">
+                <input type="search" name="search" id="search" placeholder="Buscador">
+                <label for="search" class="noVisible">Buscar</label>
                 <input type="submit" class="search-btn">
             </form>
             <li><a class="primary-link" href="https://www.cosentino.com/es/noticias/">Noticias</a></li>
@@ -62,7 +73,7 @@
                 <a class="primary-link standout-text"
                    href="https://www.cosentino.com/es/colores/">Colores</a>
                 <ul role="listbox" class="navbar__dropdown overlay-content">
-                    <li><a class="primary-link overlay__close" href="#">&lt; Colores</a></li>
+                    <li role="option"><a class="primary-link overlay__close" href="#">&lt; Colores</a></li>
                     <li role="option"><a class="primary-link" href="#">Todos</a></li>
                     <li role="option"><a class="primary-link" href="#">Tonos</a></li>
                     <li role="option"><a class="primary-link" href="#">Silestone</a></li>
@@ -75,7 +86,7 @@
                 <a class="primary-link standout-text"
                    href="https://www.cosentino.com/es/cocinas/">Cocinas</a>
                 <ul role="listbox" class="navbar__dropdown overlay-content">
-                    <li><a class="primary-link overlay__close" href="#">&lt; Cocinas</a></li>
+                    <li role="option"><a class="primary-link overlay__close" href="#">&lt; Cocinas</a></li>
                     <li role="option"><a class="primary-link" href="#">Encimeras</a></li>
                     <li role="option"><a class="primary-link" href="#">Suelos</a></li>
                     <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
@@ -86,7 +97,7 @@
             <div class="main-navbar__tab" tabindex="0"><!--Dropdown-->
                 <a class="primary-link standout-text" href="https://www.cosentino.com/es/banos/">Baños</a>
                 <ul role="listbox" class="navbar__dropdown overlay-content">
-                    <li><a class="primary-link overlay__close" href="#">&lt; Baños</a></li>
+                    <li role="option"><a class="primary-link overlay__close" href="#">&lt; Baños</a></li>
                     <li role="option"><a class="primary-link" href="#">Encimeras</a></li>
                     <li role="option"><a class="primary-link" href="#">Lavabos</a></li>
                     <li role="option"><a class="primary-link" href="#">Platos de ducha</a></li>
@@ -100,7 +111,8 @@
                    href="https://www.cosentino.com/es/soluciones-arquitectonicas/">Soluciones
                     Arquitectónicas</a>
                 <ul role="listbox" class="navbar__dropdown overlay-content">
-                    <li><a class="primary-link overlay__close" href="#">&lt; Soluciones Arquitectónicas</a></li>
+                    <li role="option"><a class="primary-link overlay__close" href="#">&lt; Soluciones
+                        Arquitectónicas</a></li>
                     <li role="option"><a class="primary-link" href="#">Fachadas</a></li>
                     <li role="option"><a class="primary-link" href="#">Suelos y pavimentos</a></li>
                     <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
@@ -111,7 +123,7 @@
                 <a class="primary-link standout-text"
                    href="https://www.cosentino.com/es/galeria/">Galería</a>
                 <ul role="listbox" class="navbar__dropdown overlay-content">
-                    <li><a class="primary-link overlay__close" href="#">&lt; Galería</a></li>
+                    <li role="option"><a class="primary-link overlay__close" href="#">&lt; Galería</a></li>
                     <li role="option"><a class="primary-link" href="#">Galería de baños</a></li>
                     <li role="option"><a class="primary-link" href="#">Galería de cocinas</a></li>
                 </ul>
@@ -120,7 +132,7 @@
                 <a class="primary-link standout-text"
                    href="https://www.cosentino.com/es/blog-news/">Blog</a>
                 <ul role="listbox" class="navbar__dropdown overlay-content">
-                    <li><a class="primary-link overlay__close" href="#">&lt; Blog</a></li>
+                    <li role="option"><a class="primary-link overlay__close" href="#">&lt; Blog</a></li>
                     <li role="option"><a class="primary-link" href="#">Top Faces</a></li>
                     <li role="option"><a class="primary-link" href="#">Top Projects</a></li>
                     <li role="option"><a class="primary-link" href="#">Top Trends</a></li>
@@ -131,7 +143,7 @@
                 <a class="primary-link standout-text" href="https://www.cosentino.com/es/donde-comprar/">Dónde
                     comprar</a>
                 <ul role="listbox" class="navbar__dropdown overlay-content">
-                    <li><a class="primary-link overlay__close" href="#">&lt; Dónde comprar</a></li>
+                    <li role="option"><a class="primary-link overlay__close" href="#">&lt; Dónde comprar</a></li>
                     <li role="option"><a class="primary-link" href="#">Fachadas</a></li>
                     <li role="option"><a class="primary-link" href="#">Suelos y pavimentos</a></li>
                     <li role="option"><a class="primary-link" href="#">Revestimientos</a></li>
@@ -144,37 +156,56 @@
     </nav>
     <div class="nav-carousel__container">
         <div class="navbar__slider">
-            <div>
-                <svg role="img">
-                    <use xlink:href="./resources/svg/sprites.svg#cosentino-mobile"></use>
-                </svg>
+            <div class="navbar__slider__slide">
+                <div>
+                    <svg role="img">
+                        <use xlink:href="./resources/svg/sprites.svg#cosentino-mobile"></use>
+                    </svg>
+                </div>
+                <small>Cosentino</small>
             </div>
-            <div>
-                <svg role="img">
-                    <use xlink:href="./resources/svg/sprites.svg#silestone-mobile"></use>
-                </svg>
+            <div class="navbar__slider__slide">
+                <div>
+                    <svg role="img">
+                        <use xlink:href="./resources/svg/sprites.svg#silestone-mobile"></use>
+                    </svg>
+                </div>
+                <small>Silestone</small>
             </div>
-            <div>
-                <svg role="img">
-                    <use xlink:href="./resources/svg/sprites.svg#dekton-mobile"></use>
-                </svg>
+            <div class="navbar__slider__slide">
+                <div>
+                    <svg role="img">
+                        <use xlink:href="./resources/svg/sprites.svg#dekton-mobile"></use>
+                    </svg>
+                </div>
+                <small>Dekton</small>
             </div>
-            <div>
-                <svg role="img">
-                    <use xlink:href="./resources/svg/sprites.svg#sensa-mobile"></use>
-                </svg>
+            <div class="navbar__slider__slide">
+                <div>
+                    <svg role="img">
+                        <use xlink:href="./resources/svg/sprites.svg#sensa-mobile"></use>
+                    </svg>
+                </div>
+                <small>Sensa</small>
             </div>
-            <div>
-                <svg role="img">
-                    <use xlink:href="./resources/svg/sprites.svg#naturalstone-mobile"></use>
-                </svg>
+            <div class="navbar__slider__slide">
+                <div>
+                    <svg role="img">
+                        <use xlink:href="./resources/svg/sprites.svg#naturalstone-mobile"></use>
+                    </svg>
+                </div>
+                <small>Natural Stone</small>
             </div>
-            <div>
-                <svg role="img">
-                    <use xlink:href="./resources/svg/sprites.svg#empleo-mobile"></use>
-                </svg>
+            <div class="navbar__slider__slide">
+                <div>
+                    <svg role="img">
+                        <use xlink:href="./resources/svg/sprites.svg#empleo-mobile"></use>
+                    </svg>
+                </div>
+                <small>Empleo</small>
             </div>
         </div>
     </div>
 </div>
+</body>
 </html>

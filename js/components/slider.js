@@ -33,9 +33,9 @@ function addPhotosSlider() {
 
 function addNavbarSlider() {
     $('.navbar__slider').slick({
-        arrows: true,
+        arrows: false,
         centerMode: true,
-        dots: true,
+        dots: false,
         slidesToShow: 2,
         slidesToScroll: 2,
         variableWidth: true,
