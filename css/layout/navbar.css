@@ -116,6 +116,12 @@
     max-height: 0;
     overflow: hidden;
 }
+/*
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}*/
 
 /*==============COLLAPSIBLE==================*/
 @media (max-width: 1024px) {
@@ -284,6 +290,7 @@
 
     .navbar__slider {
         max-height: 40px;
-        overflow: auto;
+        width: 100%;
     }
+
 }

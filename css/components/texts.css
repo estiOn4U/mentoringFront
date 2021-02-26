@@ -6,3 +6,9 @@ small {
 .standout-text {
     font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+    .overlay__footer small {
+        text-align: center;
+    }
+}
