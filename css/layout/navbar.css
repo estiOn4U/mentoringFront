@@ -150,11 +150,6 @@
     .main-navbar__tab {
         width: 100%;
         padding: 8px;
-    }
-
-    .main-navbar__tab::after {
-        content: " ";
-        display: block;
         border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: var(--color-dark-shadow);
@@ -169,7 +164,7 @@
     .header-logo {
         display: inline-block;
         position: fixed;
-        top: 0px;
+        top: 0;
     }
 
     .tab-container {
@@ -210,10 +205,7 @@
         padding: 16px;
     }
 
-
-    .navbar__dropdown li:not(:first-child)::after {
-        content: " ";
-        display: block;
+    .navbar__dropdown li:not(:first-child) {
         border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: var(--color-dark-shadow);
@@ -225,8 +217,7 @@
         position: absolute;
         right: 16%;
     }
-
-
+    
     .primary-link.standout-text {
         text-align: center;
         pointer-events: none;
