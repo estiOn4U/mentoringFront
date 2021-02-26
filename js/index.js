@@ -1,6 +1,6 @@
 import {addNavbar, addFooter} from './base/add-components.js';
 import {trapFocus} from './components/dialogs.js';
-import {addPhotosSlider, addNavbarSlider} from './components/slider.js';
+import {addPhotosSlider} from './components/slider.js';
 import {validateForm} from './components/form-validations.js';
 
 if (document.readyState !== 'loading') {
@@ -14,7 +14,6 @@ function init() {
     addFooter();
     addEventListeners();
     addPhotosSlider();
-    addNavbarSlider();
 }
 
 function addEventListeners() {
