@@ -36,10 +36,11 @@ function addNavbarSlider() {
         arrows: false,
         centerMode: true,
         dots: false,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         variableWidth: true,
-        mobileFirst: true
+        mobileFirst: true,
+        infinite: true
     });
 }
 
