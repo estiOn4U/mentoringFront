@@ -161,7 +161,7 @@
                         <textarea name="mensaje-contacto" id="dialog-message"></textarea>
                     </label>
                     <label class="textarea-label contact-form__label" for="dialog-email">Email
-                        <input type="email" placeholder="Introduce tu dirección de email" name="email"
+                        <input type="email" placeholder="Introduce tu dirección de email" name="email" class="input--validable"
                                id="dialog-email">
                     </label>
                     <fieldset>
@@ -215,7 +215,7 @@
             <span>Descubre por qué Dekton es perfecto para fachadas</span>
             <form>
                 <label class="textarea-label contact-form__label" for="email">Email
-                    <input type="email" placeholder="Introduce tu dirección de email" name="email" id="email">
+                    <input type="email" class="input--validable" placeholder="Introduce tu dirección de email" name="email" id="email">
                 </label>
                 <fieldset>
                     <legend>Estoy interesado en soluciones para...</legend>
@@ -332,11 +332,11 @@
         <div class="contact-form">
             <form class="contact-form" id="contact-form">
                 <label class="contact-form__label" for="nombre-contacto">Nombre
-                    <input type="text" name="nombre-contacto" id="nombre-contacto" pattern="[a-zA-Z]{1-15}" required/>
+                    <input type="text" name="nombre-contacto" id="nombre-contacto" class="input--validable" pattern="[a-zA-Z]{1-15}" required/>
                 </label>
 
                 <label class="contact-form__label" for="email-contacto">E-mail
-                    <input type="email" name="email-contacto" id="email-contacto" required/>
+                    <input type="email" name="email-contacto" id="email-contacto" class="input--validable" required/>
                 </label>
 
                 <label class="contact-form__label" for="perfil-contacto">Selecciona tu perfil
@@ -356,7 +356,7 @@
                 </label>
 
                 <label class="contact-form__label" for="empresa-contacto">Empresa
-                    <input type="text" name="empresa-contacto" id="empresa-contacto" minlength="3" required/>
+                    <input type="text" name="empresa-contacto" id="empresa-contacto" class="input--validable" minlength="3" required/>
                 </label>
                 <label class="contact-form__label" for="pais-contacto">País
                     <select name="pais-contacto" id="pais-contacto">

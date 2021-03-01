@@ -77,6 +77,12 @@
         width: 100%;
     }
 
+    .search-btn {
+        min-width: 40px;
+        min-height: 40px;
+        right: 10px;
+    }
+
     .toggle-navbar-btn {
         display: block;
         position: fixed;

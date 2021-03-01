@@ -8,7 +8,14 @@ fieldset label {
     display: block;
 }
 
-input:not([type="checkbox"]):not([type="submit"]), textarea, select {
+.secondary-nav--right input[type="search"],
+.secondary-nav--right input[type="submit"]
+{
+    border-color: var(--color-white);
+    border-width: 0;
+}
+
+input:not([type="checkbox"]):not([type="submit"]):not([type="search"]), textarea, select {
     border-radius: 10px;
     border-color: var(--color-black);
     border-width: 1px;
@@ -23,14 +30,13 @@ input[disabled], textarea[disabled] {
     cursor: not-allowed;
     border-color: var(--color-gray);
     opacity: 0.5;
-
 }
 
-input:not([type="checkbox"]):not([type="submit"]):invalid {
+.input--validable:invalid {
     color: var(--color-error);
 }
 
-input:not([type="checkbox"]):not([type="submit"]):valid {
+.input--validable:valid {
     color: var(--color-success);
 }
 
@@ -89,5 +95,19 @@ input:not([type="checkbox"]):not([type="submit"]):valid {
     .contact-form__label {
         display: block;
         width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .secondary-nav--right input[type="search"]
+    {
+        border-radius: 10px;
+        border-color: var(--color-black);
+        border-width: 1px;
+        background-color: var(--color-white);
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 }
