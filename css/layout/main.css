@@ -34,6 +34,12 @@ main section {
     order: -1;
 }
 
+.section--breadcrumb {
+    max-width: 1440px;
+    margin: auto;
+    text-align: left;
+}
+
 .section__initial--squares,
 .section--brands,
 .section--solutions,
