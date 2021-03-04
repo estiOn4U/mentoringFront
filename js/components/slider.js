@@ -12,6 +12,12 @@ function addPhotosSlider() {
         variableWidth: true,
         responsive: [
             {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false
+                }
+            },
+            {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
@@ -35,7 +41,7 @@ function addNavbarSlider() {
     $('.navbar__slider').slick({
         arrows: false,
         centerMode: true,
-        dots: false,
+        dots: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         variableWidth: true,

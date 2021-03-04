@@ -205,6 +205,7 @@
 
     .navbar__dropdown li a {
         padding: 16px;
+        display: inline-block;
     }
 
     .navbar__dropdown li:not(:first-child) {
@@ -329,17 +330,17 @@
         overflow: visible;
     }
 
-    .navbar__slider__slide {
+    .navbar__slider .slider__slide {
         width: 100px;
         min-height: 80px;
     }
 
-    .navbar__slider__slide div {
+    .navbar__slider .slider__slide div {
         width: 40px;
         margin: auto;
     }
 
-    .navbar__slider__slide small {
+    .navbar__slider .slider__slide small {
         max-width: 60px;
         margin: auto;
         text-align: center;

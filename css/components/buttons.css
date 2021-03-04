@@ -73,7 +73,8 @@
         background-color: var(--color-white);
         position: fixed;
         bottom: 0;
-        margin-left: -2em;
+        left: 0;
+        right: 0;
         width: 100%;
     }
 
