@@ -55,8 +55,19 @@ picture {
 }
 
 .zoomable {
+    position: relative;
     -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+}
+
+.zoomable::after {
+    content: " ";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 25%;
+    border: none;
+    display: inline-block;
 }
 
 .zoomable:hover img {
@@ -64,21 +75,25 @@ picture {
     transform: scale(1.2);
 }
 
-.zoomable:hover .img-wrapper-s,
-.zoomable:hover .img-wrapper-ml {
-    animation: animateBorder 1s normal forwards ease;
+.zoomable:hover::after {
+    animation: innerBorder 1s normal forwards ease;
 }
 
-@-webkit-keyframes animateBorder {
+
+@-webkit-keyframes innerBorder {
     from {
-        border-style: inset;
-        border-color: var(--color-black);
-        border-width: 0;
+        border: 1px solid white;
+        top: 0;
+        height: 100%;
+        left: 0;
+        width: 100%;
     }
     to {
-        border-style: inset;
-        border-color: var(--color-medium-gray);
-        border-width: 4px;
+        border: 1px solid white;
+        top: 5%;
+        height: 60%;
+        left: 5%;
+        width: 90%;
     }
 }
 
