@@ -40,7 +40,7 @@
 
 .secondary-nav--right li:not(:last-child),
 .secondary-nav--right form,
-.secondary-nav--left li a{
+.secondary-nav--left li a {
     padding: 8px;
     border-right-style: solid;
     border-right-width: 1px;
@@ -69,11 +69,18 @@
     align-self: center;
     padding: 16px;
     font-size: 1.2em;
-    border-color: var(--color-dark-shadow);
+    border-color: var(--color-medium-gray);
     border-style: solid;
     border-width: 1px;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     border-bottom-color: transparent;
+    margin-right: 4px;
+}
+
+.main-navbar__tab.active {
+    -webkit-box-shadow: 0px -6px 10px 3px var(--color-medium-gray);
+    box-shadow: 0px -6px 5px 0px var(--color-medium-gray);
 }
 
 .main-navbar__tab li {
