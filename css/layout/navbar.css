@@ -159,7 +159,7 @@
     }
 
     .main-navbar__container {
-        margin-top: -16px;
+
     }
 
     .main-navbar__tab {
@@ -291,7 +291,7 @@
         display: block;
         position: fixed;
         z-index: 9;
-        bottom: 0;
+        bottom: 50px;
         background-color: var(--color-black);
         color: var(--color-white);
         margin-left: -8%;

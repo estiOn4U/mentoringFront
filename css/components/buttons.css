@@ -36,21 +36,6 @@
     display: none;
 }
 
-.search-btn {
-    width: 40px;
-    color: transparent;
-    border: none;
-    background-color: transparent;
-    background-image: url('https://icons-for-free.com/iconfiles/png/512/search+24px-131985193505071219.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    padding: 4px;
-}
-
 .lang-selection-btn {
     border-radius: 50%;
     padding: 0;
@@ -78,12 +63,6 @@
         width: 100%;
         box-shadow: 0px 0px 18px 2px rgb(0 0 0);
         padding-bottom: env(safe-area-inset-bottom);
-    }
-
-    .search-btn {
-        min-width: 40px;
-        min-height: 40px;
-        right: 10px;
     }
 
     .toggle-navbar-btn {
