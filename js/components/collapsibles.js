@@ -44,8 +44,16 @@ function autoCollapseSubnav() {
 function checkNavbarCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let toggleNavbarBtn = document.querySelector(".toggle-navbar-btn");
+    let tabCollection = document.querySelectorAll('.main-navbar__tab');
     if (clientWidth <= tabletH) {
         toggleNavbarBtn.addEventListener("click", toggleCollapseOverlay);
+        for (let i=0; i < tabCollection.length; i++) {
+            tabCollection[i].removeEventListener("click", autoCollapseSubnav);
+        }
+    } else {
+        for (let i=0; i < tabCollection.length; i++) {
+            tabCollection[i].addEventListener("click", autoCollapseSubnav);
+        }
     }
 }
 
@@ -93,11 +101,4 @@ function toggleCollapseSubnav() {
     }
 }
 
-function addTabListeners() {
-    let tabCollection = document.querySelectorAll('.main-navbar__tab');
-    for (let i=0; i < tabCollection.length; i++) {
-        tabCollection[i].addEventListener("click", autoCollapseSubnav);
-    }
-}
-
-export {checkFooterCollapse, checkNavbarCollapse, addTabListeners};
+export {checkFooterCollapse, checkNavbarCollapse};

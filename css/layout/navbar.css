@@ -182,9 +182,7 @@
     }
 
     .header-logo {
-        display: inline-block;
-        position: fixed;
-        top: 0;
+        display: none;
     }
 
     .tab-container {
@@ -341,7 +339,7 @@
         background-color: var(--color-white);
         color: var(--color-black);
         padding: 4%;
-        top: 60px;
+        top: 0;
         margin-left: -8%;
     }
 
