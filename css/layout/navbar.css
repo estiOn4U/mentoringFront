@@ -26,6 +26,7 @@
 }
 
 .secondary-nav--left {
+    display: flex;
     padding: 0;
 }
 
@@ -68,6 +69,11 @@
     align-self: center;
     padding: 16px;
     font-size: 1.2em;
+    border-color: var(--color-dark-shadow);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-bottom-color: transparent;
 }
 
 .main-navbar__tab li {

@@ -56,7 +56,7 @@ picture {
 
 .zoomable {
     position: relative;
-    -webkit-transition: all 1s ease;
+    -webkit-transition: 2s;
 }
 
 .zoomable::after {

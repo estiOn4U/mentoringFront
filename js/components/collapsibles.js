@@ -32,20 +32,13 @@ function checkFooterCollapse() {
 }
 
 function autoCollapseSubnav() {
-    let defaultActive = document.querySelector("a[href='https://www.cosentino.com/es/soluciones-arquitectonicas/']").parentNode;
-    defaultActive.classList.toggle("active");
-    this.classList.toggle("active");
+    let tabCollectionNotThis = document.querySelectorAll('.main-navbar__tab:not(this)');
+    for (let i=0; i < tabCollectionNotThis.length; i++) {
+        tabCollectionNotThis[i].classList.remove("active");
+    }
+    this.classList.add("active");
     let panel = this.lastElementChild;
     genericCollapse(panel);
-
-}
-
-function autoFocus() {
-    let navTabs = document.querySelectorAll(".main-navbar__tab:not(.active)");
-    for (let i = 0; i < navTabs.length; i++) {
-        navTabs[i].addEventListener("mouseenter", autoCollapseSubnav);
-        navTabs[i].addEventListener("mouseleave", autoCollapseSubnav);
-    }
 }
 
 function checkNavbarCollapse() {
@@ -53,8 +46,6 @@ function checkNavbarCollapse() {
     let toggleNavbarBtn = document.querySelector(".toggle-navbar-btn");
     if (clientWidth <= tabletH) {
         toggleNavbarBtn.addEventListener("click", toggleCollapseOverlay);
-    } else {
-        autoFocus();
     }
 }
 
@@ -102,4 +93,11 @@ function toggleCollapseSubnav() {
     }
 }
 
-export {checkFooterCollapse, autoFocus, checkNavbarCollapse};
+function addTabListeners() {
+    let tabCollection = document.querySelectorAll('.main-navbar__tab');
+    for (let i=0; i < tabCollection.length; i++) {
+        tabCollection[i].addEventListener("click", autoCollapseSubnav);
+    }
+}
+
+export {checkFooterCollapse, checkNavbarCollapse, addTabListeners};

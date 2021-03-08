@@ -1,4 +1,4 @@
-import {checkFooterCollapse, autoFocus, checkNavbarCollapse} from "../components/collapsibles.js";
+import {checkFooterCollapse, checkNavbarCollapse, addTabListeners} from "../components/collapsibles.js";
 import {addNavbarSlider} from '../components/slider.js';
 
 function addFooter() {
@@ -22,6 +22,7 @@ function addNavbar() {
         .then(data => {
             document.querySelector(".main-header").innerHTML = data;
         })
+        .then(addTabListeners)
         .then(addNavbarSlider)
         .then(checkNavbarCollapse);
 }
