@@ -38,6 +38,11 @@
     position: relative;
 }
 
+.secondary-nav--right  li {
+    position: relative;
+    z-index: 4;
+}
+
 .secondary-nav--right li:not(:last-child),
 .secondary-nav--right form,
 .secondary-nav--left li a {

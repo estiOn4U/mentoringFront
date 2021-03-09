@@ -41,16 +41,24 @@ function autoCollapseSubnav() {
     genericCollapse(panel);
 }
 
+function toggleSearchVisibility() {
+    this.classList.toggle("search--active");
+    let input = this.previousElementSibling;
+    input.classList.toggle("search--active");
+}
+
 function checkNavbarCollapse() {
     let clientWidth = document.documentElement.clientWidth;
     let toggleNavbarBtn = document.querySelector(".toggle-navbar-btn");
     let tabCollection = document.querySelectorAll('.main-navbar__tab');
+    let searchInput = document.querySelector(".search-input");
     if (clientWidth <= tabletH) {
         toggleNavbarBtn.addEventListener("click", toggleCollapseOverlay);
         for (let i=0; i < tabCollection.length; i++) {
             tabCollection[i].removeEventListener("click", autoCollapseSubnav);
         }
     } else {
+        searchInput.addEventListener("focus", toggleSearchVisibility);
         for (let i=0; i < tabCollection.length; i++) {
             tabCollection[i].addEventListener("click", autoCollapseSubnav);
         }
