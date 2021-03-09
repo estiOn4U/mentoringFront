@@ -71,14 +71,27 @@ picture {
 }
 
 .zoomable:hover img {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+   /* -webkit-transform: scale(1.2);
+    transform: scale(1.2);*/
+    animation: zoomIn 2s normal forwards ease;
+
 }
 
 .zoomable:hover::after {
-    animation: innerBorder 1s normal forwards ease;
+    animation: innerBorder 2s normal forwards ease;
 }
 
+@-webkit-keyframes zoomIn {
+    0% {
+        transform: scale(1,1);
+    }
+
+    100% {
+        transform: scale(1.6,1.6);
+        filter: brightness(0.5);
+    }
+
+}
 
 @-webkit-keyframes innerBorder {
     from {
@@ -87,6 +100,7 @@ picture {
         height: 100%;
         left: 0;
         width: 100%;
+        opacity: 0
     }
     to {
         border: 1px solid white;
@@ -94,6 +108,7 @@ picture {
         height: 60%;
         left: 5%;
         width: 90%;
+        opacity: 1;
     }
 }
 
