@@ -135,8 +135,7 @@ picture {
 .navbar-icon svg {
     background-color: transparent;
     fill: currentColor;
-    max-width: 132px;
-    height: 32px;
+    min-width: 120px;
 }
 
 .navbar__slider svg {
